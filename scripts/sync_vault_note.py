@@ -61,7 +61,9 @@ def build_note(week, data):
     lines = [
         "---",
         "description: דוח שבועי - הכתבות המובילות בלמידה, פיתוח והדרכה",
-        "type: report",
+        # weekly-digest, not report: this is the value the folder's map-of-content
+        # dataview filters on, matching the sibling Trending Repos convention.
+        "type: weekly-digest",
         "category: research",
         "lang: he",
         "status: active",

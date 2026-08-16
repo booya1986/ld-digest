@@ -1,46 +1,174 @@
 {
   "_comment": [
     "Curated L&D / instructional-design / learning-technology sources.",
-    "Every URL here was probed live and confirmed to parse and return items.",
-    "A feed that 404s or parses zero items gets removed, never kept as decoration.",
+    "Every URL here was probed live AND confirmed reachable from GitHub Actions.",
+    "A feed that 404s, parses zero items, or is blocked from CI gets removed.",
     "",
     "tier: 1 = authoritative L&D publisher, 2 = practitioner expert blog,",
     "      3 = general business/HR press where L&D coverage is occasional",
     "      (tier only nudges the score; it never overrides topic fit or recency).",
-    "lane: ai_ld | id_craft | learning_tech | strategy — used for lane floors so",
+    "lane: ai_ld | id_craft | learning_tech | strategy - used for lane floors so",
     "      one loud category cannot crowd out the other three.",
     "",
-    "Low-frequency feeds (Thalheimer, Donald Clark, Dirksen) are deliberately kept.",
+    "Low-frequency feeds (Thalheimer, Dirksen, Donald Clark) are deliberately kept.",
     "They post rarely but carry high signal; the 7-day window simply skips them",
-    "on quiet weeks at the cost of one HTTP request."
+    "on quiet weeks at the cost of one HTTP request.",
+    "",
+    "Deliberately NOT here: any Substack. Substack returns 403 to GitHub Actions",
+    "runner IPs, so drphilippahardman.substack.com and joshbersin.substack.com",
+    "fetch fine from a laptop and never from CI. Leaving one in emits the same",
+    "warning every week. The web-search top-up can still surface their articles."
   ],
   "feeds": [
-    { "name": "Josh Bersin",            "url": "https://joshbersin.com/feed/",                              "tier": 1, "lane": "ai_ld" },
-    { "name": "The Learning Guild",     "url": "https://www.learningguild.com/feed/",                       "tier": 1, "lane": "ai_ld" },
-    { "name": "Philippa Hardman",       "url": "https://drphilippahardman.substack.com/feed",               "tier": 2, "lane": "ai_ld" },
-
-    { "name": "3-Star Learning",        "url": "https://3starlearningexperiences.wordpress.com/feed/",      "tier": 2, "lane": "id_craft" },
-    { "name": "Clark Quinn",            "url": "https://blog.learnlets.com/feed/",                          "tier": 2, "lane": "id_craft" },
-    { "name": "Devlin Peck",            "url": "https://www.devlinpeck.com/feed.xml",                       "tier": 2, "lane": "id_craft" },
-    { "name": "The eLearning Coach",    "url": "https://theelearningcoach.com/feed/",                       "tier": 2, "lane": "id_craft" },
-    { "name": "Will Thalheimer",        "url": "https://www.worklearning.com/feed/",                        "tier": 1, "lane": "id_craft" },
-    { "name": "Julie Dirksen",          "url": "https://usablelearning.com/feed/",                          "tier": 2, "lane": "id_craft" },
-    { "name": "Donald Clark",           "url": "https://donaldclarkplanb.blogspot.com/feeds/posts/default", "tier": 2, "lane": "id_craft" },
-
-    { "name": "eLearning Industry",     "url": "https://elearningindustry.com/feed",                        "tier": 1, "lane": "learning_tech" },
-    { "name": "Craig Weiss",            "url": "https://elearninfo247.com/feed/",                           "tier": 2, "lane": "learning_tech" },
-    { "name": "Talented Learning",      "url": "https://talentedlearning.com/feed/",                        "tier": 2, "lane": "learning_tech" },
-    { "name": "Watershed (xAPI)",       "url": "https://www.watershedlrs.com/blog/rss.xml",                 "tier": 2, "lane": "learning_tech" },
-    { "name": "InSync Training",        "url": "https://blog.insynctraining.com/rss.xml",                   "tier": 2, "lane": "learning_tech" },
-
-    { "name": "Chief Learning Officer", "url": "https://www.chieflearningofficer.com/feed/",                "tier": 1, "lane": "strategy" },
-    { "name": "HR Executive",           "url": "https://hrexecutive.com/feed/",                             "tier": 1, "lane": "strategy" },
-    { "name": "Training Journal",       "url": "https://www.trainingjournal.com/feed/",                     "tier": 1, "lane": "strategy" },
-    { "name": "Training Industry",      "url": "https://trainingindustry.com/feed/",                        "tier": 1, "lane": "strategy" },
-    { "name": "Fosway Group",           "url": "https://www.fosway.com/feed/",                              "tier": 1, "lane": "strategy" },
-    { "name": "MIT Sloan Review",       "url": "https://sloanreview.mit.edu/feed/",                         "tier": 3, "lane": "strategy" },
-    { "name": "HBR",                    "url": "http://feeds.hbr.org/harvardbusiness",                      "tier": 3, "lane": "strategy" },
-    { "name": "HR Dive",                "url": "https://www.hrdive.com/feeds/news/",                        "tier": 3, "lane": "strategy" }
+    {
+      "name": "Josh Bersin",
+      "url": "https://joshbersin.com/feed/",
+      "tier": 1,
+      "lane": "ai_ld"
+    },
+    {
+      "name": "The Learning Guild",
+      "url": "https://www.learningguild.com/feed/",
+      "tier": 1,
+      "lane": "ai_ld"
+    },
+    {
+      "name": "3-Star Learning",
+      "url": "https://3starlearningexperiences.wordpress.com/feed/",
+      "tier": 2,
+      "lane": "id_craft"
+    },
+    {
+      "name": "Clark Quinn",
+      "url": "https://blog.learnlets.com/feed/",
+      "tier": 2,
+      "lane": "id_craft"
+    },
+    {
+      "name": "Devlin Peck",
+      "url": "https://www.devlinpeck.com/feed.xml",
+      "tier": 2,
+      "lane": "id_craft"
+    },
+    {
+      "name": "The eLearning Coach",
+      "url": "https://theelearningcoach.com/feed/",
+      "tier": 2,
+      "lane": "id_craft"
+    },
+    {
+      "name": "Will Thalheimer",
+      "url": "https://www.worklearning.com/feed/",
+      "tier": 1,
+      "lane": "id_craft"
+    },
+    {
+      "name": "Julie Dirksen",
+      "url": "https://usablelearning.com/feed/",
+      "tier": 2,
+      "lane": "id_craft"
+    },
+    {
+      "name": "Donald Clark",
+      "url": "https://donaldclarkplanb.blogspot.com/feeds/posts/default",
+      "tier": 2,
+      "lane": "id_craft"
+    },
+    {
+      "name": "eLearning Industry",
+      "url": "https://elearningindustry.com/feed",
+      "tier": 1,
+      "lane": "learning_tech"
+    },
+    {
+      "name": "Craig Weiss",
+      "url": "https://elearninfo247.com/feed/",
+      "tier": 2,
+      "lane": "learning_tech"
+    },
+    {
+      "name": "Talented Learning",
+      "url": "https://talentedlearning.com/feed/",
+      "tier": 2,
+      "lane": "learning_tech"
+    },
+    {
+      "name": "Watershed (xAPI)",
+      "url": "https://www.watershedlrs.com/blog/rss.xml",
+      "tier": 2,
+      "lane": "learning_tech"
+    },
+    {
+      "name": "InSync Training",
+      "url": "https://blog.insynctraining.com/rss.xml",
+      "tier": 2,
+      "lane": "learning_tech"
+    },
+    {
+      "name": "Chief Learning Officer",
+      "url": "https://www.chieflearningofficer.com/feed/",
+      "tier": 1,
+      "lane": "strategy"
+    },
+    {
+      "name": "HR Executive",
+      "url": "https://hrexecutive.com/feed/",
+      "tier": 1,
+      "lane": "strategy"
+    },
+    {
+      "name": "Training Journal",
+      "url": "https://www.trainingjournal.com/feed/",
+      "tier": 1,
+      "lane": "strategy"
+    },
+    {
+      "name": "Training Industry",
+      "url": "https://trainingindustry.com/feed/",
+      "tier": 1,
+      "lane": "strategy"
+    },
+    {
+      "name": "Fosway Group",
+      "url": "https://www.fosway.com/feed/",
+      "tier": 1,
+      "lane": "strategy"
+    },
+    {
+      "name": "MIT Sloan Review",
+      "url": "https://sloanreview.mit.edu/feed/",
+      "tier": 3,
+      "lane": "strategy"
+    },
+    {
+      "name": "HBR",
+      "url": "http://feeds.hbr.org/harvardbusiness",
+      "tier": 3,
+      "lane": "strategy"
+    },
+    {
+      "name": "HR Dive",
+      "url": "https://www.hrdive.com/feeds/news/",
+      "tier": 3,
+      "lane": "strategy"
+    },
+    {
+      "name": "HR Executive Tech",
+      "url": "https://hrexecutive.com/category/hr-technology/feed/",
+      "tier": 2,
+      "lane": "ai_ld"
+    },
+    {
+      "name": "Learning Rebels",
+      "url": "https://learningrebels.com/feed/",
+      "tier": 2,
+      "lane": "id_craft"
+    }
   ],
-  "hn_queries": ["instructional design", "corporate training", "learning science", "edtech enterprise"]
+  "hn_queries": [
+    "instructional design",
+    "corporate training",
+    "learning science",
+    "edtech enterprise"
+  ]
 }
