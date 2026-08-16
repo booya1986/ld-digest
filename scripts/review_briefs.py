@@ -178,14 +178,17 @@ why it matters (en): {article.get('matters_en', '')}
 
 def review(client, articles, indices, by_url):
     body = "\n".join(_render(articles[i], i, by_url) for i in indices)
-    msg = client.messages.create(
+    # Streamed for the same reason as generate_briefs: the SDK rejects a
+    # non-streaming request this large before it ever leaves the process.
+    with client.messages.stream(
         model=MODEL,
         max_tokens=MAX_TOKENS,
         system=REVIEW_SYSTEM,
         messages=[{"role": "user", "content":
                    f"Review these {len(indices)} digest entries.\n\n{body}"}],
         output_config={"format": {"type": "json_schema", "schema": REVIEW_SCHEMA}},
-    )
+    ) as stream:
+        msg = stream.get_final_message()
     out = {}
     for r in json.loads(_text(msg)).get("reviews", []):
         i = r.get("index")
@@ -202,14 +205,15 @@ def rewrite(client, articles, reviews, by_url):
             f"EDITOR'S PROBLEM: {r['problem']}\n"
             f"EDITOR'S REQUIRED FIX: {r['fix']}\n"
         )
-    msg = client.messages.create(
+    with client.messages.stream(
         model=MODEL,
         max_tokens=MAX_TOKENS,
         system=REWRITE_SYSTEM,
         messages=[{"role": "user", "content":
                    "Rewrite these rejected entries.\n\n" + "\n".join(parts)}],
         output_config={"format": {"type": "json_schema", "schema": REWRITE_SCHEMA}},
-    )
+    ) as stream:
+        msg = stream.get_final_message()
     applied = []
     for entry in json.loads(_text(msg)).get("articles", []):
         i = entry.get("index")

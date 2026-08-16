@@ -244,3 +244,38 @@ def test_feed_urls_are_unique():
     feeds, _ = f.load_feeds()
     urls = [x["url"] for x in feeds]
     assert len(urls) == len(set(urls))
+
+# --- Claude call shape (regression) ----------------------------------------
+
+def _src(name):
+    here = os.path.dirname(os.path.abspath(__file__))
+    return open(os.path.join(here, name), encoding="utf-8").read()
+
+
+@pytest.mark.parametrize("mod", ["generate_briefs.py", "review_briefs.py"])
+def test_large_calls_stream(mod):
+    """The SDK raises ValueError for a non-streaming request it estimates could
+    exceed 10 minutes, which MAX_TOKENS=32000 does. That failure is caught by
+    the degrade-to-headlines handler, so it shipped a green run with an empty
+    digest. Large calls must stream and collect via get_final_message()."""
+    src = _src(mod)
+    assert "messages.stream(" in src, f"{mod} must stream its large call"
+    assert "get_final_message()" in src, f"{mod} must collect the streamed message"
+    assert "client.messages.create(" not in src, (
+        f"{mod} still has a non-streaming create() call")
+
+
+@pytest.mark.parametrize("mod", ["generate_briefs.py", "review_briefs.py",
+                                 "discover_articles.py"])
+def test_reads_first_text_block_not_content_zero(mod):
+    """Thinking is on by default on claude-opus-5 and a thinking block has no
+    .text, so reading content[0].text is the classic silent-empty-briefs bug.
+    Assert the positive: each module scans for the first text-typed block.
+    (Checking for the absence of the string "content[0]" would match the
+    comments that explain this very trap.)"""
+    src = _src(mod)
+    # Strip comments so an explanatory mention cannot pass or fail the check.
+    code = "\n".join(l.split("#")[0] for l in src.splitlines())
+    assert 'block.type == "text"' in code, (
+        f"{mod} must select the first text-typed block")
+    assert ".content[0]" not in code, f"{mod} indexes content[0] in real code"

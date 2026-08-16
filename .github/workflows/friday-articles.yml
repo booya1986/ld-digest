@@ -140,7 +140,13 @@ jobs:
           sections=$(grep -o 'brief-section' "${{ env.outdir }}/index.html" | wc -l | tr -d ' ')
           echo "brief-sections in report: $sections"
           if [ "$sections" -lt 20 ]; then
-            echo "::warning title=briefs::only $sections brief-section markers -- briefs are missing or partial"
+            # Hard failure, not a warning. The briefs step degrades to headlines
+            # on any exception, so a real bug (an SDK guard, an expired key, a
+            # schema rejection) produced a GREEN run shipping a digest with no
+            # summaries and no insights. A digest without briefs is not worth
+            # publishing; fail here and let the Friday safety-net crons retry.
+            echo "::error title=briefs::only $sections brief-section markers -- the briefs step degraded. Refusing to publish a headline-only digest."
+            exit 1
           fi
 
       - name: Build social card (non-fatal)

@@ -194,13 +194,19 @@ def generate(infile, outfile):
                 f"{_candidate_list(pool)}\n\n"
                 f"Choose the {WANTED} most valuable and write the digest entries."
             )
-            message = client.messages.create(
+            # Stream, then collect. The SDK refuses a non-streaming request it
+            # estimates could run past 10 minutes, and MAX_TOKENS is well over
+            # that line: it raises ValueError before sending anything. That
+            # failure is invisible in a green run, because the except below
+            # degrades to headlines.
+            with client.messages.stream(
                 model=MODEL,
                 max_tokens=MAX_TOKENS,
                 system=SYSTEM_PROMPT.format(wanted=WANTED),
                 messages=[{"role": "user", "content": prompt}],
                 output_config={"format": {"type": "json_schema", "schema": BRIEFS_SCHEMA}},
-            )
+            ) as stream:
+                message = stream.get_final_message()
             if message.stop_reason == "max_tokens":
                 warnings.append("briefs hit max_tokens; digest may be short")
             parsed = json.loads(_response_text(message))
