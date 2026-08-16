@@ -46,6 +46,20 @@ jobs:
           pip install pytest
           python3 -m pytest scripts/ -q
 
+      - name: Verify required secrets are present
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          # The scripts each degrade gracefully without a key, which is right for
+          # a transient API failure but wrong for a missing secret: the run would
+          # go green and ship a headline-only digest with no summaries and no
+          # insights. Fail here instead, so a config problem is obvious.
+          if [ -z "$ANTHROPIC_API_KEY" ]; then
+            echo "::error title=config::ANTHROPIC_API_KEY is not set. Set it with: gh secret set ANTHROPIC_API_KEY --repo booya1986/ld-digest"
+            exit 1
+          fi
+          echo "ANTHROPIC_API_KEY present"
+
       - name: Fetch candidate articles
         env:
           LD_REPORTS_DIR: ${{ github.workspace }}/reports
