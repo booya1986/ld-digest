@@ -1,0 +1,241 @@
+{
+  "week": "2026-W33",
+  "generated_for": "2026-08-16",
+  "count": 10,
+  "articles": [
+    {
+      "headline_he": "AI מרחיב רק ידע שכבר תועד: בעיית הידע הסמוי",
+      "headline_en": "AI Only Scales What You Made Explicit: The Tacit Knowledge Problem",
+      "summary_he": "הטענה: השקעות AI לא מחזירות ערך לא בגלל המודל אלא בגלל שהידע שלפיו המומחים בארגון באמת מקבלים החלטות מעולם לא תועד. הכותב מצטט את Gartner (88% ממנהלי HR לא ראו ערך עסקי משמעותי מכלי AI ב-2025) ומחקר BCG על 1,250 חברות (5% מפיקות ערך משמעותי בקנה מידה ארגוני, 60% ללא תשואה חומרית כלל). Swagatam Basu מ-Gartner מכנה את הבלבול בין מדדי גישה ואימוץ לבין טרנספורמציה \"enablement illusion\". כשהמודל מקבל תיעוד פורמלי של התהליך האידיאלי במקום התהליך האמיתי, הוא מייצר תשובות שרק נראות נכונות.",
+      "summary_en": "The argument: AI investments fail to pay off not because of the model but because the logic by which a company's best people actually decide was never written down. It cites Gartner (88% of HR leaders saw no meaningful business value from AI tools in 2025) and a BCG study of 1,250 companies (5% capture significant value at enterprise scale, 60% see no material return at all). Gartner's Swagatam Basu calls the confusion of access and adoption metrics with transformation the \"enablement illusion.\" Feed a model formal documentation of the ideal process instead of the real one and it produces answers that only look correct.",
+      "insights_he": [
+        "שכבת orchestration (שכבה נפרדת שמחברת כלים מפוצלים ומאחדת את הנתונים שלהם לתמונה אחת) פותרת רק את הרובד הטכני: גם מערכות משולבות לחלוטין יעבירו הלאה רק את הידע שהארגון הצליח ללכוד. אינטגרציה אינה תחליף לחילוץ ידע.",
+        "האנקדוטה עושה יותר עבודה מכל מצגת: כמעט אלף עובדים עברו שבוע הדרכה אינטנסיבית על עבודה במערכת אחת, המשוב היה מצוין, וכעבור שבועיים מנהלת סניף כבר הזינה נתונים לאקסל הפרטי שלה (\"ככה יותר קל לי\"). הבנה אינה אימוץ.",
+        "אותו פער מייצר שלוש עלויות במקביל: קליטה איטית, ידע שנעלם עם כל עזיבה, והשקעות AI שלא מחזירות את עצמן. חילוץ ידע סמוי הוא התשתית המשותפת לשלושתן, ולכן אפשר לתקצב אותו משלושה כיסים ולא רק מתקציב ההדרכה."
+      ],
+      "insights_en": [
+        "An orchestration layer (a separate layer that ties fragmented tools together and consolidates their data into one picture) only fixes the technical level: even perfectly integrated systems pass along nothing more than the knowledge the company managed to capture. Integration is not a substitute for elicitation.",
+        "The anecdote does more work than a deck: nearly a thousand employees went through a week of intensive training on working in a single system, feedback was overwhelmingly positive, and two weeks later a branch manager was back in her own Excel file (\"it's just easier for me\"). Comprehension is not adoption.",
+        "The same gap produces three costs at once: slow onboarding, knowledge lost with every departure, and AI investments that never pay back. Tacit knowledge extraction is shared infrastructure for all three, which means it can be funded from three budgets rather than only the training line."
+      ],
+      "matters_he": "אם היחידה שלך רוצה להיות הספק שמזין את מערכות ה-AI של הבנק, חילוץ הדרך שבה החתמים, הבנקאים הבכירים ומנהלי הסיכונים באמת מכריעים הופך למוצר של היחידה ולא לתוצר לוואי של בניית קורס. המסר האופרטיבי כאן: שום פרויקט אינטגרציה לא יעשה את העבודה הזו במקומך.",
+      "matters_en": "If your unit wants to be the supplier that feeds the bank's AI systems, extracting how your underwriters, senior bankers and risk managers actually decide becomes the unit's product rather than a byproduct of building a course. The operative point: no integration project will do that work for you.",
+      "lane": "ai_ld",
+      "url": "https://elearningindustry.com/the-knowledge-transfer-problem-ai-cant-solve-for-you",
+      "source": "eLearning Industry",
+      "published": "2026-08-14T13:00:34+00:00",
+      "revised": true
+    },
+    {
+      "headline_he": "דוחות L&D מסתכלים אחורה כשההחלטות מסתכלות קדימה",
+      "headline_en": "L&D Reports Look Backward While Decisions Look Forward",
+      "summary_he": "המאמר מפרק את הכשל המבני בדיווח הסטנדרטי של L&D: שיעורי השלמה, ציוני שביעות רצון ושעות הדרכה מדויקים אך חסרי ערך להחלטות שנדרשות עכשיו. הסיבה ארכיטקטונית: LMS נבנה ללכידת אירועים שכבר קרו, ולכן הפלט שלו הוא בהגדרה תיאור של העבר. ההחלטות שהעסק שואל עליהן (הקצאת תקציב, פערי מיומנות לפני השקה, מהירות ההגעה לפרודוקטיביות) צופות פני עתיד, והמאמר קורא למעבר ל-Business Intelligence: למה זה קרה, מה זה מנבא, ומה לעשות אחרת.",
+      "summary_en": "The article dissects the structural failure of standard L&D reporting: completion rates, satisfaction scores and training hours are accurate but useless for the decisions being asked of L&D right now. The cause is architectural: an LMS is built to capture events that already happened, so its output is by definition a description of the past. The decisions the business asks about (budget allocation, skill gaps before a launch, ramp speed) are forward-looking, and the article calls for a shift to business intelligence: why it happened, what it predicts, what to do differently.",
+      "insights_he": [
+        "הבעיה אינה דיוק אלא תזמון, והעיכוב יושב בשרשרת ההעברה: הפקה, בדיקה של מי שמחזיק ב-LMS, הפצה, ואז פרשנות של מישהו עם מספיק הקשר. עד שהשרשרת נסגרת, חלון ההחלטה עבר. בהקשר של קבלת החלטות, מאוחר שקול לחסר.",
+        "ה-LMS נבנה ללכידת אירועים: מודול הופעל, קורס הושלם, מבחן נכשל או עבר, תעודה הונפקה. כל אלה עובדות שכבר התרחשו, ולכן שום עיצוב מחדש של דשבורד לא יהפוך את הפלט לצופה פני עתיד. נדרשת שכבה אחרת מעל, לא דוח יפה יותר.",
+        "כל דוגמה במאמר מתוארכת לפורום עסקי: פער שזוהה במחזור הערכת הביצועים של השבוע, תקציב שצריך להיסגר לפני ישיבת התכנון הרבעונית ביום שישי, השקה בעוד שמונה שבועות. המסקנה המעשית: קצב הדיווח נגזר מלוח ההחלטות של העסק, לא ממחזור החיים של התוכנית."
+      ],
+      "insights_en": [
+        "The problem is not accuracy but timing, and the delay sits in the handoff chain: generation, review by whoever owns the LMS, distribution, then interpretation by someone with enough context. By the time the chain closes, the decision window has passed. In decision contexts, late is functionally equivalent to absent.",
+        "An LMS is built for event capture: a module was launched, a course completed, an assessment passed or failed, a certificate issued. These are facts that already occurred, so no dashboard redesign makes the output forward-looking. What is needed is a different layer on top, not a prettier report.",
+        "Every example in the piece is dated to a business forum: a gap surfaced in this week's performance review cycle, a budget that must close before Friday's quarterly planning meeting, a launch eight weeks out. The practical implication: reporting cadence should be derived from the business decision calendar, not from the program lifecycle."
+      ],
+      "matters_he": "חומר עבודה מול צוות הדאטה שלך: מפו את פורומי ההחלטה החוזרים בבנק, ולכל אחד הגדירו איזה feed חייב להיות חי לפני שהוא מתכנס. זה מזיז את הדיון מ\"איזה דוח נפיק\" ל\"איזו החלטה, עד מתי\", ונותן נימוק טכני מדויק לכך ש-LMS לא יכול להיות מקור האמת לאנליטיקה.",
+      "matters_en": "Working material for your data team: map the recurring decision forums in the bank and specify, for each, which feed must be live before it convenes. That moves the debate from \"which report\" to \"which decision, by when,\" and gives you a precise technical reason the LMS cannot be the system of record for analytics.",
+      "lane": "strategy",
+      "url": "https://elearningindustry.com/why-ld-reports-look-backward-when-decisions-need-to-go-forward",
+      "source": "eLearning Industry",
+      "published": "2026-08-15T17:00:04+00:00",
+      "revised": true
+    },
+    {
+      "headline_he": "חוויית למידה מונעת AI, לא תוכן שנוצר ב-AI",
+      "headline_en": "AI-Powered Learning Experiences, Not AI-Generated Content",
+      "summary_he": "Devlin Peck מציג שישה פרויקטים מעשיים לתיק עבודות של מעצבי למידה, מסודרים מהקל לכבד: מ-custom GPT שנבנה בסוף שבוע ועד סימולציית תרגול מבוססת AI המוטמעת ב-Storyline 360. ההבחנה המרכזית: תוכן שנוצר ב-AI (תסריט, תמונות, קריינות) כל אחד יודע לייצר, ולכן הוא לא מוכיח דבר. חוויה מונעת AI היא כזו שבה ה-AI הוא חלק מאיך שהלומד לומד: בן שיח שמגיב, מאמן שנותן משוב על בחירות, או סימולציה שמסתגלת.",
+      "summary_en": "Devlin Peck lays out six buildable AI portfolio projects for instructional designers, ranked easiest first: from a weekend custom GPT to an AI practice simulation embedded in a Storyline 360 flagship. The central distinction is that AI-generated content (scripts, images, voiceover) is something every candidate can produce and therefore proves little. An AI-powered experience is one where AI is part of how the learner learns: a conversation partner that responds, a coach that gives feedback on choices, or a simulation that adapts.",
+      "insights_he": [
+        "המבחן המעשי: אם ה-AI רק ייצר את הנכס, זה לא פרויקט. אם ה-AI מגיב ללומד בזמן אמת, זו הוכחת עיצוב. לפי הכותב, מנהלי גיוס מבחינים בהבדל תוך תשעים שניות.",
+        "הנתונים שמצדיקים את המהלך: 66% מהמנהלים לא יגייסו מועמד ללא מיומנויות AI, ו-71% יעדיפו מועמד פחות מנוסה עם מיומנויות AI על פני מנוסה בלעדיהן (Microsoft ו-LinkedIn, Work Trend Index 2024).",
+        "המגמה ל-2026: תיקי העבודות החזקים כבר לא מפרידים בין מיומנות Storyline 360 לבין מוכנות AI. שניהם נמצאים באותו פרויקט."
+      ],
+      "insights_en": [
+        "The practical test: if AI only generated the asset, it is not a project. If AI responds to the learner in real time, it is proof of design. The author says hiring managers can tell the difference in about ninety seconds.",
+        "The supporting data: 66% of leaders say they would not hire someone without AI skills, and 71% would rather hire a less experienced candidate with AI skills than a more experienced one without (Microsoft and LinkedIn, Work Trend Index 2024).",
+        "The 2026 shift: the strongest portfolios no longer separate Storyline 360 craft from AI readiness. Both live inside the same project."
+      ],
+      "matters_he": "ההבחנה בין תוכן שנוצר ב-AI לחוויה מונעת AI היא בדיוק הרף שאתה מנסה להעלות אצל הצוות ואצל התלמידים שאתה מלמד. שישה הפרויקטים הם תרגילי הכשרה מוכנים לשימוש.",
+      "matters_en": "The generated-versus-powered distinction is exactly the bar you are trying to raise with your team and the L&D professionals you teach. The six projects double as ready-made training exercises.",
+      "lane": "id_craft",
+      "url": "https://www.devlinpeck.com/content/ai-portfolio-projects-for-instructional-designers",
+      "source": "Devlin Peck",
+      "published": "2026-08-11T00:00:00+00:00"
+    },
+    {
+      "headline_he": "הדרכה שמרגישה כמו עבודה: תרגול בהקשר במקום אירוע",
+      "headline_en": "Training That Feels Like Work: Practice in Context, Not Events",
+      "summary_he": "המאמר טוען ש-L&D בילתה שני עשורים באופטימיזציה של מעורבות, אבל ציוני שביעות רצון אינם מנבאים שינוי התנהגות: עובד יכול לדרג סדנת מנהיגות 4.8 מתוך 5 ולחזור לנהל בדיוק כמו קודם. לפי הכותב, מדע יצירת ההרגלים דורש כעשרה שבועות של תרגול עקבי בהקשר שבו ההתנהגות אמורה להתרחש, לא עשרה שבועות של הוראה. התוכניות שבאמת משנות התנהגות אינן מרגישות כמו אירוע אלא כמו עבודה, כי הן עבודה.",
+      "summary_en": "The article argues L&D spent two decades optimizing for engagement, but satisfaction scores do not predict behavior change: an employee can rate a leadership workshop 4.8 out of 5 and return to managing exactly as before. Per the author, habit formation requires roughly ten weeks of consistent practice in the context where the behavior needs to occur, not ten weeks of instruction. The programs that actually change behavior do not feel like events, they feel like work, because they are work.",
+      "insights_he": [
+        "עשרה שבועות של תרגול בהקשר, לא עשרה שבועות של הוראה: זה קובע את יחידת התכנון. לא יום סדנה אלא מחזור של רבעון עם עשייה חוזרת ומשוב לאורך כל הדרך, כלומר תקציב וזמן ניהולי שנמתחים על פני שבועות ולא על פני אולם.",
+        "המכניקה זהה בשתי הדוגמאות שהמאמר נותן: לא ללמד service recovery בחדר ישיבות אלא להנחות לתרגל אותו באינטראקציה אמיתית עם לקוח ולדווח מה קרה; לא ללמד מנהלים טכניקות אימון דרך case studies אלא לבקש שיחת אימון אמיתית אחת השבוע ורפלקציה על מה עבד. הנחיה קצרה, הקשר אמיתי, דיווח חובה.",
+        "כשמעורבות היא המדד הראשי, ההטיה נכנסת לשתי החלטות שאפשר לשנות מיד: לאן זורם הכסף (אירועים מרשימים במקום התערבויות שמייצרות תוצאה) ומי נחשב מנחה טוב (המשעשע ביותר במקום זה שהמשתתפים שלו מתפקדים אחרת אחר כך)."
+      ],
+      "insights_en": [
+        "Ten weeks of practice in context, not ten weeks of instruction: that sets the planning unit. Not a workshop day but a quarter-long cycle of repeated doing with feedback throughout, which means budget and manager time stretched across weeks rather than across a room.",
+        "The mechanic is identical in both examples the article gives: do not teach service recovery in a conference room, prompt people to practice it during an actual guest interaction and report what happened; do not teach managers coaching through case studies, prompt one real coaching conversation this week plus a reflection on what worked. Short prompt, real context, mandatory report-back.",
+        "When engagement is the primary metric, the bias enters two decisions you can change immediately: where money flows (impressive events instead of interventions that produce results) and who counts as a good facilitator (the most entertaining one instead of the one whose participants perform differently afterwards)."
+      ],
+      "matters_he": "התחמושת לשיחה עם בעלי עניין שמזמינים קורס: הוויכוח אינו על מודאליות אלא על מה נמדד ולכמה זמן מתחייבים. במונחי LTEM זה המעבר משכבות התגובה לראיות התנהגות, ובמונחי תקציב זה מעבר מיום סדנה למחזור תרגול של רבעון עם דיווח מהשטח.",
+      "matters_en": "Ammunition for the conversation with stakeholders who order a course: the argument is not about modality but about what gets measured and how long you commit for. In LTEM terms it is the move from reaction tiers to behavioral evidence, and in budget terms it is the move from a workshop day to a quarter-long practice cycle with field reporting.",
+      "lane": "id_craft",
+      "url": "https://elearningindustry.com/why-the-best-training-programs-feel-like-work",
+      "source": "eLearning Industry",
+      "published": "2026-08-14T17:00:10+00:00",
+      "revised": true
+    },
+    {
+      "headline_he": "סטטיסטיקות AI בהדרכה ארגונית 2026: אימוץ רחב, יישום רדוד",
+      "headline_en": "AI in Corporate Training Statistics 2026: Wide Adoption, Shallow Practice",
+      "summary_he": "ריכוז נתונים ל-2026 שבו כל מספר מלווה במקור ראשוני ובתאריך. 87% מצוותי L&D כבר משתמשים ב-AI בצורה כלשהי ורק 2% ללא תוכניות אימוץ (Synthesia 2026), ו-88% מהארגונים משתמשים ב-AI בפונקציה עסקית אחת לפחות לעומת 78% שנה קודם (McKinsey 2025). לפי המאמר, רק כשליש מצוותי ה-L&D עברו את שלב הניסוי. במקביל, רק 25% מהעובדים בארה\"ב אומרים שהארגון תקשר תוכנית ברורה לשילוב AI (Gallup, מאי 2026). שוק ההדרכה הארגונית מבוססת AI מוערך ב-7.49 מיליארד דולר ב-2026 (Mordor Intelligence).",
+      "summary_en": "A 2026 statistics roundup where every figure names a primary source and date. 87% of L&D teams already use AI in some form and only 2% have no adoption plans (Synthesia 2026), and 88% of organizations use AI in at least one business function, up from 78% a year earlier (McKinsey 2025). The article states that only around a third of L&D teams have moved past experimentation. Meanwhile only 25% of U.S. employees say their organization has communicated a clear plan for integrating AI (Gallup, May 2026). The AI-powered corporate training market is put at $7.49 billion in 2026 (Mordor Intelligence).",
+      "insights_he": [
+        "הפער החד ביותר לטיעון תקציבי: 55% מהעובדים משתמשים ב-AI באופן קבוע, אך רק אחד משלושה קיבל הדרכת AI מהמעסיק בחצי השנה האחרונה (The Conference Board, 2026). כלומר רוב השימוש בארגון הוא שימוש לא מלווה.",
+        "49% מהעובדים סבורים ש-AI מתקדם מהר יותר מתוכניות ההדרכה של החברה שלהם (TalentLMS, 2025). זו אמירה על קצב הפונקציה, לא על הטכנולוגיה, וזה מדד שאפשר לשאול עליו בסקר פנימי כבר ברבעון הקרוב.",
+        "הצירוף שעושה עבודה שאף מספר בודד לא עושה: 88% מהארגונים כבר מפעילים AI איפשהו, אך רק 25% מהעובדים יכולים להצביע על תוכנית ברורה ורק 33% קיבלו הדרכה מהמעסיק. הפער הוא בתקשור ובהכשרה, ושניהם נמצאים בתחום האחריות שלך, לא בתחום ה-IT."
+      ],
+      "insights_en": [
+        "The sharpest gap for a budget argument: 55% of workers regularly use AI, but only one in three received employer-provided AI training in the past six months (The Conference Board, 2026). Most in-organization usage is therefore unsupported usage.",
+        "49% of employees believe AI is advancing faster than their company's training programs (TalentLMS, 2025). That is a statement about the function's cadence, not about the technology, and it is a question you could put into an internal pulse survey this quarter.",
+        "The pairing that does work no single number does: 88% of organizations already run AI somewhere, yet only 25% of employees can point to a clear plan and only 33% got employer training. The gap is communication and enablement, and both sit with you rather than with IT."
+      ],
+      "matters_he": "מאגר מצוטט ומתוארך שאפשר להפוך לשקף לוועדת השקעות תוך דקות. הצירוף החזק אצלך אינו 87% האימוץ אלא 88 מול 25 מול 33: הוא ממסגר \"תוכנית AI מתוקשרת ומגובה בהכשרה\" כתוצר מדיד של היחידה, וזה נכס במיוחד בסביבה בנקאית שבה ממשל ובהירות נדרשים ממילא.",
+      "matters_en": "A sourced, dated stat bank you can turn into an investment committee slide in minutes. The strongest pairing for you is not the 87% adoption figure but 88 versus 25 versus 33: it frames \"a communicated AI plan backed by training\" as a measurable deliverable of your unit, which is especially sellable in a bank where governance and clarity are expected anyway.",
+      "lane": "ai_ld",
+      "url": "https://www.devlinpeck.com/content/ai-in-corporate-training-statistics",
+      "source": "Devlin Peck",
+      "published": "2026-08-11T00:00:00+00:00",
+      "revised": true
+    },
+    {
+      "headline_he": "תכנון לאחור: מהתוצאה העסקית אל חוויית הלמידה",
+      "headline_en": "Design Backward: From Business Outcome to Learning Experience",
+      "summary_he": "המאמר טוען שלמידה צריכה להתחיל מהתוצאה העסקית ולא מתוכנית הלימודים, ומציע רצף מעשי: תוצאות עסקיות, יכולות ארגוניות, מיומנויות קריטיות, חוויות למידה, תמיכת ביצועים, השפעה עסקית. הערך אינו בתזה אלא בשימוש ברצף כארטיפקט: כל שלב עונה על שאלה אחרת, והלמידה היא רכיב אחד באסטרטגיה רחבה ולא האסטרטגיה עצמה.",
+      "summary_en": "The article argues learning should start from the business outcome rather than the curriculum, and proposes a working sequence: business outcomes, organizational capabilities, critical skills, learning experiences, performance support, business impact. The value is less in the thesis than in using the chain as an artifact: each stage answers a different question, and learning is one component of a broader strategy rather than the strategy itself.",
+      "insights_he": [
+        "רשימת החסמים בדוגמת קיצור מחזורי ההפצה ב-30% היא למעשה צ'קליסט אבחון שאפשר להעתיק: מומחיות טכנית, שיתוף פעולה חוצה ארגון, בעלות על מוצר, קבלת החלטות, זרימת ידע, מנהיגות. רק חלק מהם נסגרים בהדרכה, וזו בדיוק הנקודה.",
+        "הרצף ממקם תמיכת ביצועים כשלב עצמאי בין חוויית הלמידה לבין מדידת ההשפעה. המשמעות המעשית: אי אפשר לתבוע השפעה עסקית בלי רכיב שמקיים את היכולת בתוך זרימת העבודה, ותכנון שמסתיים ביום ההעברה מדלג על שלב שלם.",
+        "המחיר של אימוץ הרצף: אם החסם שזוהה הוא תהליכי, מבני או ניהולי, התוצר הלגיטימי של האבחון הוא \"אין כאן התערבות למידה\". זו התחייבות שקשה לעמוד בה הרבה יותר מאשר לצייר את התרשים."
+      ],
+      "insights_en": [
+        "The list of candidate constraints in the 30% release-cycle example is effectively a diagnostic checklist you can lift: technical expertise, cross-functional collaboration, product ownership, decision-making, knowledge flow, leadership. Only some of these are closed by training, which is exactly the point.",
+        "The sequence places performance support as its own stage between the learning experience and impact measurement. Practically: you cannot claim business impact without a component that sustains capability inside the flow of work, and a plan that ends at delivery day skips a whole stage.",
+        "The price of adopting the chain: if the constraint identified is process, structural or managerial, the legitimate output of the diagnosis is \"there is no learning intervention here.\" That commitment is far harder to honour than drawing the diagram."
+      ],
+      "matters_he": "שווה להשתמש ברצף כארטיפקט בתהליך קליטת הבקשות: שני השלבים האמצעיים, יכולות ארגוניות ומיומנויות קריטיות, הם בדיוק השדות שמזינים את מאגר נתוני המיומנויות שאתה בונה. כך אותו טופס אבחון מייצר גם החלטה על התערבות וגם דאטה מובנה. בלי זה כל בקשה תמשיך להגיע כשם של קורס.",
+      "matters_en": "Worth using the chain as an intake artifact: the two middle stages, organizational capabilities and critical skills, are exactly the fields that feed the skills data set you are building. The same diagnostic form then produces both an intervention decision and structured data. Without it, every request keeps arriving as the name of a course.",
+      "lane": "strategy",
+      "url": "https://www.chieflearningofficer.com/2026/08/10/design-your-learning-backward/",
+      "source": "Chief Learning Officer",
+      "published": "2026-08-10T06:00:00+00:00",
+      "revised": true
+    },
+    {
+      "headline_he": "אוטומציה מקלה על המשימות הפשוטות ומקשה על המורכבות",
+      "headline_en": "Automation Eases Simple Tasks and Worsens Complex Ones",
+      "summary_he": "מדובר בסטאב סינדיקציה בן שתי שורות לפוסט של Learning Guild, לא במאמר. הטענה היחידה שמופיעה: מחקר גורמי אנוש מראה שאוטומציה עשויה להקל על משימות פשוטות ובה בעת להחריף את הקושי במשימות מורכבות, ומכאן הצורך בהקצאת משימות מכוונת בין אדם לבין GenAI. אין בטקסט מנגנון, סוגי משימות, מקור מחקרי מזוהה או כלל הקצאה.",
+      "summary_en": "This is a two-sentence syndication stub for a Learning Guild post, not an article. The only claim present: human-factors research shows automation can make simple tasks easier while exacerbating difficulty on complex tasks, hence the need for deliberate task allocation between humans and GenAI. The text supplies no mechanism, no task types, no identified study and no allocation heuristic.",
+      "insights_he": [
+        "הניסוח אינו סימטרי וזה העיקר: לא \"אוטומציה מועילה פחות במשימות מורכבות\" אלא \"מחריפה את הקושי\". אם זה נכון, המחיר אינו תועלת שלא מומשה אלא ביצוע אנושי שנפגע.",
+        "הנגזרת היחידה שהסטאב מציע: חלוקת המשימות בין אדם ל-GenAI צריכה להיקבע במכוון, ולא כברירת מחדל לפי מה שהכלי במקרה מסוגל לעשות.",
+        "אין כאן די כדי לפעול. הסטאב לא מציין אילו משימות נבדקו, על איזה מחקר הוא נשען ואיזה כלל הקצאה מוצע. אם הנושא רלוונטי לך, קרא את הפוסט המקורי ב-Learning Guild ואל תסתמך על התקציר."
+      ],
+      "insights_en": [
+        "The wording is asymmetric and that is the whole point: not \"automation helps less on complex tasks\" but \"exacerbates the difficulty.\" If true, the cost is degraded human performance, not merely unrealised benefit.",
+        "The single derivative the stub offers: the split of work between humans and GenAI must be decided deliberately rather than defaulting to whatever the tool happens to be able to do.",
+        "There is not enough here to act on. The stub names no tasks, no study and no allocation rule. If the topic matters to you, read the original Learning Guild post rather than relying on the summary."
+      ],
+      "matters_he": "רלוונטי לעבודת הייצור ה-AI-native שלך רק כשאלה פתוחה: היכן במסלול הייצור המשימה מורכבת מספיק כדי שהכנסת המודל תפגע באיכות ההחלטה של המעצב במקום להאיץ אותה. הסטאב מסמן את הסיכון, אבל לא מספק בסיס להחלטה.",
+      "matters_en": "Relevant to your AI-native production work only as an open question: where in the production path is a task complex enough that inserting the model degrades the designer's decision quality instead of speeding it up. The stub flags the risk but gives you no basis for a decision.",
+      "lane": "ai_ld",
+      "url": "https://www.learningguild.com/articles/leveraging-genai-to-support-cognitive-development",
+      "source": "The Learning Guild",
+      "published": "2026-08-12T05:00:00+00:00",
+      "revised": true
+    },
+    {
+      "headline_he": "השאלה אינה מהי אסטרטגיית ה-AI שלנו אלא איך AI משרת את יעדי הלמידה",
+      "headline_en": "The Question Is Not \"What Is Our AI Strategy\" but \"How Does AI Serve Our L&D Goals\"",
+      "summary_he": "Gaurav Gupta טוען שהתשואה מהשקעות AI ב-L&D מאכזבת בגלל אופן הגישה ולא בגלל הטכנולוגיה. השאלה הנכונה אינה \"מהי אסטרטגיית ה-AI שלנו\" אלא \"כיצד AI משרת את יעדי הלמידה\", ואימוץ ללא יישור כזה מייצר use cases מפוזרים שרק משפרים במעט תהליכים קיימים. הנקודה החזקה במאמר היא השונות בין משתמשים: אותו יעד ואותו כלי מניבים תוצאות שונות מאוד מאדם לאדם.",
+      "summary_en": "Gaurav Gupta argues the weak returns on AI in L&D come from how leaders approach it, not from the technology. The right question is not \"what is our AI strategy\" but \"how can AI enable our L&D objectives,\" and adoption without that alignment yields fragmented use cases that merely fine-tune existing processes. The strongest claim in the piece is user variance: the same goal and the same tool produce dramatically different results from person to person.",
+      "insights_he": [
+        "בניגוד לתוכנה מסורתית עם פונקציות מוגדרות מראש, ערך ה-AI תלוי במשתמש: תנו לשני אנשי מקצוע את אותו יעד ואותו כלי ותקבלו תוצאות שונות מאוד, ולא בגלל פערי כישורים אלא בגלל אופן השימוש. השונות בולטת במיוחד ביישומי GenAI.",
+        "טענה שהופכת את ההבטחה על ראשה: הפקת ערך מ-AI דורשת יותר החלטות אנושיות תכופות, לא פחות. כשכל אינטראקציה ייחודית, יחידת השיפור היא איכות ההחלטות של המפעיל ולא יכולות הכלי.",
+        "מבחן פשוט לתיק ה-AI שלך שנגזר מהמאמר: אם כל השימושים מייעלים במעט תהליך קיים ואף אחד לא משנה את מה שהיחידה מייצרת, זו החתימה של אימוץ שאינו מיושר ליעדים, ולא של כלים חלשים."
+      ],
+      "insights_en": [
+        "Unlike traditional software with prescribed functions, AI value depends on the user: give two professionals the same goal and the same tool and results diverge sharply, not because of skill gaps but because of how each one uses it. The variability is most pronounced with generative applications.",
+        "A claim that inverts the automation promise: getting value from AI requires more frequent human decision-making, not less. When every interaction is unique, the unit of improvement is the quality of the operator's decisions, not the tool's capability.",
+        "A simple test for your AI portfolio, derived from the article: if every use case slightly speeds up an existing process and none changes what the unit actually produces, that is the signature of adoption unaligned to objectives, not of weak tooling."
+      ],
+      "matters_he": "אם אותו brief ואותו כלי מייצרים תוצאות שונות בין מעצבים, אז מדידת פיילוטים צריכה למדוד את הפיזור בין אנשים ולא את ביצועי הכלי: הריצו brief זהה אצל שניים או שלושה, נתחו במה נבדלה העבודה של החזק, והפכו את הדפוסים לסטנדרט. זה גם ממיר \"הדרכת AI\" ממתן גישה לבניית שיקול דעת.",
+      "matters_en": "If the same brief and the same tool produce different output across designers, then pilot measurement should track the spread between people rather than tool performance: run an identical brief with two or three of them, analyse where the strongest work differed, and turn those patterns into the unit's standard. It also converts \"AI training\" from granting access into building judgment.",
+      "lane": "ai_ld",
+      "url": "https://www.trainingjournal.com/2026/content-type/opinion/ai-should-enable-your-ld-goals-not-hijack-them/?utm_source=rss&utm_medium=rss&utm_campaign=ai-should-enable-your-ld-goals-not-hijack-them",
+      "source": "Training Journal",
+      "published": "2026-08-14T01:34:00+00:00",
+      "revised": true
+    },
+    {
+      "headline_he": "KPMG: 75% מצפים לרווח משיתוף אדם ו-AI, רק 19% עם כוח אדם מוכן",
+      "headline_en": "KPMG: 75% Expect Human-AI Gains, Only 19% Have a Ready Workforce",
+      "summary_he": "סקירת החדשות השבועית של Training Journal מרכזת מחקר חדש של KPMG International בקרב יותר מ-1,750 מנהלים בכירים ב-20 מדינות, שמצא נתק גדל בין אימוץ AI לבין ביצועים ארגוניים: 58% אומרים שיכולות רוחביות קריטיות אך רק 12% מספקים אותן ביעילות, 75% מצפים לרווח משילוב אדם ו-AI אך רק 19% מדווחים על כוח אדם מוכן, ורק 28% עוקבים אחר תוצאות תפעוליות או הכנסות הקשורות ל-AI מהימן. הסקירה כוללת גם דיווחים על עלויות טוקנים מבוזבזות ובידוד עובדים כתופעות לוואי של אימוץ מהיר.",
+      "summary_en": "Training Journal's weekly roundup features new KPMG International research across more than 1,750 senior leaders in 20 countries, showing a widening disconnect between AI adoption and enterprise performance: 58% say enterprise-wide capabilities are critical but only 12% deliver them effectively, 75% expect gains from humans and AI working together but only 19% have a ready workforce, and only 28% track operational or revenue outcomes linked to trusted AI. The roundup also covers wasted token spend and worker isolation as side effects of rapid adoption.",
+      "insights_he": [
+        "שני הפערים אצל KPMG מצביעים לאותו כיוון: 58 מול 12 ו-75 מול 19, כלומר פי ארבעה עד פי שישה בין כוונה מוצהרת ליכולת לספק. החסם המדווח אינו שאפתנות ואינו כלים, אלא היכולת להעמיד יכולות בפועל.",
+        "רק 28% מהארגונים עוקבים אחר תוצאות תפעוליות או הכנסות הקשורות ל-AI מהימן: המדידה נדירה הרבה יותר מהאימוץ. מכאן שהיכולת לקשור שימוש לתוצאה היא בידול זמין כבר עכשיו, והיא בעיית דאטה וממשל ולא בעיית מודל.",
+        "בצד ההוצאות, הסקירה מביאה דיווחים של בכירים בתעשייה על כסף שנשרף על טוקנים מבוזבזים לצד עובדים בודדים ומורל נמוך. המשמעות: שיחת התקציב על AI עוברת מרישוי לעלות שימוש, וכדאי להגיע אליה עם נתוני עלות לתוצר."
+      ],
+      "insights_en": [
+        "The two KPMG gaps point the same way: 58 versus 12 and 75 versus 19, a four to sixfold spread between stated intent and delivery. The reported constraint is neither ambition nor tooling, it is the ability to actually stand up capability.",
+        "Only 28% of organizations track operational or revenue outcomes linked to trusted AI: measurement is far rarer than adoption. That makes the ability to tie usage to outcome an available differentiator now, and it is a data and governance problem rather than a model problem.",
+        "On the cost side, the roundup carries big tech executives' reports of money burned on wasted tokens alongside lonely workers and low morale. The implication: the AI budget conversation is shifting from licences to cost of usage, so bring cost-per-output data to it."
+      ],
+      "matters_he": "שני מספרים עובדים בשבילך. 28% אומר ששכבת המדידה שאתה בונה, זו שמקשרת שימוש לתוצאה, היא בידול ולא היגיינה, וכדאי להציג אותה ככזו. 75 מול 19 ממיר בקשה לתקציב פיתוח מיומנויות מ\"עוד תוכנית\" לניהול סיכון: הבנק כבר מצפה לרווח משילוב אדם ו-AI בלי שיש לו כוח אדם מוכן. את שניהם אפשר להגיש לוועדה כמדדים שהיחידה מתחייבת לשפר ברבעון.",
+      "matters_en": "Two numbers do work for you. The 28% says the measurement layer you are building, the one linking usage to outcome, is a differentiator rather than hygiene, and should be presented that way. The 75 versus 19 converts a capability-building budget request from \"another programme\" into risk management: the bank already expects gains from humans plus AI without a ready workforce. Both can be tabled at your committee as metrics the unit commits to move this quarter.",
+      "lane": "strategy",
+      "url": "https://www.trainingjournal.com/2026/content-type/news/tj-newsflash-12-august-ld-conferences-ai-challenges-and-local-skills-plans/?utm_source=rss&utm_medium=rss&utm_campaign=tj-newsflash-12-august-ld-conferences-ai-challenges-and-local-skills-plans",
+      "source": "Training Journal",
+      "published": "2026-08-12T05:13:00+00:00",
+      "revised": true
+    },
+    {
+      "headline_he": "Design Thinking בהדרכה: להתחיל מהבעיה, לא מהתוכן",
+      "headline_en": "Design Thinking in Training: Start From the Problem, Not the Content",
+      "summary_he": "המאמר מציג את הטענה שעיצוב הדרכה מסורתי מתחיל מתוכן ולא מאנשים, ולכן הלומדים מקבלים מידע מדויק טכנית אך מנותק מהמציאות התפעולית שלהם. השאלה המנחה משתנה מ\"איזה תוכן ללמד\" ל\"אילו בעיות הלומדים באמת מנסים לפתור\". החלק החזק בטקסט הוא שלוש דוגמאות לבקשות הדרכה שמטפלות בתסמין ולא בשורש.",
+      "summary_en": "The article makes the case that traditional training design starts with content rather than people, so learners get information that is technically accurate but disconnected from their operational reality. The guiding question shifts from \"what content should we teach\" to \"what problems are learners actually trying to solve.\" The strongest part of the text is three examples of training requests that address a symptom rather than a cause.",
+      "insights_he": [
+        "שלוש דוגמאות לתסמין מול שורש: ירידה במעורבות עשויה לנבוע מתקשורת לקויה בין מנהלים לצוותים ולא מחוסר ידע מנהיגותי; ביצועי מכירות חלשים מתמחור ומיצוב מוצר ולא מכישורי משא ומתן; עיכובים בפרויקטים מתכנון לא ריאלי ולא ממתודולוגיה חסרה.",
+        "לשלוש הבקשות מבנה זהה: הן מגיעות כשם של פתרון (\"הדרכת מנהיגות\", \"סדנת משא ומתן\", \"הסמכה בניהול פרויקטים\") ומופעלות על ידי מדד שירד. מכאן שאלת קליטה אחת שאפשר להנהיג מחר: איזה מספר זז, מתי, ומה עוד השתנה באותו זמן.",
+        "הערת היקף: כפי שהטקסט מגיע, המאמר עוצר במסגור ואינו מגיע לשלבי המסגרת עצמה. מה שיש כאן הוא שפה ודוגמאות לשכנוע, לא מתודולוגיה שאפשר להריץ."
+      ],
+      "insights_en": [
+        "Three symptom-versus-cause examples: declining engagement may come from poor manager-team communication rather than a lack of leadership knowledge; weak sales from pricing and positioning rather than negotiation skills; project delays from unrealistic planning rather than missing methodology.",
+        "All three requests share a structure: they arrive as the name of a solution (\"leadership training,\" \"negotiation workshop,\" \"project management certification\") triggered by a metric that dropped. That yields one intake question you could adopt tomorrow: which number moved, when, and what else changed at the same time.",
+        "Scope note: as the text stands, the article stops at the reframe and never reaches the framework's phases. What is on offer is language and examples for persuasion, not a method you can run."
+      ],
+      "matters_he": "שלוש דוגמאות התסמין מול השורש הן חומר גלם מוכן לפתיחת סדנת אבחון הצרכים עם מנהלי הקווים העסקיים בבנק: הן מנוסחות בשפה שלהם ולא במונחי ISPI או HPT, ומאפשרות לך לערער על בקשה בלי להישמע כמי שדוחה אותה.",
+      "matters_en": "The three symptom-versus-cause examples are ready-made openers for your needs-analysis workshop with business line heads: they are phrased in their language rather than ISPI or HPT terms, letting you challenge a request without sounding like you are refusing it.",
+      "lane": "learning_tech",
+      "url": "https://elearningindustry.com/design-thinking-a-practical-framework-for-professional-training",
+      "source": "eLearning Industry",
+      "published": "2026-08-16T17:00:37+00:00",
+      "revised": true
+    }
+  ],
+  "warnings": [
+    "web-search top-up added no new candidates",
+    "5 article(s) still below the editorial bar after 2 rounds; shipped as-is",
+    "editorial pass rate 4/9 in the final round: this week's source material may be thin"
+  ]
+}
