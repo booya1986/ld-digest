@@ -17,7 +17,9 @@
     "Deliberately NOT here: any Substack. Substack returns 403 to GitHub Actions",
     "runner IPs, so drphilippahardman.substack.com and joshbersin.substack.com",
     "fetch fine from a laptop and never from CI. Leaving one in emits the same",
-    "warning every week. The web-search top-up can still surface their articles."
+    "warning every week. The web-search top-up can still surface their articles.",
+    "",
+    "Also removed for CI-blocking: fosway.com (403 from runner IPs, and its newest post was 450 days old anyway). If a feed starts 403ing in the run warnings week after week, it is blocking datacenter IPs: drop it rather than let a permanent warning train you to ignore warnings."
   ],
   "feeds": [
     {
@@ -125,12 +127,6 @@
     {
       "name": "Training Industry",
       "url": "https://trainingindustry.com/feed/",
-      "tier": 1,
-      "lane": "strategy"
-    },
-    {
-      "name": "Fosway Group",
-      "url": "https://www.fosway.com/feed/",
       "tier": 1,
       "lane": "strategy"
     },
