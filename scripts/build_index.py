@@ -1,0 +1,94 @@
+#!/usr/bin/env python3
+"""Regenerate reports/index.html from the report directories that exist.
+
+Usage: build_index.py [reports_dir]
+
+Generated on every build rather than hand-maintained, so the archive can never
+drift out of date the way a hand-written list does.
+"""
+import html
+import json
+import os
+import re
+import sys
+
+DEFAULT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "reports")
+
+
+def week_label(week):
+    return week.replace("-", " ").replace("W", "שבוע ")
+
+
+def collect(reports_dir):
+    weeks = []
+    for name in sorted(os.listdir(reports_dir), reverse=True):
+        if not re.fullmatch(r"\d{4}-W\d{2}", name):
+            continue
+        path = os.path.join(reports_dir, name)
+        if not os.path.isdir(path) or not os.path.exists(os.path.join(path, "index.html")):
+            continue
+        count, date = None, ""
+        meta = os.path.join(path, "articles.json")
+        if os.path.exists(meta):
+            try:
+                data = json.load(open(meta, encoding="utf-8"))
+                count = data.get("count")
+                date = data.get("generated_for", "")
+            except (ValueError, OSError):
+                pass
+        weeks.append((name, count, date))
+    return weeks
+
+
+def render(weeks):
+    rows = ""
+    for name, count, date in weeks:
+        meta = []
+        if count:
+            meta.append(f"{count} כתבות")
+        if date:
+            meta.append(html.escape(date))
+        sub = " · ".join(meta)
+        rows += (
+            f'<a href="{html.escape(name)}/">'
+            f'<span class="w">{html.escape(week_label(name))}</span>'
+            f'<span class="m">{sub}</span></a>\n'
+        )
+    if not rows:
+        rows = '<p class="empty">עוד אין דוחות.</p>'
+
+    return f"""<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#1b1b1b">
+<title>עיכול L&amp;D שבועי</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Hebrew:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+body{{background:#1b1b1b;color:#c5c1b9;font-family:'Noto Sans Hebrew',sans-serif;max-width:520px;margin:0 auto;padding:40px 16px 60px}}
+h1{{color:#dcdad5;font-size:1.5rem;margin:0 0 6px}}
+.sub{{color:#a09d96;font-size:.9rem;margin:0 0 28px}}
+a{{color:#22c55e;text-decoration:none;display:flex;justify-content:space-between;align-items:baseline;gap:12px;
+   padding:14px 0;border-bottom:1px solid rgba(34,197,94,0.12);transition:color .15s}}
+a:hover{{color:#fff}}
+.w{{font-weight:600}}
+.m{{color:#96928c;font-size:.78rem;white-space:nowrap}}
+.empty{{color:#96928c;font-size:.9rem}}
+</style></head>
+<body>
+<h1>&#128218; עיכול L&amp;D שבועי</h1>
+<p class="sub">דוחות שבועיים: למידה, פיתוח והדרכה</p>
+{rows}</body></html>
+"""
+
+
+def main():
+    reports_dir = sys.argv[1] if len(sys.argv) > 1 else DEFAULT_DIR
+    weeks = collect(reports_dir)
+    out = os.path.join(reports_dir, "index.html")
+    with open(out, "w", encoding="utf-8") as f:
+        f.write(render(weeks))
+    print(f"wrote {out} ({len(weeks)} weeks)")
+
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,88 @@
+name: Sunday digest email
+
+# Sends the weekly L&D digest email from GitHub's cloud, so it goes out even
+# when Avi's Mac is off.
+on:
+  schedule:
+    # 07:07 Israel time. Israel is UTC+3 (IDT) Apr-Oct and UTC+2 (IST) Oct-Mar.
+    # Two entries cover both; the per-week .email_sent dedup makes the extra fire a no-op.
+    - cron: "7 4 * * 0"   # 07:07 IDT (summer)
+    - cron: "7 5 * * 0"   # 07:07 IST (winter)
+    # Heartbeat catch-net: GitHub silently drops or delays the primary fire often.
+    # Hourly Sun 05:00-11:00 UTC (08:00-14:00 IL); the .email_sent dedup keeps
+    # this to a single send per week regardless of how many times it fires.
+    - cron: "0 5-11 * * 0"
+  workflow_dispatch: {}
+  # External-trigger path: anything with contents:write can fire a real send by
+  # pushing to .send-trigger, without needing actions:write.
+  push:
+    paths:
+      - ".send-trigger"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sunday-digest
+  cancel-in-progress: false
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Determine latest week
+        id: week
+        run: |
+          week=$(ls reports | grep -E '^[0-9]{4}-W[0-9]+$' | sort | tail -1)
+          echo "week=$week" >> "$GITHUB_OUTPUT"
+          echo "Latest report week: $week"
+          # If the latest report is not the current ISO week, Friday's build
+          # probably failed. Say so loudly rather than quietly re-sending an
+          # old digest.
+          cur=$(python3 -c "import datetime;i=datetime.date.today().isocalendar();print(f'{i[0]}-W{i[1]:02d}')")
+          if [ "$week" != "$cur" ]; then
+            echo "::warning title=stale::latest report is $week but the current week is $cur -- the Friday run may have failed"
+          fi
+
+      - name: Send digest email (SMTP via App Password)
+        env:
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+        run: python3 scripts/send_digest_smtp.py "${{ steps.week.outputs.week }}"
+
+      - name: Commit dedup marker
+        env:
+          WEEK: ${{ steps.week.outputs.week }}
+        run: |
+          git config user.email "avi.j.levi@gmail.com"
+          git config user.name "Avi Levi (GitHub Actions)"
+
+          # Stage each path in its own `git add`, and only when it exists.
+          # A single `git add -f a b c` where one path is missing dies with
+          # "pathspec did not match any files" and stages NOTHING. In the
+          # sibling repo that meant .email_sent never got committed, so every
+          # hourly catch-net fire re-sent the digest: 6 copies of one email.
+          for f in .email_sent; do
+            p="reports/$WEEK/$f"
+            [ -e "$p" ] && git add -f "$p"
+          done
+
+          if git diff --cached --quiet; then
+            echo "nothing to commit"
+          else
+            git commit -m "Sunday digest: mark $WEEK sent"
+            git push
+          fi
+
+          # The dedup marker is the only thing preventing a duplicate send, so
+          # failing to persist it is worth shouting about even though the email
+          # itself already went out.
+          if [ -f "reports/$WEEK/.email_sent" ] && ! git ls-tree -r --name-only HEAD | grep -qx "reports/$WEEK/.email_sent"; then
+            echo "::error title=dedup::.email_sent for $WEEK was NOT committed -- the next scheduled fire will re-send this digest"
+            exit 1
+          fi

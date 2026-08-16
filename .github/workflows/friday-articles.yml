@@ -1,0 +1,163 @@
+name: Friday L&D articles
+
+# Collects the week's L&D / instructional-design / learning-tech articles,
+# extracts their text, writes bilingual briefs via Claude, runs an editorial
+# review pass, and builds the HTML report + social card.
+# The Sunday workflow emails it out on its own schedule.
+on:
+  schedule:
+    # 07:05 Israel time. Israel is UTC+3 (IDT) Apr-Oct and UTC+2 (IST) Oct-Mar.
+    - cron: "5 4 * * 5"   # 07:05 IDT (summer)
+    - cron: "5 5 * * 5"   # 07:05 IST (winter)
+    # Safety-net: GitHub frequently drops or delays the primary cron.
+    # The per-week directory-existence dedup makes every fire after the first a no-op.
+    - cron: "0 9-11 * * 5"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Test the pipeline into a temp dir, uploaded as an artifact. Ignores the per-week dedup and never commits or emails."
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: friday-articles
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          pip install anthropic playwright
+          playwright install --with-deps chromium
+
+      - name: Run unit tests
+        run: |
+          pip install pytest
+          python3 -m pytest scripts/ -q
+
+      - name: Fetch candidate articles
+        env:
+          LD_REPORTS_DIR: ${{ github.workspace }}/reports
+        run: |
+          python3 scripts/fetch_ld_articles.py > /tmp/ld_raw.json
+          count=$(python3 -c "import json; print(json.load(open('/tmp/ld_raw.json'))['count'])")
+          week=$(python3 -c "import json; print(json.load(open('/tmp/ld_raw.json'))['week'])")
+          echo "Fetched $count candidates for $week"
+          echo "week=$week" >> "$GITHUB_ENV"
+          # Which lane each candidate landed in. A run where one lane is empty
+          # week after week means the signal lists need attention.
+          python3 -c "import json,collections;d=json.load(open('/tmp/ld_raw.json'));print('Lanes:',dict(collections.Counter(a['lane'] for a in d['items'])))"
+          # Surface fetch warnings as run annotations so a silently degraded
+          # fetch (dead feed, markup change) is visible on the run summary
+          # instead of hiding inside a green check.
+          python3 -c "import json;d=json.load(open('/tmp/ld_raw.json'));[print('::warning title=fetch::'+w) for w in d.get('warnings') or []]"
+          if [ "$count" = "0" ]; then
+            echo "No articles returned -- aborting"
+            exit 1
+          fi
+
+      - name: Check if report already exists for this week
+        id: dedup
+        run: |
+          if [ "${{ inputs.dry_run }}" = "true" ]; then
+            echo "DRY RUN -- building into /tmp/dryrun, nothing will be committed"
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+            echo "outdir=/tmp/dryrun/${{ env.week }}" >> "$GITHUB_ENV"
+          elif [ -f "reports/${{ env.week }}/index.html" ]; then
+            echo "Report for ${{ env.week }} already exists -- nothing to do"
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+            echo "outdir=reports/${{ env.week }}" >> "$GITHUB_ENV"
+          fi
+
+      # Discovery and extraction are additive: both degrade to "we have fewer
+      # or thinner candidates" rather than failing the digest.
+      - name: Web-search top-up (non-fatal)
+        if: steps.dedup.outputs.skip == 'false'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          python3 scripts/discover_articles.py /tmp/ld_raw.json /tmp/ld_found.json \
+            || cp /tmp/ld_raw.json /tmp/ld_found.json
+
+      - name: Extract article text (non-fatal)
+        if: steps.dedup.outputs.skip == 'false'
+        env:
+          FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
+        run: |
+          python3 scripts/extract_content.py /tmp/ld_found.json /tmp/ld_full.json \
+            || cp /tmp/ld_found.json /tmp/ld_full.json
+
+      - name: Write bilingual briefs (Claude)
+        if: steps.dedup.outputs.skip == 'false'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python3 scripts/generate_briefs.py /tmp/ld_full.json /tmp/ld_briefs.json
+
+      - name: Editorial review and rewrite (non-fatal)
+        if: steps.dedup.outputs.skip == 'false'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          python3 scripts/review_briefs.py /tmp/ld_briefs.json /tmp/ld_final.json \
+            || cp /tmp/ld_briefs.json /tmp/ld_final.json
+          python3 -c "import json;d=json.load(open('/tmp/ld_final.json'));[print('::warning title=review::'+w) for w in d.get('warnings') or []]"
+
+      - name: Build HTML report
+        if: steps.dedup.outputs.skip == 'false'
+        run: |
+          mkdir -p "${{ env.outdir }}"
+          python3 scripts/build_report.py --in /tmp/ld_final.json --outdir "${{ env.outdir }}"
+          # Brief sections are the body of every card. Ten articles x three
+          # sections is 30; well below that means the briefs step degraded and
+          # the report would ship near-empty cards.
+          sections=$(grep -o 'brief-section' "${{ env.outdir }}/index.html" | wc -l | tr -d ' ')
+          echo "brief-sections in report: $sections"
+          if [ "$sections" -lt 20 ]; then
+            echo "::warning title=briefs::only $sections brief-section markers -- briefs are missing or partial"
+          fi
+
+      - name: Build social card (non-fatal)
+        if: steps.dedup.outputs.skip == 'false'
+        run: |
+          python3 scripts/build_og_image.py "${{ env.outdir }}" || true
+          if [ ! -f "${{ env.outdir }}/og.png" ]; then
+            echo "::warning title=og::no og.png produced -- shared links will preview without an image"
+          fi
+
+      - name: Rebuild archive index
+        if: steps.dedup.outputs.skip == 'false' && inputs.dry_run != true
+        run: python3 scripts/build_index.py
+
+      - name: Upload dry-run report
+        if: inputs.dry_run == true
+        uses: actions/upload-artifact@v4
+        with:
+          name: dry-run-${{ env.week }}
+          path: ${{ env.outdir }}
+
+      - name: Commit and push
+        if: steps.dedup.outputs.skip == 'false' && inputs.dry_run != true
+        run: |
+          git config user.email "avi.j.levi@gmail.com"
+          git config user.name "Avi Levi (Friday robot)"
+          git add "reports/${{ env.week }}/" 2>/dev/null || true
+          git add reports/index.html 2>/dev/null || true
+          if ! git diff --cached --quiet; then
+            git commit -m "Add L&D digest for ${{ env.week }}"
+            git push
+          else
+            echo "nothing to commit"
+          fi
