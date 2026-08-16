@@ -39,7 +39,16 @@ jobs:
       - name: Determine latest week
         id: week
         run: |
-          week=$(ls reports | grep -E '^[0-9]{4}-W[0-9]+$' | sort | tail -1)
+          week=$(ls reports 2>/dev/null | grep -E '^[0-9]{4}-W[0-9]+$' | sort | tail -1)
+          # No report yet (fresh repo, or Friday has never run). There is
+          # nothing to send, and that is not a failure: exit cleanly rather
+          # than red-flagging the run and mailing a failure notice.
+          if [ -z "$week" ]; then
+            echo "::notice title=no-report::no report directory yet, nothing to send"
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          echo "skip=false" >> "$GITHUB_OUTPUT"
           echo "week=$week" >> "$GITHUB_OUTPUT"
           echo "Latest report week: $week"
           # If the latest report is not the current ISO week, Friday's build
@@ -51,11 +60,13 @@ jobs:
           fi
 
       - name: Send digest email (SMTP via App Password)
+        if: steps.week.outputs.skip == 'false'
         env:
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
         run: python3 scripts/send_digest_smtp.py "${{ steps.week.outputs.week }}"
 
       - name: Commit dedup marker
+        if: steps.week.outputs.skip == 'false'
         env:
           WEEK: ${{ steps.week.outputs.week }}
         run: |
