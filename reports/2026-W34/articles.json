@@ -1,0 +1,240 @@
+{
+  "week": "2026-W34",
+  "generated_for": "2026-08-21",
+  "count": 10,
+  "articles": [
+    {
+      "headline_he": "Samsung הכשירה את ההנהלה ב-AI: בעיית האמונה נפתרה, בעיית ההרגל נשארה",
+      "headline_en": "Samsung Trained Its Leaders on AI: Belief Solved, Habit Not Yet",
+      "summary_he": "Samsung פתחה את מהלך ה-AI הקבוצתי בהכשרה מעשית לכ-50 נשיאי חברות בנות, לפני ההרחבה לשאר העובדים. כריסטין ג'וזפין, ראשת תרבות ומעורבות ב-Samsung אינדונזיה, טוענת שהובלה אישית של מנהלים פותרת את \"בעיית האמונה\" (השינוי אמיתי) אבל לא את \"בעיית ההרגל\" (כך אני עובד בפועל). את הפער סוגרים בשלושה מהלכים: שימוש ראשון בכלי על עבודה אמיתית ולא על תרגיל, בדיקות מנהל ב-30, 60 ו-90 יום, ותוצאות מדודות שמשכנעות במקום הנחיה מלמעלה.",
+      "summary_en": "Samsung launched its group-wide AI push by putting around 50 affiliate presidents through hands-on training before extending it to the wider workforce. Christine Josephine, head of culture and engagement at Samsung Indonesia, argues that leaders going through the same training solves the belief problem (the change is real) but not the habit problem (this is how I now work). Closing that gap takes three moves: apply the tool to real work on first use rather than a hypothetical exercise, run manager check-ins at 30, 60 and 90 days, and let measured results drive adoption instead of mandates.",
+      "insights_he": [
+        "ההבחנה בין בעיית אמונה לבעיית הרגל היא כלי אבחון: השתתפות גבוהה עם שימוש נמוך בפועל היא כשל הרגל, וסבב הכשרה נוסף לא יתקן אותו.",
+        "מנגנון ההפצה שהיא מציעה הוא הוכחה ולא הנחיה: צוות שקיצר זמן הפקת דוח ב-40% מייצר אימוץ לרוחב. המסקנה התקציבית היא שכדאי להשקיע באיתור, מדידה ופרסום של תוצאה אחת אמיתית יותר מאשר בעוד סבב תקשורת פנים ארגונית.",
+        "הרצף שבו ההנהלה עוברת ראשונה עובד רק אם היא מתאמנת על אותם כלים שיגיעו לעובדים ולא על גרסת מנהלים מקוצרת: הקרדיט לאמן נובע מכך שהמנהל חווה את אותה עקומת למידה ולכן יודע להבחין בין שימושי לרעש."
+      ],
+      "insights_en": [
+        "The belief problem versus habit problem split works as a diagnostic: high participation with low real usage is a habit failure, and another training round will not fix it.",
+        "The distribution mechanic on offer is proof, not directive: a team cutting report time by 40% spreads adoption laterally. The budget implication is that finding, measuring and publishing one genuine result beats another internal communications push.",
+        "Training the executive layer first only pays if they train on the same tooling the workforce will get, not a curated executive version: the credibility to coach comes from having felt the same learning curve and being able to tell useful from noise."
+      ],
+      "matters_he": "קצב בדיקה של 30, 60 ו-90 יום מעביר את נטל המדידה למאות ראשי צוותים בבנק. זה מחייב שאלה קצרה וקבועה שהם יודעים לשאול, ומקום שבו התשובה נרשמת ומצטברת. במילים אחרות, זו עבודה של הכשרת מנהלים ושל תשתית דיווח, ולא של תוכן הדרכה.",
+      "matters_en": "A 30, 60 and 90 day check-in cadence moves the measurement burden onto hundreds of team leaders in the bank. It needs one short question they know how to ask and somewhere the answer is recorded and aggregated: that is a manager enablement and reporting stack job, not a content job.",
+      "lane": "ai_ld",
+      "url": "https://hrexecutive.com/samsung-trained-employees-on-ai-did-anything-actually-change/",
+      "source": "HR Executive Tech",
+      "published": "2026-08-19T11:45:06+00:00",
+      "revised": true
+    },
+    {
+      "headline_he": "Deloitte: רק ארגון אחד מתוך חמישה ערוך למעבר לסוכני AI אוטונומיים",
+      "headline_en": "Deloitte: Only 1 in 5 Organizations Is Ready for Autonomous AI Agents",
+      "summary_he": "הקטע שבידינו מונה שלושה חסמים המעכבים את המעבר: תהליכים שאינם מתועדים כראוי או שאינם מובנים, מערכות נתונים מפוצלות, ודרכי עבודה מושרשות. חשוב לומר מה אין בקטע: הוא אינו מזהה את הגוף המפרסם, אינו מגדיר לאיזה מעבר מדובר ואינו כולל נתון כמותי או הגדרת מוכנות.",
+      "summary_en": "The available text lists three barriers impeding the transition: poorly documented or misunderstood processes, fragmented data systems, and entrenched ways of working. What it does not contain matters too: no publisher, no definition of which transition is meant, and no figure or readiness criterion.",
+      "insights_he": [
+        "שני חסמים שונים נדחסו לניסוח אחד: תהליך שאינו מתועד ותהליך שמובן אחרת בכל צוות. הראשון נפתר בכתיבה, השני מתגלה רק בתצפית על העבודה בפועל, ולכן שאלת בעל התהליך אינה מספיקה.",
+        "שלושת החסמים ארגוניים ולא טכנולוגיים, כלומר הם קודמים לכל החלטת מערכת ולא נפתרים בהחלפת כלי או בהוספת שכבת מודל.",
+        "אין בקטע מקור, הגדרה או מספר. כדאי לאמת מול הדוח המלא לפני שמצטטים אותו בפורום פנימי, במיוחד אם הכוונה להישען עליו כראיה."
+      ],
+      "insights_en": [
+        "Two different barriers are compressed into one phrase: a process nobody wrote down, and a process every team understands differently. The first is solved by writing, the second surfaces only by observing the work, so asking the process owner is not enough.",
+        "All three barriers are organizational rather than technological, which puts them upstream of any system decision: no tool swap or model layer removes them.",
+        "The excerpt carries no source, no definition and no number. Verify against the full report before quoting it internally, especially if it is meant to serve as evidence."
+      ],
+      "matters_he": "מיפוי של איך העבודה נעשית בפועל הוא כבר חלק ממה שהצוות של אבי עושה בניתוח צרכים. אם זה בדיוק החסם לפרויקטים הטכנולוגיים בבנק, זו נקודת כניסה טבעית ל-L&D, בתנאי שהתוצר יהיה תיאור תהליך שעומד בפני עצמו ולא מסמך אפיון להדרכה.",
+      "matters_en": "Mapping how the work is actually done is already part of what Avi's team does in needs analysis. If that is precisely what blocks technology projects in the bank, it is a natural entry point for L&D, provided the output is a process description that stands on its own rather than a training spec.",
+      "lane": "ai_ld",
+      "url": "https://www.hrdive.com/news/only-1-in-5-organizations-are-prepared-to-move-toward-autonomous-ai-agents/828324/",
+      "source": "HR Dive",
+      "published": "2026-08-20T13:48:00+00:00",
+      "revised": true
+    },
+    {
+      "headline_he": "98% מודדים השפעה עסקית, רק 62% מסוגלים לכך",
+      "headline_en": "98% Measure Business Impact, Only 62% Can Actually Do It",
+      "summary_he": "מאמר אורח של Ashish Rangnekar מ-BenchPrep מציג פער מדידה: לפי GP Strategies, 98% מאנשי הלמידה מודדים השפעה עסקית של תוכניות, אך רק 62% מחזיקים ביכולת לעשות זאת. ההקשר הוא ארגוני חברות מקצועיות, שעבורם הכנסה שאינה מדמי חבר היא אתגר הניהול המרכזי ארבע שנים ברציפות (52% מהמנהלים, לפי מחקר Naylor 2026). ההצעה: לעבור ממדדי פעילות (הרשמות, השלמות, זמן למידה, ציונים ושביעות רצון) לשאלות תיק מוצרים: אילו מוצרים מייצרים רכישה חוזרת, אילו חוויות משפרות חידוש ושימור, אילו לומדים הופכים ללקוחות ארוכי טווח ואילו תוכניות תורמות הכי הרבה הכנסה.",
+      "summary_en": "A guest piece by BenchPrep CEO Ashish Rangnekar surfaces a measurement gap: per GP Strategies, 98% of learning professionals measure business impact, yet only 62% have the capability to do so. The context is associations, where non-dues revenue has been the top management challenge four years running (52% of leaders, per 2026 Naylor benchmarking). The proposal is to move from activity metrics (registrations, completions, time spent, scores, satisfaction) to portfolio questions: which products drive repeat purchases, which experiences improve renewal and retention, which learners become long-term customers, and which programs contribute most revenue.",
+      "insights_he": [
+        "הפער 98 מול 62 אומר שרוב הדיווח על השפעה עסקית מיוצר בלי היכולת לייצר אותו. זה נתון שימושי בדיוק כשמבקשים דוח השפעה לפני שהושקע באנליטיקה.",
+        "ארבע שאלות התיק נשענות כולן על החלטת קנייה. בקהל שבוי אין קנייה, ולכן המקבילה היחידה היא ביקוש לא כפוי: חזרה וולונטרית למשאב, יחידה עסקית שמבקשת שוב בלי מנדט מלמעלה, והפניה בין מנהלים. כל אלה צריכים להימדד בכוונה, כי שום דבר לא מחייב עליהם.",
+        "הדוגמה של תוכנית עם הרשמות גבוהות והשלמה נמוכה מתהפכת בפנים: בתוכן חובה נפח ההרשמה חסר משמעות מעצם ההגדרה. רק החלק הוולונטרי בקטלוג ניתן לשיפוט בלוגיקת התיק הזאת."
+      ],
+      "insights_en": [
+        "The 98 versus 62 gap means most reported business impact is produced without the capability to produce it. That is a useful figure precisely when someone asks for an impact report before the analytics have been funded.",
+        "All four portfolio questions rest on a purchase decision. A captive audience makes no purchase, so the only equivalent is unforced demand: voluntary return use of a resource, a business unit asking again without a mandate, referrals between managers. Each has to be instrumented deliberately, because nothing bills for it.",
+        "The high registration, low completion example inverts internally: for mandatory content, registration volume is meaningless by construction. Only the voluntary part of the catalogue can be judged by this portfolio logic at all."
+      ],
+      "matters_he": "ועדות שמאשרות תקציב מדברות בשפת תיק מוצרים, ולוגיקת ההשקעה מחדש כאן מתורגמת היטב. הפער 98 מול 62 הוא ניסוח מוכן לשאלה למה השקעה באנליטיקה קודמת לדוח השפעה, וההפרדה בין החלק המחייב לחלק הוולונטרי בקטלוג מזהה את החלק היחיד שאפשר לשפוט לפי ביקוש אמיתי.",
+      "matters_en": "Budget committees speak portfolio language, and the reinvestment logic here transfers well. The 98 versus 62 gap is ready-made phrasing for why analytics investment has to precede impact reporting, and separating mandatory from voluntary catalogue identifies the only part that real demand can judge.",
+      "lane": "strategy",
+      "url": "https://talentedlearning.com/how-to-measure-business-impact-of-professional-education-programs/",
+      "source": "Talented Learning",
+      "published": "2026-08-19T13:55:13+00:00",
+      "revised": true
+    },
+    {
+      "headline_he": "כשל רצון או כשל יכולת: שתי סיבות שונות לכך שמערכת חדשה לא נקלטת",
+      "headline_en": "Willingness Failure or Capability Failure: Two Different Reasons Software Adoption Fails",
+      "summary_he": "המאמר מפריד בין שני כשלים שמערבבים בדרך כלל בהטמעת מערכות: כשל רצון, שבו העובדים יודעים להשתמש אך מתנגדים כי ההקשר הארגוני לא נוהל, וכשל יכולת, שבו העובדים מוכנים לחלוטין אך אינם מסוגלים לבצע את משימות העבודה האמיתיות במערכת. בתרחיש שמובא, השלמת הדרכה עברה 90% בהשקה, ובחודש השלישי נפתחו 200 קריאות שירות בשבוע על פעולות בסיסיות ואימוץ הפונקציונליות נעצר על 31%. המסקנה: שני הכשלים מקבלים אותה תגובה, עוד הדרכה, ולכן שניהם ממשיכים.",
+      "summary_en": "The piece separates two failure modes that usually get conflated in software rollouts: a willingness failure, where employees can use the system but resist because the organizational change was not managed, and a capability failure, where employees are willing but cannot perform real job tasks in the system. In the illustrative case, training completion passed 90% at launch, yet by month three the helpdesk was handling 200 tickets a week on basic tasks and feature adoption had plateaued at 31% of intended functionality. Both failures get the same response, more training, so both persist.",
+      "insights_he": [
+        "לפני שמזמינים הדרכה נוספת, שאלו איזה כשל מולכם: אם ההתנגדות היא באמון ובהקשר, קורס נוסף רק ייצר עוד השלמות ריקות.",
+        "נתוני helpdesk ואחוז הפיצ'רים בשימוש בפועל הם אינדיקטור הצלחה חזק בהרבה מאחוז השלמת ההדרכה.",
+        "יחידות עסקיות שמשחזרות בשקט את תהליכי הגיליון הישנים לצד המערכת החדשה הן סימן אבחוני לכשל יכולת, לא להתנגדות."
+      ],
+      "insights_en": [
+        "Before ordering more training, ask which failure you face: if the resistance is about trust and context, another course only adds empty completions.",
+        "Helpdesk volume and share of features actually used are far stronger success signals than training completion rates.",
+        "Business units quietly rebuilding old spreadsheet processes alongside the new system are a diagnostic sign of capability failure, not resistance."
+      ],
+      "matters_he": "זו שפה אבחונית מוכנה לשימוש בשיחת ייעוץ ביצועים מול לקוח פנימי שמבקש \"הדרכה על המערכת החדשה\", ובבנק זה תרחיש שחוזר כמעט בכל פרויקט.",
+      "matters_en": "This is ready-made diagnostic language for a performance consulting conversation with an internal client asking for training on a new system, a recurring scenario in a bank.",
+      "lane": "id_craft",
+      "url": "https://elearningindustry.com/why-change-management-and-employee-onboarding-are-solving-two-different-problems",
+      "source": "eLearning Industry",
+      "published": "2026-08-20T15:00:08+00:00"
+    },
+    {
+      "headline_he": "מקבץ מחקרים: תפוקת AI עולה, העומס הקוגניטיבי עולה איתה",
+      "headline_en": "Research Roundup: AI Output Is Up, and So Is Cognitive Load",
+      "summary_he": "סקירת החדשות השבועית של Training Journal מרכזת כמה ממצאים: מחקר של הפדרל ריזרב של סנט לואיס מצא שכ-95% מהאזכורים של פריון בהקשר AI בשיחות משקיעים הם עתידיים, לעומת כ-75% באזכורי פריון אחרים. מחקר של המחלקה לפסיכולוגיה ב-Lingnan University מצא שכאשר ה-AI מחליט בעצמו מתי להשתלט על משימה ומתי להחזיר שליטה, קשה למשתמש לשחזר מודעות מצבית והעייפות המנטלית עולה. עוד בסקירה: נייר עמדה של University of Phoenix על עובדים שמשתמשים ב-AI לחקר מסלולי קריירה ויוצרים חוסר התאמה חדש מול מערכות הארגון, וסינתזת מחקר על \"פער המומחה למציג\" עם נתון של 42% מהידע הארגוני שנמצא רק בראשם של אנשים.",
+      "summary_en": "Training Journal's weekly roundup pulls together several findings: a St. Louis Fed study found about 95% of AI-related productivity mentions on corporate earnings calls are forward-looking, versus about 75% for non-AI productivity talk. A study from the Department of Psychology at Lingnan University found that when AI autonomously decides when to take over and hand back control, users struggle to regain situational awareness and mental fatigue rises. The roundup also covers a University of Phoenix white paper on employees using AI to explore career moves faster than workplace systems can adapt, and a research synthesis on the expert-to-presenter gap reporting that 42% of institutional knowledge lives only in individual heads.",
+      "insights_he": [
+        "הפער בין 95% ל-75% הוא נתון שימושי לשיחה עם הנהלה: ההבטחה הפריונית של AI היא כמעט כולה עתידית, כך שדרישה לתוצאות מדידות עכשיו היא לגיטימית.",
+        "עיצוב של אוטונומיה חלקית ל-AI צריך לכלול נקודות מסירה מפורשות, אחרת המשתמש משלם בעייפות ובאובדן מודעות מצבית.",
+        "עובדים שמשתמשים ב-AI כדי למפות לעצמם מסלולי קריירה מקדימים את מערכות הפיתוח הארגוניות, וזה סיכון שימור ולא רק הזדמנות למידה."
+      ],
+      "insights_en": [
+        "The 95% versus 75% split is a useful line for leadership conversations: the AI productivity promise is almost entirely future-tense, so demanding measurable results now is fair.",
+        "Designing partial AI autonomy requires explicit handover points, otherwise users pay in fatigue and lost situational awareness.",
+        "Employees using AI to map their own career options are outrunning internal development systems, which makes this a retention risk, not just a learning opportunity."
+      ],
+      "matters_he": "עבור אבי, שבונה תהליכי הפקה AI-native, הממצא על עייפות מנטלית ומודעות מצבית הוא אזהרת תכנון: אוטומציה ללא נקודות מסירה ברורות מייצרת עומס במקום לחסוך אותו.",
+      "matters_en": "For Avi, who is building AI-native production workflows, the mental fatigue finding is a design warning: automation without clear handover points creates load instead of removing it.",
+      "lane": "ai_ld",
+      "url": "https://www.trainingjournal.com/2026/content-type/news/tj-newsflash-19-august-ai-reshapes-expertise-careers-productivity-and-mental-workload/?utm_source=rss&utm_medium=rss&utm_campaign=tj-newsflash-19-august-ai-reshapes-expertise-careers-productivity-and-mental-workload",
+      "source": "Training Journal",
+      "published": "2026-08-19T04:58:00+00:00"
+    },
+    {
+      "headline_he": "בנצ'מרק רכש LMS ל-2026: חוויית משתמש 70%, יכולות AI רק 30%",
+      "headline_en": "2026 LMS Buying Benchmark: UX at 70%, AI Capabilities at Just 30%",
+      "summary_he": "דוח הבנצ'מרק של eLearning Industry ל-2026 מדרג את שיקולי רוכשי ה-LMS: חוויית משתמש ראשונה עם 70%, תמחור 63%, אינטגרציה עם מערכות קיימות 59%, ויכולות AI הרחק מאחור עם 30%. הדוח מכנה את המרחק בין קצב הוספת פיצ'רי AI אצל הספקים לבין סדר העדיפויות של הקונים \"AI Expectation Gap\", ומסכם ש-AI נתפס כתכונת בסיס ולא כבידול. הדוח מתפרסם על ידי eLearning Industry עצמה ומשמש גם כחומר שיווקי.",
+      "summary_en": "eLearning Industry's 2026 benchmark ranks what LMS buyers prioritize: User Experience first at 70%, pricing at 63%, integration with existing systems at 59%, and AI capabilities far behind at 30%. The report names the distance between vendor feature velocity and buyer priorities the AI Expectation Gap, and concludes AI is now a baseline feature rather than a differentiator. The report is published by eLearning Industry itself and doubles as marketing material.",
+      "insights_he": [
+        "AI ב-30% מול UX ב-70% הוא נתון שאפשר להניח על שולחן המשא ומתן: כשמודול AI נושא תוספת מחיר או מצדיק העלאה בחידוש, יש כעת בנצ'מרק חיצוני שמראה שזה לא מה שרוכשים מדרגים ראשון.",
+        "שלושת הקריטריונים שגברו על AI, חוויית משתמש, מחיר ואינטגרציה, הם בדיוק אלה שאפשר לבדוק בפיילוט או לעגן בחוזה. יכולת AI היא הטענה הקשה ביותר לאימות לפני חתימה, וזה הסבר אפשרי לדירוג הנמוך שאינו זהה לחוסר עניין.",
+        "אם AI הוא תכונת בסיס אצל כל הספקים, הוא לא יכול להיות סעיף השוואה. הדבר היחיד שנשאר להשוות הוא מה הפלטפורמה עושה עם הנתונים שלה, וזה מחזיר את הדיון לאינטגרציה שקיבלה 59%."
+      ],
+      "insights_en": [
+        "AI at 30% against UX at 70% is a number you can put on the negotiating table: when an AI module carries a premium or justifies a renewal increase, there is now an external benchmark showing that is not what buyers rank first.",
+        "The three criteria that beat AI (UX, price, integration) are exactly the ones testable in a pilot or enforceable in a contract. AI capability is the hardest claim to verify before signing, which is a plausible reason for the low score that is not the same as low interest.",
+        "If AI is baseline across every vendor, it cannot be a comparison line. What remains comparable is what the platform does with its own data, which pushes the conversation back to integration at 59%."
+      ],
+      "matters_he": "כשספק פותח מצגת ב-AI מול ועדת רכש בבנק, בנצ'מרק חיצוני מתועד מחזיר את השיחה לאינטגרציה, לנתונים ולמחיר. ואם שכבת ההפקה מבוססת ה-AI של אבי יושבת ממילא מחוץ ל-LMS, ה-LMS נרכש בעיקר עבור רישום, ממשקים וחוויית משתמש, וכך צריך להיכתב מסמך הקריטריונים.",
+      "matters_en": "When a vendor opens with AI in front of bank procurement, a documented external benchmark returns the conversation to integration, data and price. And if Avi's AI-native production stack already sits outside the LMS, the LMS is being bought for records, interfaces and UX, which is how the criteria document should read.",
+      "lane": "learning_tech",
+      "url": "https://elearningindustry.com/lms-selection-criteria",
+      "source": "eLearning Industry",
+      "published": "2026-08-19T19:00:42+00:00",
+      "revised": true
+    },
+    {
+      "headline_he": "מפת מודליות לקליטת עובדים היברידית: מה ללמד עצמאית, מה בשידור חי, ומה בעבודה עצמה",
+      "headline_en": "A Hybrid Onboarding Modality Map: What to Teach Self-Paced, Live, and On the Job",
+      "summary_he": "המאמר טוען שקליטה היברידית מטופלת בטעות כבעיית לוח זמנים (אילו ימים מהבית ואילו מהמשרד) במקום כשאלה של איך כל רכיב נלמד היטב. המסגרת מציעה לעבוד לאחור מהתוצאה הנדרשת ולשאול שלוש שאלות: מה העובד צריך לדעת, מה הוא צריך לעשות, ואיזו תמיכה יידרש לו בזמן היישום. רק אז נבחר הנתיב: למידה עצמאית לתכנים שכולם צריכים באופן אחיד וניתן לחזור אליהם, מפגש חי לנושאים שדורשים שיחה ואינטראקציה, ועבודה בשטח עם תרגול נתמך למה שלא נלמד בלי תצפית, תרגול ומשוב.",
+      "summary_en": "The article argues hybrid onboarding is wrongly handled as a scheduling problem (which days remote, which in office) rather than a question of how each element is learned. The framework works backward from the required outcome and asks three questions: what the employee needs to know, what they need to do, and what support they will need while applying it. Only then is the lane chosen: self-paced for information everyone needs identically and may revisit, live for topics needing conversation, and workplace practice for what cannot be learned without observation, practice and feedback.",
+      "insights_he": [
+        "מבחן הנתיב שהמאמר מציע הוא שלוש שאלות (לדעת, לעשות, לקבל תמיכה ביישום), והשאלה שנושאת את המשקל היא השלישית: האם אפשר להעיד שאדם כשיר בלי לראות אותו מבצע. אם לא, הפריט אינו יכול לשבת בלמידה עצמאית גם אם נוח לתעד אותו שם.",
+        "הכשל שהמאמר מצביע עליו אינו בחירת פורמט אלא היעדר חוט מקשר: חוברת ב-LMS, מצגת וירטואלית ויום הצללה הם שלוש מודליות בלי קו שמחבר ביניהן לכשירות בתפקיד, והעובד מסיים בלי לדעת איך הן מצטרפות.",
+        "הקטע שבידינו נקטע לפני הקריטריון שקובע מתי זמינות של תוכן עצמאי מפסיקה להספיק. במצב זה מדובר בהיוריסטיקה למיון פעילויות, לא בכלל החלטה מלא."
+      ],
+      "insights_en": [
+        "The lane test on offer is three questions (know, do, support during application), and the third carries the weight: can you attest that someone is competent without watching them perform. If not, the item cannot sit in self-paced, however convenient it is to record it there.",
+        "The failure the article identifies is not format choice but the missing thread: a handbook on the LMS, a virtual presentation and a shadowing day are three modalities with no line connecting them to role competence, and the new hire finishes without knowing how they add up.",
+        "The available text cuts off before the criterion for when availability of self-paced content stops being enough. As it stands this is a sorting heuristic for activities, not a complete decision rule."
+      ],
+      "matters_he": "בבנק חלק ניכר מהקליטה הוא חובה רגולטורית שנוטה אוטומטית ללמידה עצמאית, כי כך קל לתעד השלמה. השאלה שהמפה מכריחה לשאול היא אילו מהפריטים האלה אי אפשר להעיד עליהם בלי לראות אדם מבצע, וזה משנה את דרישת הראיה מול הביקורת, לא רק את הפורמט.",
+      "matters_en": "In a bank a large share of onboarding is regulatory and defaults to self-paced because completion is easy to evidence. The question the map forces is which of those items cannot be attested without watching someone perform, which changes the evidence requirement facing audit, not just the format.",
+      "lane": "id_craft",
+      "url": "https://elearningindustry.com/the-hybrid-onboarding-modality-map-what-to-teach-online-live-and-on-the-job",
+      "source": "eLearning Industry",
+      "published": "2026-08-20T13:00:17+00:00",
+      "revised": true
+    },
+    {
+      "headline_he": "מנהלת למידה בכירה: טכנולוגיה כמכפיל כוח, לא כתחליף למומחיות",
+      "headline_en": "A Learning Executive on Technology as a Force Multiplier, Not a Replacement",
+      "summary_he": "בסדרת Learning Insights של Chief Learning Officer מתראיין מנהל בכיר האחראי על הדרכה טכנית ופיתוח כוח אדם (שמו אינו מופיע בקטע שבידינו). הוא מתאר מעבר אישי מהתמקדות בהעברת הדרכה ובפיתוח פרטני אל בניית יכולת ארגונית, שינוי תרבות, בטיחות ועתודה ניהולית. מיקוד העבודה שלו כיום הוא יישור פיתוח כוח האדם מול יעדים ארגוניים, דרישות רגולטוריות, מוכנות תפעולית ומצוינות תפעולית, בין היתר דרך החלפת LMS, תמיכת ביצוע מבוססת AI ו-XR. הוא ממקם את AI ואת XR כמכפיל כוח למומחיות אנושית, לבניית יכולת מהירה יותר ולשימור ידע מוסדי קריטי. הקטע נקטע באמצע השאלה השנייה.",
+      "summary_en": "In Chief Learning Officer's Learning Insights series, a senior executive responsible for technical training and workforce development (unnamed in the available text) describes moving from instructional delivery and individual development toward building workforce capability, culture change, safety and leadership pipelines. His current focus is aligning workforce development with organizational goals, regulatory requirements, workforce readiness and operational excellence, including LMS replacement, AI-enabled performance support and extended reality. He positions AI and XR as force multipliers for human expertise, for building capability faster and preserving critical institutional knowledge. The text breaks off partway through the second question.",
+      "insights_he": [
+        "רשימת התחומים שהוא מונה תחת אותו תפקיד, בטיחות, החלפת LMS, תמיכת ביצוע מבוססת AI ו-XR, מציגה מודל שבו טכנולוגיית למידה ורגולציה מנוהלות ביחידה אחת ולא כשתי אג'נדות מקבילות.",
+        "הנימוק שהוא נותן ל-AI ול-XR אינו הוזלת הדרכה אלא קיצור זמן בניית יכולת לצד שימור ידע מוסדי קריטי. זה טיעון שמדבר לסיכון תפעולי ולתחלופה, ולא לתקציב ההדרכה.",
+        "זהו ראיון קריירה. אין בקטע נתון, יעד או דוגמה מדידה, ולכן הערך שלו הוא בניסוח המנדט ובמיצוב התפקיד, לא בראיה שאפשר להישען עליה."
+      ],
+      "insights_en": [
+        "The scope he lists under one role (safety, LMS replacement, AI-enabled performance support, XR) shows a model where learning technology and regulatory obligation are run in a single unit rather than as two parallel agendas.",
+        "His justification for AI and XR is not cheaper training but faster capability building alongside preservation of critical institutional knowledge. That argument speaks to operational risk and attrition, not to a training budget line.",
+        "This is a career Q&A. The available text contains no figure, target or measurable example, so its value is in how the mandate is phrased and positioned, not as evidence."
+      ],
+      "matters_he": "ניסוח המנדט שלו, יישור פיתוח כוח האדם מול יעדים ארגוניים, דרישות רגולטוריות ומוכנות, עובד כמעט מילה במילה בבנק, והנימוק לשימור ידע מוסדי מעביר את שיחת ה-AI מהוועדה שמאשרת תקציב הדרכה אל השיחה על סיכון ותחלופה.",
+      "matters_en": "His mandate phrasing, aligning workforce development with organizational goals, regulatory requirements and readiness, transfers almost verbatim to a bank, and the institutional knowledge argument moves the AI conversation out of the training budget committee and into the risk and attrition conversation.",
+      "lane": "strategy",
+      "url": "https://www.chieflearningofficer.com/2026/08/14/learning-insights-danielle-ford-upholds-curiosity-and-the-pursuit-of-knowledge/",
+      "source": "Chief Learning Officer",
+      "published": "2026-08-14T06:00:00+00:00",
+      "revised": true
+    },
+    {
+      "headline_he": "ערכת הכישורים של איש הלמידה: מניתוח צרכים ועד לזיהוי מתי למידה אינה הפתרון",
+      "headline_en": "The L&D Skill Set: From Needs Analysis to Knowing When Learning Is Not the Answer",
+      "summary_he": "עמוד של The Learning Guild שמקדם את תוכנית ההסמכה שלה ואת כנס DevLearn, ובנוי סביב רשימת כישורים לאיש L&D: ניתוח צרכים, הגדרת יעדים, החלטה מתי למידה אינה הפתרון, עקרונות למידת מבוגרים, הכרת טכנולוגיות לפי הבעיה שהן פותרות, הבנת האופן שבו הארגון מרוויח ואילו KPI חשובים להנהלה, ובניית רשת מקצועית. אין כאן ממצא חדש, אלא הצהרה של גוף מקצועי מרכזי על מה נחשב בסיס המקצוע ואיפה AI ממוקם בתוכו.",
+      "summary_en": "A Learning Guild page promoting its Instructional Design Certificate and DevLearn, built around a practitioner skills list: needs analysis, objectives, deciding when learning is not the solution, adult learning principles, knowing technologies by the problem each solves, understanding how the organization makes money and which KPIs leadership cares about, and building a peer network. There is no new finding here, only a statement from a major professional body about what counts as the baseline of the craft and where AI sits within it.",
+      "insights_he": [
+        "AI מופיע ברשימה כעזר להפקה על פני משימות מוגדרות (ראשי פרקים, תרחישים, שאלות הערכה, סיכום משוב לומדים, חומרי מנחה, התאמה אישית), ואף לא במקום אחד כשינוי במודל התפעולי. המסגור הוא אימוץ כלי, לא הפקה שנבנית מלכתחילה סביב AI.",
+        "סעיף ה-AI מגיע עם רשימת גבולות מפורשת: היכן עדיין נדרשים שיפוט אנושי, אימות, בקרות פרטיות ומומחיות תוכן. ארבעת אלה הם ניסוח מוכן לתקן עבודה פנימי של צוות שמפיק עם AI.",
+        "זהו עמוד שיווקי לתוכנית הסמכה ולכנס. כדאי לקרוא אותו כאינדיקציה לרף הבסיס שהגוף המקצועי מציב לשוק, ולא כתיאור של פרקטיקה מתקדמת."
+      ],
+      "insights_en": [
+        "AI appears on the list as production assistance across defined tasks (outlines, scenarios, assessment items, summarizing learner feedback, facilitator materials, personalization), and nowhere as a change to the operating model. The framing is tool adoption, not production designed around AI from the start.",
+        "The AI item carries an explicit boundary list: where human judgment, verification, privacy controls and subject-matter expertise are still necessary. Those four are ready-made phrasing for an internal standard for a team producing with AI.",
+        "This is a marketing page for a certificate and a conference. Read it as an indication of the baseline the professional body is setting for the market, not as a description of advanced practice."
+      ],
+      "matters_he": "הפער בין הרף שהגוף המקצועי מציב לבין מה שאבי בונה בפועל הוא מידע שימושי לשני שימושים: מסגרת דירוג ותיאורי תפקיד בגיוס לצוות, והבנה עד כמה מה שהוא מלמד אחרים כבר קדם למה שהשוק מגדיר כבסיס.",
+      "matters_en": "The distance between the baseline this professional body sets and what Avi is actually building is useful in two places: levelling and role descriptions when hiring into his unit, and gauging how far ahead of the market baseline the practice he teaches already sits.",
+      "lane": "strategy",
+      "url": "https://www.learningguild.com/build-your-ld-edge-with-skills-strategies-and-connections-that-matter/",
+      "source": "The Learning Guild",
+      "published": "2026-08-20T08:41:00+00:00",
+      "revised": true
+    },
+    {
+      "headline_he": "מסלולי למידה מותאמים ב-AI בארגונים קטנים: היתרונות ברורים, המכשולים הם נתונים ומוכנות",
+      "headline_en": "AI-Personalized Learning Paths in Smaller Organizations: Clear Benefits, Data and Readiness Obstacles",
+      "summary_he": "מאמר של The Learning Guild בוחן איך ארגונים קטנים ובינוניים יכולים להציע מסלולי למידה מותאמים אישית בלי LMS ייעודי. היתרונות שמנויים: קיצור אצירה ידנית, זיהוי פערי מיומנות באמצעות אנליטיקה חזויה, אוטומציה של תזמון ומעקב, ומשוב מיידי שמותאם לתשובות הלומד. החסמים: מוכנות ארגונית נמוכה (מתוך 100 מנהלים בכירים שנסקרו, כשליש דיווחו על אסטרטגיית AI ורק 25% על תקציב ייעודי), עלות והחזר לא ודאי, פערי מיומנות פנימיים, אבטחה, ונתוני למידה מפוזרים בין גיליונות, CRM ומערכות HR מנותקות.",
+      "summary_en": "A Learning Guild article on how small and midsize businesses can offer personalized learning paths without a custom LMS. The benefits listed: less manual curation, skill gap detection via predictive analytics, automated scheduling and tracking, and immediate feedback adapted to learner responses. The obstacles: low organizational readiness (of 100 senior executives surveyed, about a third report an AI strategy and only 25% a dedicated AI budget), cost and uncertain ROI, internal skill gaps, security exposure, and learning data scattered across spreadsheets, CRM and disconnected HR platforms.",
+      "insights_he": [
+        "רשימת היתרונות מניחה בדיוק את תנאי הנתונים שרשימת החסמים שוללת: זיהוי פערים חזוי והמלצות מותאמות דורשים רשומות מאוחדות, בעוד המאמר עצמו מודה שהרשומות יושבות בגיליונות, ב-CRM ובמערכות HR מנותקות. זו הסתירה הפנימית שכדאי לקרוא איתה כל הבטחת התאמה אישית.",
+        "האילוץ של ארגון קטן, אין LMS ייעודי, מכריח לבנות התאמה אישית מעל הרשומות שכבר קיימות. זו ארכיטקטורה הפוכה מברירת המחדל של ארגון גדול, שמניח שההתאמה תיוולד בתוך הפלטפורמה שממילא רושמת בעיקר השלמות.",
+        "החיסכון שהמאמר מבטיח הוא בהפקת תוכן ובאצירה, אבל ההוצאה החדשה שהוא מונה היא אנשים שיודעים לפרש פלטי מודל ולנהל אינטגרציות. כלומר העלות עוברת מייצור חומרים לעבודת נתונים, וזו שאלת הרכב צוות ולא שאלת תקציב תוכן."
+      ],
+      "insights_en": [
+        "The benefits list assumes exactly the data conditions the obstacles list rules out: predictive gap detection and tailored recommendations need consolidated records, while the article concedes records sit in spreadsheets, CRM and disconnected HR platforms. That contradiction is the lens for any personalization promise.",
+        "The SMB constraint of no custom LMS forces personalization to be built on top of whatever records already exist. That is the inverse of the large-organization default, which assumes personalization will emerge inside a platform that mostly records completions.",
+        "The savings it promises are in content production and curation, but the new spend it names is people who can interpret model outputs and manage integrations. The cost moves from making materials to data work, which is a team composition question rather than a content budget question."
+      ],
+      "matters_he": "ההגבלה על התאמה אישית בבנק לא תהיה איכות המודל אלא האם רשומות המיומנויות קיימות כנתונים שאפשר לשאול אותם. ההיפוך שכדאי לקחת מכאן הוא לבנות את שכבת ההתאמה מעל הרשומות הקיימות במקום לחכות שה-LMS יספק אותה, ולהיערך לכך שההשקעה עוברת מהפקת תוכן ליכולת נתונים בתוך הצוות.",
+      "matters_en": "What will limit personalization in the bank is not model quality but whether skills records exist as data that can be queried. The inversion worth borrowing is building the personalization layer on top of existing records rather than waiting for the LMS to supply it, and planning for investment to shift from content production to data capability inside the team.",
+      "lane": "learning_tech",
+      "url": "https://www.learningguild.com/how-smbs-can-offer-ai-personalized-learning-paths/",
+      "source": "The Learning Guild",
+      "published": "2026-08-19T05:00:00+00:00",
+      "revised": true
+    }
+  ],
+  "warnings": [
+    "web-search top-up added no new candidates",
+    "3 article(s) still below the editorial bar after 2 rounds; shipped as-is",
+    "editorial pass rate 5/8 in the final round: this week's source material may be thin"
+  ]
+}
