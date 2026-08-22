@@ -30,10 +30,11 @@ import os
 import re
 import sys
 
-SITE_DIR = os.environ.get(
-    "LD_SITE_CLONE",
-    os.path.expanduser("~/Library/Application Support/ld-digest/ld-site"),
-)
+# Default to the repo this script lives in, which is correct on the Mac clone
+# and on a CI runner alike. A Mac-path default made the Friday `--emit` step
+# read a directory that does not exist on a runner.
+_REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+SITE_DIR = os.environ.get("LD_SITE_CLONE", _REPO_ROOT)
 VAULT_DIR = os.path.expanduser("~/Documents/avi-workspace/Researches/L&D Articles")
 REPORTS_DIR = os.path.join(SITE_DIR, "reports")
 BASE_URL = "https://booya1986.github.io/ld-digest/reports"
@@ -134,6 +135,9 @@ def build_note(week, data):
 
 
 NOTE_SUFFIX = "L&D Articles"
+INDEX_NOTE = "📌 L&D Articles — מפת תוכן.md"
+INDEX_START = "<!-- INDEX:START -->"
+INDEX_END = "<!-- INDEX:END -->"
 
 
 def render_note(week):
@@ -187,7 +191,79 @@ def install_all():
         print(f"{week}: note written ({origin}) -> {target}")
         written += 1
     print(f"install-all: {written} note(s) written, {len(weeks)} week(s) checked")
+    update_index()
     return 0
+
+
+
+def _friday_of(week):
+    """The Friday a week's report was built, derived from the ISO week itself."""
+    try:
+        year, num = week.split("-W")
+        return datetime.date.fromisocalendar(int(year), int(num), 5).isoformat()
+    except ValueError:
+        return ""
+
+
+def installed_weeks():
+    """Weeks that have a note in the vault, newest first."""
+    if not os.path.isdir(VAULT_DIR):
+        return []
+    suffix = f" {NOTE_SUFFIX}.md"
+    return sorted(
+        (f[:-len(suffix)] for f in os.listdir(VAULT_DIR)
+         if f.endswith(suffix) and re.fullmatch(r"\d{4}-W\d+", f[:-len(suffix)])),
+        reverse=True,
+    )
+
+
+def render_index(weeks):
+    """The generated table of contents for the vault folder.
+
+    Plain markdown with wikilinks rather than a dataview query, so it reads
+    correctly in preview, in source mode, and anywhere the note is exported or
+    opened outside Obsidian.
+    """
+    lines = [INDEX_START,
+             "<!-- נוצר אוטומטית על ידי sync_vault_note.py. אין לערוך ידנית. -->",
+             ""]
+    if not weeks:
+        lines.append("_עוד אין דוחות._")
+    else:
+        lines.append("| שבוע | תאריך | פתק | דוח מלא |")
+        lines.append("|---|---|---|---|")
+        for week in weeks:
+            lines.append(f"| `{week}` | {_friday_of(week)} "
+                         f"| [[{week} {NOTE_SUFFIX}]] "
+                         f"| [פתח]({BASE_URL}/{week}/) |")
+        lines.append("")
+        lines.append(f"_{len(weeks)} דוחות._")
+    lines.append(INDEX_END)
+    return "\n".join(lines)
+
+
+def update_index():
+    """Refresh the generated block inside the folder's index note.
+
+    Marker scoped: the note carries hand-written documentation above the table
+    which has to survive.
+    """
+    path = os.path.join(VAULT_DIR, INDEX_NOTE)
+    table = render_index(installed_weeks())
+    try:
+        with open(path, encoding="utf-8") as fh:
+            text = fh.read()
+    except OSError:
+        print(f"index note not found at {path}, skipping")
+        return
+    if INDEX_START in text and INDEX_END in text:
+        text = (text[:text.index(INDEX_START)] + table
+                + text[text.index(INDEX_END) + len(INDEX_END):])
+    else:
+        text = text.rstrip("\n") + "\n\n## 📝 כל הדוחות\n\n" + table + "\n"
+    with open(path, "w", encoding="utf-8") as fh:
+        fh.write(text)
+    print(f"index updated: {path}")
 
 
 def main():
