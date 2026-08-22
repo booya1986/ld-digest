@@ -63,6 +63,10 @@ jobs:
         if: steps.week.outputs.skip == 'false'
         env:
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          # Comma separated recipient list, held as a repo variable so the
+          # audience changes without a commit. Falls back to Avi alone if the
+          # variable is unset.
+          DIGEST_TO: ${{ vars.DIGEST_TO }}
         run: python3 scripts/send_digest_smtp.py "${{ steps.week.outputs.week }}"
 
       - name: Commit dedup marker

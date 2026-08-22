@@ -12,7 +12,8 @@ import os
 import re
 
 REPORTS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "reports")
-TO = "avi.j.levi@gmail.com"
+# Recipients live in send_digest_smtp.py (DIGEST_TO, comma separated).
+# This module is only used as a library for build_html/read_top_articles.
 BASE_URL = "https://booya1986.github.io/ld-digest/reports"
 TLDR_COUNT = 4
 
