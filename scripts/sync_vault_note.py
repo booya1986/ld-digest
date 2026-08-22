@@ -206,15 +206,15 @@ def _friday_of(week):
 
 
 def installed_weeks():
-    """Weeks that have a note in the vault, newest first."""
-    if not os.path.isdir(VAULT_DIR):
-        return []
-    suffix = f" {NOTE_SUFFIX}.md"
-    return sorted(
-        (f[:-len(suffix)] for f in os.listdir(VAULT_DIR)
-         if f.endswith(suffix) and re.fullmatch(r"\d{4}-W\d+", f[:-len(suffix)])),
-        reverse=True,
-    )
+    """Weeks that have both a published report and a note in the vault.
+
+    Derived from the reports directory and probed one path at a time, NOT by
+    listing the vault. Under launchd, macOS TCC lets this process stat a known
+    file under ~/Documents but denies enumerating the directory, so os.listdir
+    on the vault raises PermissionError while os.path.exists on a file inside
+    it succeeds. Observed 2026-08-22.
+    """
+    return [w for w in reversed(all_weeks()) if os.path.exists(note_path_for(w))]
 
 
 def render_index(weeks):
