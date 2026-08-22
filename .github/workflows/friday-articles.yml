@@ -189,6 +189,8 @@ jobs:
           git config user.name "Avi Levi (Friday robot)"
           git add "reports/${{ env.week }}/" 2>/dev/null || true
           git add reports/index.html 2>/dev/null || true
+          # The README carries the generated report index.
+          git add README.md 2>/dev/null || true
           if ! git diff --cached --quiet; then
             git commit -m "Add L&D digest for ${{ env.week }}"
             git push
