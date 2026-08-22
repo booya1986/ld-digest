@@ -91,7 +91,19 @@ jobs:
             echo "nothing to commit"
           else
             git commit -m "Sunday digest: mark $WEEK sent"
-            git push
+            # Retry on a rejected push. The Friday run takes several minutes,
+            # and anything landing on main meanwhile rejects this push and
+            # discards the whole week's work. Rebase and try again rather than
+            # losing the report. Observed 2026-08-22.
+            for attempt in 1 2 3; do
+              if git push; then break; fi
+              echo "push rejected (attempt $attempt); rebasing on the remote"
+              git pull --rebase --autostash
+              if [ "$attempt" = "3" ]; then
+                echo "::error title=push::could not push after 3 attempts"
+                exit 1
+              fi
+            done
           fi
 
           # The dedup marker is the only thing preventing a duplicate send, so
