@@ -1,17 +1,28 @@
 #!/usr/bin/env python3
-"""Write the weekly L&D Articles note into Avi's Obsidian vault.
+"""Build the weekly L&D Articles note, and install it into Avi's vault.
 
-The cloud workflow cannot reach the vault, so it only commits the report into
-the git repo. This script runs locally (launchd, via vault_note_only.sh) and
-turns the published report into an Obsidian note.
+Split in two, because the vault is a local folder with no git remote and the
+cloud cannot reach it:
+
+  RENDER  runs in the Friday workflow (`--emit <path>`) and commits the note
+          markdown into the repo as reports/<week>/vault-note.md, so the note
+          EXISTS whether or not the Mac is on.
+  INSTALL runs on the Mac (`--install-all`) and copies every rendered note the
+          vault is missing. It walks all weeks, not just the newest: before
+          this, a Mac that was off across a Friday lost that week's note
+          permanently, because only the latest week was ever considered.
 
 Source of truth is the committed reports/<week>/articles.json, not the HTML.
-The sibling trending-repos pipeline regexes its own rendered page back apart,
-which couples the note to the page's markup; reading the structured data
-avoids that entirely.
+The sibling AI News pipeline regexes its own rendered page back apart, which
+couples the note to the page's markup; reading the structured data avoids that
+entirely.
 
-Idempotent: exits early if the week's note already exists.
-Usage: python3 sync_vault_note.py [week]
+Idempotent throughout: an existing vault note is never overwritten.
+
+Usage:
+  python3 sync_vault_note.py [week]              write one week into the vault
+  python3 sync_vault_note.py <week> --emit PATH  render to PATH, no vault touch
+  python3 sync_vault_note.py --install-all       backfill every missing week
 """
 import datetime
 import json
@@ -122,24 +133,104 @@ def build_note(week, data):
     return "\n".join(lines)
 
 
-def main():
-    week = sys.argv[1] if len(sys.argv) > 1 else latest_week()
-    os.makedirs(VAULT_DIR, exist_ok=True)
-    note_path = os.path.join(VAULT_DIR, f"{week} L&D Articles.md")
+NOTE_SUFFIX = "L&D Articles"
 
-    if os.path.exists(note_path):
-        print(f"Vault note already exists for {week}, skipping.")
-        return
 
+def render_note(week):
+    """The note markdown for a week, or None when the report has no articles.
+
+    Touches nothing outside the reports directory, so it is safe to run in CI
+    where no vault exists.
+    """
     data = load_articles(week)
     if not data.get("articles"):
-        print(f"No articles in {week} report; not writing an empty note.")
-        return
+        print(f"No articles in {week} report; nothing to render.")
+        return None
+    return build_note(week, data)
 
-    with open(note_path, "w", encoding="utf-8") as f:
-        f.write(build_note(week, data))
-    print(f"note written: {note_path}")
+
+def all_weeks():
+    return sorted(
+        d for d in os.listdir(REPORTS_DIR)
+        if os.path.isdir(os.path.join(REPORTS_DIR, d)) and re.fullmatch(r"\d{4}-W\d+", d)
+    )
+
+
+def note_path_for(week):
+    return os.path.join(VAULT_DIR, f"{week} {NOTE_SUFFIX}.md")
+
+
+def install_all():
+    """Backfill every week the vault is missing a note for.
+
+    Prefers the note rendered in the cloud (reports/<week>/vault-note.md) and
+    falls back to rendering locally, so weeks published before the cloud render
+    existed are still recoverable.
+    """
+    os.makedirs(VAULT_DIR, exist_ok=True)
+    weeks = all_weeks()
+    written = 0
+    for week in weeks:
+        target = note_path_for(week)
+        if os.path.exists(target):
+            continue
+        cloud = os.path.join(REPORTS_DIR, week, "vault-note.md")
+        if os.path.exists(cloud):
+            content, origin = open(cloud, encoding="utf-8").read(), "cloud"
+        else:
+            content, origin = render_note(week), "rendered locally"
+        if not content or not content.strip():
+            print(f"{week}: nothing to write, skipping")
+            continue
+        with open(target, "w", encoding="utf-8") as f:
+            f.write(content)
+        print(f"{week}: note written ({origin}) -> {target}")
+        written += 1
+    print(f"install-all: {written} note(s) written, {len(weeks)} week(s) checked")
+    return 0
+
+
+def main():
+    args = sys.argv[1:]
+    if "--install-all" in args:
+        return install_all()
+
+    emit = None
+    if "--emit" in args:
+        i = args.index("--emit")
+        try:
+            emit = args[i + 1]
+        except IndexError:
+            print("--emit needs a path", file=sys.stderr)
+            return 2
+        del args[i:i + 2]
+
+    week = args[0] if args else latest_week()
+
+    if emit:
+        content = render_note(week)
+        if not content or not content.strip():
+            print(f"Refusing to emit an empty note for {week}.", file=sys.stderr)
+            return 1
+        os.makedirs(os.path.dirname(os.path.abspath(emit)) or ".", exist_ok=True)
+        with open(emit, "w", encoding="utf-8") as f:
+            f.write(content)
+        print(f"Note rendered: {emit} ({len(content)} chars)")
+        return 0
+
+    target = note_path_for(week)
+    if os.path.exists(target):
+        print(f"Vault note already exists for {week}, skipping.")
+        return 0
+    content = render_note(week)
+    if not content:
+        return 0
+    os.makedirs(VAULT_DIR, exist_ok=True)
+    with open(target, "w", encoding="utf-8") as f:
+        f.write(content)
+    print(f"note written: {target}")
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

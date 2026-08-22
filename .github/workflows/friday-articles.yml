@@ -149,6 +149,20 @@ jobs:
             exit 1
           fi
 
+      # The vault note is RENDERED HERE, in the cloud, and committed inside the
+      # report directory. The Obsidian vault is a local folder with no git
+      # remote, so nothing in CI can write into it; but rendering here means the
+      # note EXISTS whether or not the Mac is on, and the Mac's only job becomes
+      # copying files it does not have yet (sync_vault_note.py --install-all).
+      # Before this, the note was built on the Mac and only ever for the newest
+      # week, so a Mac that was off across a Friday lost that week's note.
+      # 2026-08-21 (W34) is the run that exposed it: green in CI, no note.
+      - name: Render vault note
+        if: steps.dedup.outputs.skip == 'false' && inputs.dry_run != true
+        run: |
+          python3 scripts/sync_vault_note.py "${{ env.week }}" \
+            --emit "${{ env.outdir }}/vault-note.md"
+
       - name: Build social card (non-fatal)
         if: steps.dedup.outputs.skip == 'false'
         run: |
