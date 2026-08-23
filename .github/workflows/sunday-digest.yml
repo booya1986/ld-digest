@@ -4,14 +4,21 @@ name: Sunday digest email
 # when Avi's Mac is off.
 on:
   schedule:
-    # 07:07 Israel time. Israel is UTC+3 (IDT) Apr-Oct and UTC+2 (IST) Oct-Mar.
-    # Two entries cover both; the per-week .email_sent dedup makes the extra fire a no-op.
-    - cron: "7 4 * * 0"   # 07:07 IDT (summer)
-    - cron: "7 5 * * 0"   # 07:07 IST (winter)
-    # Heartbeat catch-net: GitHub silently drops or delays the primary fire often.
-    # Hourly Sun 05:00-11:00 UTC (08:00-14:00 IL); the .email_sent dedup keeps
-    # this to a single send per week regardless of how many times it fires.
-    - cron: "0 5-11 * * 0"
+    # GitHub's cron is NOT the primary trigger any more, because it cannot
+    # promise a time: it fired 41 minutes late on 2026-08-23 and did not fire at
+    # all on 2026-08-16. Both weeks the email only went out because a catch-net
+    # picked it up. Avi wants the digest at 07:30 Israel time, so the punctual
+    # claude.ai routine "Sunday Digest Send" fires first, by pushing
+    # .send-trigger (see the push: trigger below). A push starts a workflow
+    # immediately instead of queueing it behind GitHub's scheduler.
+    #
+    # What is left here is a LATE BACKUP. It deliberately starts after 07:30 in
+    # BOTH Israeli timezones, so it can rescue a failed send without ever
+    # pre-empting the intended delivery time:
+    #   06:00 UTC = 09:00 IDT (summer) / 08:00 IST (winter)
+    # The per-week .email_sent dedup keeps this to one send regardless of how
+    # many times it fires.
+    - cron: "0 6-11 * * 0"
   workflow_dispatch: {}
   # External-trigger path: anything with contents:write can fire a real send by
   # pushing to .send-trigger, without needing actions:write.
