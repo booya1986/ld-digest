@@ -25,9 +25,14 @@ design, and learning technology. Built Friday, emailed Sunday morning.
 | 9 | `build_index.py` | Regenerates the archive index from the directories that exist | Yes |
 | 10 | commit + push | GitHub Pages serves it as static files, no build step | Yes |
 
-**Sunday 07:07 IL** — `.github/workflows/sunday-digest.yml`
+**Sunday 07:30 IL** — `.github/workflows/sunday-digest.yml`
 Finds the latest week, sends via Gmail SMTP to everyone in the `DIGEST_TO` repo
 variable, commits the `.email_sent` dedup marker.
+
+Triggered by a claude.ai routine that pushes `.send-trigger` at 07:25 IL.
+GitHub's own cron cannot promise a time (41 minutes late on 2026-08-23, absent
+on 2026-08-16), and a push starts a workflow immediately. GitHub's cron is now
+only a late backup, starting after 07:30 in both Israeli timezones.
 
 **The vault note.** The vault is a plain local folder with no git remote, so CI
 cannot write into it. The note is therefore *rendered* in the Friday run
