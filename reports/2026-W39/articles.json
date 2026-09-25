@@ -1,0 +1,245 @@
+{
+  "week": "2026-W39",
+  "generated_for": "2026-09-25",
+  "count": 10,
+  "articles": [
+    {
+      "headline_he": "אם אין השפעה למדוד, למה בכלל לימדנו?",
+      "headline_en": "If There Is No Impact to Measure, Why Train at All?",
+      "summary_he": "Clark Quinn קורא ספר הערכה שמחלק תוצאות למידה לשלושה סוגים: אינפורמטיבי, שינוי התנהגות בלי השפעה, והשפעה עסקית. לדבריו המודל פחות מנוסח מ-LTEM של Thalheimer אבל נגיש יותר, והחוזק האמיתי של הספר הוא בניתוח הכשלים בכל שלב ובדרכים לתקשר אותם. הוא חולק דווקא על החלוקה עצמה: אף אחד לא מעביר מידע כדי שלא יקרה איתו כלום. אם יש סיבה לתוכן, יש התנהגות רצויה, ולכן יש גם מדד כלשהו.",
+      "summary_en": "Clark Quinn reviews an evaluation book that splits learning outcomes into three types: informational, behaviour change without impact, and impact. He rates the model as less nuanced than Thalheimer's LTEM but more comprehensible, and says the book's real strength is its per-stage failure analysis and the language it gives you to communicate problems. His quarrel is with the split itself: nobody hands out information expecting nothing to follow. If there is a reason for the content, there is a desired behaviour, and therefore some measure.",
+      "insights_he": [
+        "מה שהוא כן משבח בספר הוא ניתוח כשלים ותרופות בכל שלב הערכה, וזו בדיוק הבעיה: מבנה שמציע תיקון בכל שלב מאפשר לעצור אחרי שלב אחד ולהרגיש שסיימת.",
+        "החריג היחיד שהוא מוכן לקבל הוא הדרכת \"כיסוי תחת\" רגולטורית, שהיא למידה לצורכי משפט ולא לצורכי ביצועים.",
+        "הוא מודה שהמדידה יכולה להיות תצפיתית, עדינה או ארוכת טווח: כלומר היעדר מדד נקי אינו עילה לוותר על בדיקת ההשפעה, אלא הזמנה להגדיר איזו ראיה כן תיחשב."
+      ],
+      "insights_en": [
+        "What he praises in the book, per-stage failure analysis with remedies, is also the trap: a structure that offers a fix at every stage lets practitioners stop after one stage and feel finished.",
+        "The only exception he accepts is cover-your-assets compliance training, which is learning for legal's sake rather than performance.",
+        "He concedes measures may be observational, subtle or long term: lacking a clean metric is not grounds for skipping impact, it is a prompt to decide what counts as evidence."
+      ],
+      "matters_he": "זה בדיוק הקו של אבי: הארגון קונה קורס אבל צריך ביצועים. הטיעון נותן ניסוח חד למה מודל הערכה שעוצר ברמת הידע מנציח את תרבות ההזמנות במקום ייעוץ ביצועים, וגם פותח פתח לראיות תצפיתיות כשאין מדד עסקי זמין.",
+      "matters_en": "This is Avi's thesis in miniature: the organization buys a course when it needs performance. It gives a sharp argument for why an evaluation model that stops at knowledge entrenches order-taking, and it licenses observational evidence when no business metric is available.",
+      "lane": "id_craft",
+      "url": "https://blog.learnlets.com/2026/09/into-action/",
+      "source": "Clark Quinn",
+      "published": "2026-09-22T15:04:50+00:00",
+      "revised": true
+    },
+    {
+      "headline_he": "L&D מקבל את ציון המוכנות הנמוך ביותר ל-AI",
+      "headline_en": "L&D Scores Lowest on AI Readiness",
+      "summary_he": "סקר Market Pulse של Talogy מאביב 2026 בקרב 207 מנהלי HR וטאלנט בכירים בארה\"ב ובבריטניה מצא ש-L&D הוא הפונקציה עם ציון המוכנות הנמוך ביותר ל-AI. רק 23% אמרו שהארגון שלהם \"מוכן מאוד\" לעדכן תיאורי תפקיד, כשירויות ומסלולי קריירה לאור AI. Kristin Delgado מסבירה את הפרדוקס: שליטה בכלים הפכה מובנת מאליה, אבל אין ל-L&D כלים מבוססי מחקר להעריך עד כמה טוב העובדים עובדים יחד עם AI. היא מציעה למדוד גורמים אנושיים: זריזות למידה, נוחות עם עמימות וחשיבה ביקורתית מול פלטים.",
+      "summary_en": "Talogy's spring 2026 Market Pulse survey of 207 senior HR and talent leaders in the US and UK found L&D has the lowest readiness score of any function. Only 23% said their organization is very prepared to adapt job descriptions, competencies and career paths to AI-driven change. Kristin Delgado explains the paradox: tool fluency is now a given, but L&D has no science-backed instruments to assess how well the workforce actually collaborates with AI. She argues for measuring human factors: learning agility, comfort with ambiguity and critical thinking about AI outputs.",
+      "insights_he": [
+        "ה-23% נוגעים לארכיטקטורת התפקידים (תיאורי תפקיד, כשירויות, מסלולי קריירה) ולא ליכולת להדריך: זו מוכנות מסוג אחר לגמרי מזו ש-L&D רגיל להצהיר עליה.",
+        "L&D קיבל את הציון הנמוך מכל פונקציה דווקא כמי שמשתמש ב-AI הכי הרבה זמן: ותק בשימוש בכלים לא מתרגם למוכנות ארגונית, ולעיתים מסתיר את היעדרה.",
+        "הגורמים שהיא מציעה למדוד הם תכונות ניתנות להערכה (זריזות למידה, נוחות עם עמימות, חשיבה ביקורתית מול פלטים), כלומר הכלי החסר הוא אבחוני ולא עוד דוח LMS."
+      ],
+      "insights_en": [
+        "The 23% is about job architecture (descriptions, competencies, career paths), not about delivery capability: a different readiness problem from the one L&D usually claims to own.",
+        "L&D scored lowest of any function despite being the longest-standing heavy AI user: years of tool use do not convert into organizational readiness, and can mask its absence.",
+        "The factors she names are assessable constructs (learning agility, comfort with ambiguity, critical evaluation of outputs), so the missing instrument is diagnostic, not another LMS report."
+      ],
+      "matters_he": "הפער שהסקר מצביע עליו הוא בדיוק התוצר שאבי יכול לייצר בבנק: עדכון כשירויות ומסלולי קריירה לפי מה ש-AI באמת שינה בתפקידים, במקום עוד קורס AI. זה גם ממקם את ה-skills data שלו כתשתית של HR ולא כפרויקט צדדי של L&D.",
+      "matters_en": "The gap the survey points at is exactly the artefact Avi can produce inside the bank: competencies and career paths updated for what AI actually changed in the roles, rather than another AI course. It also positions his skills data as HR infrastructure rather than a side project of L&D.",
+      "lane": "ai_ld",
+      "url": "https://www.trainingjournal.com/2026/content-type/opinion/beyond-the-prompt-what-ld-teams-should-consider-when-implementing-ai/?utm_source=rss&utm_medium=rss&utm_campaign=beyond-the-prompt-what-ld-teams-should-consider-when-implementing-ai",
+      "source": "Training Journal",
+      "published": "2026-09-24T04:10:00+00:00",
+      "revised": true
+    },
+    {
+      "headline_he": "פער מיומנויות ה-AI בשווי 5.5 טריליון דולר נסגר על ידי עמיתים",
+      "headline_en": "A $5.5 Trillion AI Skills Gap Being Closed by Peers",
+      "summary_he": "מקבץ החדשות השבועי של Training Journal. שני פריטים נושאים סיגנל אמיתי: סקר Talogy בקרב 207 מנהלי HR, גיוס ו-L&D מצא ש-78% מודאגים מאובדן ארוך טווח של מיומנויות מנהיגות, כי AI נוטל בדיוק את המשימות שהיו שמורות לתפקידי כניסה ושם המיומנויות נבנו באופן טבעי; ובמקביל, הקריאות לרגולציה פדרלית על AI בארה\"ב משאירות ארגונים בלי ודאות אם הגבלות עתידיות יפגעו בשימוש שלהם במודלים פתוחי משקל. ברקע: פחות מ-25% מהעובדים מקבלים הדרכת AI מובנית ותנועת עמיתים אורגנית ממלאת את החלל, 55% ממנהלי HR שקלו לעזוב את המקצוע לפי דוח Lattice, ומתרבים החששות לגבי השפעת AI על הקוגניציה.",
+      "summary_en": "Training Journal's weekly roundup. Two items carry real signal: a Talogy survey of 207 senior HR, talent acquisition and L&D leaders found 78% are concerned about long-term loss of critical leadership skills, because AI is absorbing exactly the entry-level tasks where those skills used to form naturally; and mounting calls for US federal AI regulation leave enterprises unsure whether future restrictions will hinder their use of open-weight models. In the background: fewer than 25% of workers receive structured AI training and a grassroots peer-led movement is filling the vacuum, 55% of HR leaders have considered leaving the profession (Lattice), and concerns are growing about AI's impact on cognition.",
+      "insights_he": [
+        "כשפחות מ-25% מקבלים הדרכה מובנית, מי שמגדיר בפועל את דרכי העבודה עם AI הוא עמית ולא L&D: בבנק זה אומר שזרימות עבודה שנבנו מלמטה מתנגשות בממשל ובאבטחת מידע עוד לפני ש-L&D מיפה אותן.",
+        "78% חוששים לצינור המנהיגות מסיבה מכניסטית ולא תחושתית: AI בולע את משימות הכניסה, ואיתן את ההזדמנויות שבהן נבנו שיקול דעת ומיומנות ניהולית.",
+        "אי הוודאות הרגולטורית הופכת בחירת מודלים ושימוש בפתוחי משקל לסיכון תכנוני: הכשרה שנבנית סביב כלי ספציפי עלולה להתיישן מסיבות משפטיות, לא טכנולוגיות."
+      ],
+      "insights_en": [
+        "With fewer than 25% getting structured training, the people defining how AI is actually used are peers, not L&D: in a bank that means bottom-up workflows collide with governance and data security before L&D has even mapped them.",
+        "The 78% concern about the leadership pipeline rests on a mechanism, not a mood: AI absorbs entry-level tasks, and with them the occasions where judgment and managerial skill used to form.",
+        "Regulatory uncertainty turns model choice and open-weight use into a planning risk: enablement built around one specific tool can age out for legal reasons rather than technical ones."
+      ],
+      "matters_he": "שתי החלטות קונקרטיות לאבי. הראשונה: האם להכיר רשמית בזרימות העבודה שכבר רצות בצוותים ולהפוך אותן לפרקטיקה מתועדת ומאושרת, או להמשיך ולראות אותן נבנות מחוץ לרדאר. השנייה: אילו משימות כניסה בבנק כדאי להשאיר בידיים אנושיות דווקא בגלל ערכן ההתפתחותי, וזו שאלה שהוא יכול לענות עליה עם נתוני מיומנויות ולא עם דעה.",
+      "matters_en": "Two concrete decisions for Avi. First, whether to formally recognize the AI workflows already running in his teams and turn them into documented, sanctioned practice, or keep watching them grow off-radar. Second, which entry-level tasks in the bank should stay human precisely because of their developmental value, a question he can answer with skills data rather than opinion.",
+      "lane": "strategy",
+      "url": "https://www.trainingjournal.com/2026/content-type/news/tj-newsflash-23-september-ai-skills-leadership-hr-pressure-and-regulation-collide/?utm_source=rss&utm_medium=rss&utm_campaign=tj-newsflash-23-september-ai-skills-leadership-hr-pressure-and-regulation-collide",
+      "source": "Training Journal",
+      "published": "2026-09-23T03:34:00+00:00",
+      "revised": true
+    },
+    {
+      "headline_he": "כשהניתוח הופך לסחורה, היתרון עובר לפרשנות",
+      "headline_en": "When Analysis Is Commoditized, the Edge Moves to Interpretation",
+      "summary_he": "מאמר ב-Chief Learning Officer טוען שגישה למידע כבר אינה יתרון תחרותי, כי AI מספק ניתוח לכל אחד כמעט בחינם, ולכן היתרון עובר ליכולת הפרשנות. הכותב, שמוביל פעילות צמיחה גלובלית ב-Donorbox, מתאר AI כעובד מבריק שאין לו ניסיון עסקי: הוא מסיק מסקנות מעניינות שלא בהכרח רלוונטיות למשימה. עמוד ראשון במסגרת שלו: שיקול דעת בקלט, עם קו אדום ברור (פרטי קשר, מזהים ייחודיים, נתוני הכנסה) וניקוי מזהים לפני העלאה לכלי צד שלישי. עמוד שני: שיטת עבודה קבועה שסוגרת את פער ההקשר, כלומר מטרה מוגדרת ונתונים שסוננו מראש.",
+      "summary_en": "A Chief Learning Officer piece argues that access to information is no longer the edge, because AI gives anyone instant analysis at near-zero cost, so advantage shifts to interpretation. The author, who leads global growth at Donorbox, describes AI as a brilliant worker with no business experience: it draws interesting conclusions that may not be relevant to the work at hand. Pillar one of his framework is discretion about inputs, with a hard line (contact details, unique identifiers, revenue figures) and stripping identifiers before uploading to third-party tools. Pillar two is a repeatable method that closes the context gap: a defined goal plus pre-screened data.",
+      "insights_he": [
+        "הגדרת הקו האדום היא מיומנות נלמדת ולא נוהל: אנליסט זוטר בלחץ זמן ידביק את כל הגיליון לצ'אט בלי להבין שסיכן את הארגון כולו.",
+        "AI מדבר בביטחון גם כשהוא טועה, ולכן פער ההקשר הוא סיכון ביצועי: עובד חסר ניסיון יקבל פלט שגוי עובדתית או לא מיושר אסטרטגית כמובן מאליו.",
+        "דפוס ההחלטה שכדאי ללמד: הוא יכול היה להעלות את קובץ 200 הלקוחות כמו שהוא וגם לקבל תוצאות טובות, ובחר להסיר מזהים ולהשאיר רק סוג ארגון ושימוש בפיצ'רים. האותות השימושיים נכנסו, המידע הרגיש נשאר בחוץ."
+      ],
+      "insights_en": [
+        "Knowing where the data red line sits is a learned skill, not a policy: a junior analyst under deadline will paste the whole spreadsheet into the chat without grasping that they just exposed the organization.",
+        "AI speaks convincingly even when it is wrong, so the context gap is a performance risk: inexperienced staff take factually incorrect or strategically misaligned output at face value.",
+        "The decision pattern worth teaching: he could have uploaded the full top-200 customer file and still got useful results, and instead stripped identifiers and kept only organization type and feature usage. The useful signals went in, the sensitive data stayed out."
+      ],
+      "matters_he": "זו הגרסה המעשית של מה שאבי מנסה להטמיע: לא הדרכת פרומפטים אלא שיקול דעת ושיטת עבודה. בסביבה בנקאית ההבחנה הזו היא תוכן ההכשרה עצמו, כלומר קו אדום מתועד ושלב סינון לפני כל העלאה לכלי חיצוני.",
+      "matters_en": "This is the practical version of what Avi is trying to embed: not prompt training but judgment and method. In a bank, that distinction is the enablement content itself: a documented red line and a screening step before anything reaches an external tool.",
+      "lane": "ai_ld",
+      "url": "https://www.chieflearningofficer.com/2026/09/23/learning-is-the-new-edge/",
+      "source": "Chief Learning Officer",
+      "published": "2026-09-23T06:00:00+00:00",
+      "revised": true
+    },
+    {
+      "headline_he": "פיתוח מנהלים עם AI: מה הנתונים מהקוהורטות מראים",
+      "headline_en": "AI-Driven Leadership Development: What Cohort Data Shows",
+      "summary_he": "עמוד סשן של The Learning Guild בחסות Simsola AI. הטקסט הנגיש הוא תקציר שיווקי בלבד, בלי שום ממצא: הוא מבטיח נתונים אמפיריים מקוהורטות פיתוח מנהלים מבוססות AI במספר חברות, והתוכן עצמו נעול מאחורי טופס שמעביר את פרטי הנרשם לספק ולמפיצים הגלובליים שלו. השאלות שהסשן מתחייב לענות עליהן: מדוע חלק מהמשתתפים פורחים בסימולציות AI ואחרים מתנתקים, איך מבנה, קצב והנחיה משפיעים על התוצאה, ואיך צורכי המיומנות הניהולית משתנים בעידן AI.",
+      "summary_en": "A Learning Guild session page sponsored by Simsola AI. The accessible text is marketing copy with no findings in it: it promises empirical data from AI-driven leadership development cohorts across several companies, while the content itself sits behind a form that passes your details to the sponsor and its global reseller partners. The questions it commits to answering: why some learners thrive in AI-based simulations while others disengage, how structure, cadence and facilitation shape outcomes, and how leadership skill needs are shifting.",
+      "insights_he": [
+        "אין כאן ממצאים אלא הבטחה לממצאים: זה פריט יומן, לא מקור שאפשר לצטט בדיון פנימי.",
+        "התקציר עצמו מצהיר שמבנה, קצב והנחיה מעצבים את התוצאה לא פחות מהטכנולוגיה. ספק סימולציות שמודה בכך למעשה מוכר תוכנית ולא מוצר, וזו השאלה הראשונה שכדאי להפנות אליו.",
+        "שאלות להכין מראש: כמה קוהורטות ובכמה חברות, איך מוגדרת ונמדדת \"התנתקות\", ומול מה הושוו התוצאות."
+      ],
+      "insights_en": [
+        "There are no findings here, only a promise of findings: treat it as a calendar decision, not a source you can cite internally.",
+        "The abstract itself states that structure, cadence and facilitation shape outcomes as much as the technology. A simulation vendor conceding that is effectively selling a programme rather than a product, which is the first question to put to them.",
+        "Questions to prepare: how many cohorts and how many companies, how disengagement is defined and measured, and against what the outcomes were compared."
+      ],
+      "matters_he": "אם אבי שוקל סימולציות AI לפיתוח מנהלים בבנק, זו הזדמנות זולה לשיחה עם ספק, בתנאי שהוא נכנס עם רשימת שאלות ולא מצפה לראיות. ההחלטה כאן היא פשוטה: להירשם עם שאלות מוכנות או לדלג.",
+      "matters_en": "If Avi is weighing AI simulations for leadership development in the bank, this is a cheap vendor conversation, provided he arrives with a question list rather than an expectation of evidence. The decision is simple: register with prepared questions, or skip.",
+      "lane": "ai_ld",
+      "url": "https://www.learningguild.com/online-events-archive/leadership-development-in-the-ai-era-what-real-data-reveals",
+      "source": "The Learning Guild",
+      "published": "2026-09-23T14:54:40+00:00",
+      "revised": true
+    },
+    {
+      "headline_he": "Gartner: לעצב מחדש את העבודה בזמן אמת",
+      "headline_en": "Gartner: Redesign Work in Real Time",
+      "summary_he": "פריט חלקי. כל מה שזמין בטקסט הוא משפט אחד מסיקור של דוח Gartner: HR צריך לתעדף ניידות טאלנט, כדי שמיומנויות ויכולות ייפרסו במהירות היכן שהן נדרשות. אין בטקסט הזמין נתונים, הקשר או נימוק שתומכים בהמלצה.",
+      "summary_en": "A fragment. All that is available is a single sentence from coverage of a Gartner report: HR should prioritize talent mobility so that skills and capabilities can be rapidly deployed where they are needed. The accessible text contains no data, context or reasoning behind the recommendation.",
+      "insights_he": [
+        "ההמלצה מנוסחת כפריסה של יכולות ולא כפיתוח שלהן: הפעולה שמוצעת ל-HR היא להזיז אנשים למקום הנכון, לא להכשיר אותם.",
+        "פריסה מהירה מחייבת מלאי עדכני של מי יודע מה: בלי שכבת נתוני מיומנויות המשפט הזה אינו ניתן ליישום.",
+        "זהו פריט חלקי ולא מקור: לפני שמצטטים את Gartner מול הנהלה צריך את הדוח המלא ואת הבסיס להמלצה."
+      ],
+      "insights_en": [
+        "The recommendation is framed as deploying capability, not building it: the action proposed for HR is moving people to the right place, not training them.",
+        "Rapid deployment presupposes a current inventory of who knows what: without a skills data layer the sentence is not actionable.",
+        "This is a fragment, not a source: before quoting Gartner upward you need the full report and the basis for the recommendation."
+      ],
+      "matters_he": "אם ניידות טאלנט הופכת לשפה של HR בבנק, שכבת נתוני המיומנויות שאבי בונה הופכת לתלות של HR ולא לפרויקט של L&D, וזו שאלת מיקום שכדאי להכריע מוקדם. עד שיהיה טקסט מלא, אין כאן מה לצטט.",
+      "matters_en": "If talent mobility becomes HR's language in the bank, the skills data layer Avi is building turns into an HR dependency rather than an L&D project, and that positioning question is worth settling early. Until the full text is available, there is nothing here to quote.",
+      "lane": "strategy",
+      "url": "https://www.hrdive.com/news/in-the-ai-era-organizations-must-redesign-work-in-real-time-gartner/831205/",
+      "source": "HR Dive",
+      "published": "2026-09-24T14:01:00+00:00",
+      "revised": true
+    },
+    {
+      "headline_he": "מודל LEARNT: להשתמש ב-AI בלי לוותר על חשיבה עצמאית",
+      "headline_en": "The LEARNT Model: Using AI Without Outsourcing Thinking",
+      "summary_he": "הטקסט הנגיש הוא תקציר בן שלוש שורות: AI גנרטיבי יכול לתת משוב מיידי, להסביר מושגים קשים ולעזור לארגן פרויקטי מחקר מורכבים, ובאותה נשימה להחליש למידה כשמשתמשים בו כמחולל תשובות. המאמר מציג מודל בשם LEARNT כמסגרת מעשית למורים ולמעצבי למידה דיגיטלית, אבל שלבי המודל אינם מופיעים בטקסט הזמין. ההקשר הוא סטודנטים ושיפור ציונים, לא למידה ארגונית.",
+      "summary_en": "The accessible text is a three-sentence overview: generative AI can give immediate feedback, explain difficult concepts and help organize complex research projects, while also weakening learning when used as an answer generator. The article offers a model called LEARNT as a practical frame for educators and eLearning designers, but the model's steps do not appear in the available text. The context is students and grades, not workplace learning.",
+      "insights_he": [
+        "הנכס היחיד כאן הוא ראשי התיבות LEARNT, והם לא מפוענחים בטקסט הנגיש: כרגע יש תווית בלי תוכן ואין מה ליישם.",
+        "שלושת השימושים שכן פורטו (משוב מיידי, הסבר מושגים, ארגון פרויקט מורכב) הם בדיוק אלה שאפשר להתיר במפורש במטלה, בעוד ייצור התשובה עצמה הוא הקו שנחצה.",
+        "מדד התוצאה במאמר הוא ציונים, ואין לו מקבילה ארגונית: כל העברה לסביבת הבנק מחייבת להחליף את המדד בראיית ביצוע בתפקיד."
+      ],
+      "insights_en": [
+        "The only asset here is the LEARNT acronym, and it is not spelled out in the accessible text: right now it is a label with no content and nothing to apply.",
+        "The three uses that are named (immediate feedback, explaining concepts, organizing a complex project) are exactly what an assignment can explicitly permit, while generating the answer itself is the line that gets crossed.",
+        "The article's outcome measure is grades, which has no corporate equivalent: transferring it to the bank means swapping that for on-the-job performance evidence."
+      ],
+      "matters_he": "אבי מלמד כללי עיצוב, וכלל עיצוב צריך שלבים ולא ראשי תיבות. שווה לחזור לפריט רק אם שלבי LEARNT יתפרסמו במלואם; עד אז אין כאן מה להכניס לתוכנית ההכשרה שהוא מעביר.",
+      "matters_en": "Avi teaches design rules, and a design rule needs steps, not an acronym. This is worth revisiting only if the LEARNT steps are published in full; until then there is nothing to add to the training he delivers.",
+      "lane": "id_craft",
+      "url": "https://elearningindustry.com/how-ai-can-help-students-improve-grades-without-replacing-independent-thinking",
+      "source": "eLearning Industry",
+      "published": "2026-09-24T17:00:45+00:00",
+      "revised": true
+    },
+    {
+      "headline_he": "שטף פיננסי כמיומנות ליבה של אנשי L&D",
+      "headline_en": "Financial Fluency as a Core L&D Capability",
+      "summary_he": "Jane Deeks טוענת ב-Training Journal שככל שהדרכה נשענת על פרילנסרים, ספקי טכנולוגיה וספקי תוכן חיצוניים, ציות כספי הופך לחלק מהתפקיד של L&D. הנקודה שלה: כש-L&D חושב \"ציות\" הוא חושב על עיצוב למידה, הגנה על משתתפים ותקנים מקצועיים, בעוד שבשותפויות חיצוניות הציות מתרחב לממשל פיננסי, מהתקשרות וחשבוניות ועד הגנת מידע, מניעת הונאות והתנהלות אתית. שטף פיננסי, לדבריה, אינו הפיכה למומחה כספים אלא ידע מספיק כדי לשאול את השאלות הנכונות, לזהות סיכון מוקדם ולעבוד מול פיננסים, משפטית ורכש. הסיכון הראשון שהיא מונה הוא עמימות בחוזה ובתנאי התשלום.",
+      "summary_en": "Jane Deeks argues in Training Journal that as learning delivery leans on freelancers, technology vendors and contracted content providers, financial compliance becomes part of the L&D job. Her point: when L&D thinks compliance it thinks learning design, safeguarding and professional standards, whereas in external partnerships compliance extends into financial governance, from contracting and invoicing through to data protection, anti-fraud measures and ethical conduct. Financial fluency is not about becoming a finance expert but knowing enough to ask the right questions, spot risk early and work with finance, legal and procurement. The first risk she names is contract and payment ambiguity.",
+      "insights_he": [
+        "היא מזיזה את גבול הציות: לא עיצוב למידה ותקנים מקצועיים אלא התקשרות, חשבוניות, הגנת מידע, מניעת הונאות והתנהלות אתית. זו רשימה שרוב מנהלי ההדרכה לא רואים כשלהם.",
+        "הסיכון הנפוץ הראשון הוא עמימות: כשאחריות, תוצרים, לוחות זמנים ותנאי תשלום לא מתועדים במפורש, המחלוקת פוגעת גם בתקציב וגם בקשר עם השותף.",
+        "הגנת מידע יושבת אצלה בתוך מעטפת הציות הפיננסי ולא לצידה: בבנק זה אומר שבדיקת ספק ובדיקת הנתונים הן ביקורת אחת מול רכש ומשפטית, לא שני תהליכים נפרדים."
+      ],
+      "insights_en": [
+        "She moves the compliance perimeter: not learning design and professional standards but contracting, invoicing, data protection, anti-fraud and ethical conduct, a list most training managers do not treat as theirs.",
+        "The first common risk is ambiguity: when responsibilities, deliverables, timings and payment terms are not documented, the resulting dispute damages both the budget and the relationship.",
+        "She places data protection inside the financial compliance envelope rather than beside it: in a bank that means vendor review and data review are one gate with procurement and legal, not two separate processes."
+      ],
+      "matters_he": "אבי מנהל צוות קטן שנשען על ספקים חיצוניים, כולל ספקי כלים וספקי תוכן בסביבה רגולטורית. ההחלטה המעשית היא איפה בדיוק עובר קו התוצרים בין מה שהספק מספק לבין מה שהצוות מייצר בעצמו עם AI, כי בדיוק שם נוצרת העמימות שעולה כסף ואמון.",
+      "matters_en": "Avi runs a small team leaning on external suppliers, including tool and content vendors, inside a regulated environment. The practical decision is exactly where the deliverable line sits between what the vendor supplies and what his team now produces itself with AI, because that is where the costly ambiguity forms.",
+      "lane": "strategy",
+      "url": "https://www.trainingjournal.com/2026/content-type/features/stronger-partnerships-start-with-financial-fluency/?utm_source=rss&utm_medium=rss&utm_campaign=stronger-partnerships-start-with-financial-fluency",
+      "source": "Training Journal",
+      "published": "2026-09-25T04:53:00+00:00",
+      "revised": true
+    },
+    {
+      "headline_he": "השיטה הסוקרטית בלמידה ארגונית: ללמד בשאלות",
+      "headline_en": "The Socratic Method at Work: Teaching by Questions",
+      "summary_he": "מאמר של Christopher Pappas ב-eLearning Industry. בטקסט הנגיש יש כותרת והגדרה בלבד: השיטה הסוקרטית היא הוראה שנשענת על שאלות מכוונות במקום מתן תשובות ישירות, וכך מעודדת חשיבה ביקורתית. הדוגמאות, היתרונות, המגבלות והשימושים של צוותי L&D מובטחים בתוכן העניינים אך אינם מופיעים בטקסט שנמשך.",
+      "summary_en": "A Christopher Pappas piece on eLearning Industry. The accessible text contains only a title and a definition: the Socratic Method is teaching that relies on thoughtful questioning rather than giving direct answers, and so encourages critical thinking. The examples, benefits, limitations and L&D applications promised in the table of contents do not appear in the retrieved text.",
+      "insights_he": [
+        "מה שחסר הוא בדיוק החלק בעל הערך: המגבלות והתנאים שבהם הגישה לא עובדת. בלעדיהם זה ערך מילוני.",
+        "ההגדרה עצמה היא מפרט טוב לסוכן דיאלוג מבוסס AI: הדרישה שהמודל ישאל במקום לענות מתנגשת חזיתית עם ברירת המחדל שלו, וזה מה שצריך להכריח בפרומפט ובבדיקה.",
+        "הפורמט מסגיר את הקהל: מאמר הגדרתי עם תוכן עניינים וכפתורי סיכום ל-AI. השימוש הסביר הוא קישור למנחים שמתחילים, לא קריאה שלך."
+      ],
+      "insights_en": [
+        "What is missing is precisely the valuable part: the limitations and the conditions under which the approach fails. Without them this is a dictionary entry.",
+        "The definition itself is a usable spec for an AI dialogue agent: requiring the model to ask rather than answer runs directly against its default behaviour, and that is what has to be forced in the prompt and checked in testing.",
+        "The format gives away the audience: a definitional article with a table of contents and AI-summary buttons. The sensible use is a link for facilitators starting out, not a read for you."
+      ],
+      "matters_he": "לאבי אין כאן חומר חדש. הזווית היחידה בעלת ערך היא הפעלת דפוס השאילה בסוכן AI שהצוות שלו בונה, כלומר מתי המודל מפסיק לשאול ומתחיל לספק את התשובה, וזו נקודת כשל שאפשר וכדאי לבדוק בתסריט.",
+      "matters_en": "There is nothing new here for Avi. The only angle with value is operating the questioning pattern inside an AI agent his team builds: the point where the model stops asking and starts supplying the answer is a failure mode worth testing in the script.",
+      "lane": "id_craft",
+      "url": "https://elearningindustry.com/socratic-method",
+      "source": "eLearning Industry",
+      "published": "2026-09-24T19:00:54+00:00",
+      "revised": true
+    },
+    {
+      "headline_he": "היכל התהילה 2026: מה בדיוק איבדנו כשנעלם Authorware",
+      "headline_en": "Hall of Fame 2026: What We Lost When Authorware Disappeared",
+      "summary_he": "Craig Weiss פותח היכל תהילה ל-2026. JIU, לטענתו, הייתה האוניברסיטה המקוונת הראשונה עם אקרדיטציה מלאה כבר ב-1993, לפני University of Phoenix. Blackboard נכנסת לא בגלל יכולות אלא בגלל עיצוב ו-UX טובים יותר וקהל גדול יותר, והוא טוען שעד שנות ה-2010 היא עדיין נשאה אופי סינכרוני מובהק. Authorware נכנס ככלי הפיתוח שאי אפשר לדבר בלעדיו על סימולציות ותרחישים אסינכרוניים, עם עקומת למידה תלולה במיוחד. הטענה החדה שלו: אחרי ש-Adobe סגרה את Flash, שום כלי בשוק לא מתקרב למה ש-Authorware אפשר, וההימור שלו על HTML5 כיורש היה טעות שהוא מודה בה.",
+      "summary_en": "Craig Weiss opens a 2026 hall of fame. JIU, he claims, was the first fully accredited online university back in 1993, ahead of the University of Phoenix. Blackboard is inducted not for capability but for better design and UX and a larger audience, and he argues its synchronous-first character persisted into the 2010s. Authorware goes in as the tool you cannot discuss asynchronous simulation and scenario work without, with a famously steep learning curve. His sharpest claim: after Adobe killed Flash, nothing on the market matches what Authorware could do, and his own bet that HTML5 would take over was, he admits, a mistake.",
+      "insights_he": [
+        "כלי היצירה של היום קנו מהירות הפקה במחיר עומק סימולציה: שווה לשאול מה בדיוק ויתרנו עליו כשעברנו לברירת המחדל הנוכחית.",
+        "תקן לא משמר יכולת, אנשים כן: HTML5 לא ירש את Authorware, ויחד עם עקומת הלמידה התלולה ועם היעלמות תפקיד מי שבנה סטוריבורדים נעלמה גם הפרקטיקה שידעה להפעיל את הכלי.",
+        "Blackboard ניצחה על עיצוב וקהל ולא על יכולת, ולפי Weiss ההנחה הסינכרונית שהיא הטמיעה שרדה עד שנות ה-2010: מובילות קטגוריה מקבעת הנחות עיצוב שמאריכות ימים אחרי הטכנולוגיה עצמה."
+      ],
+      "insights_en": [
+        "Today's authoring tools bought production speed at the cost of simulation depth: worth asking exactly what you gave up when you settled on your current default toolchain.",
+        "A standard does not preserve a capability, people do: HTML5 never inherited Authorware, and between the steep learning curve and the disappearance of the dedicated storyboard role, the practice that could work the tool disappeared with it.",
+        "Blackboard won on design and audience rather than capability, and Weiss argues the synchronous-first assumption it baked in survived into the 2010s: category leaders fix design assumptions that outlive the technology."
+      ],
+      "matters_he": "אבי בונה דרכי ייצור AI-native, וההחלטה הקונקרטית היא לאן מכוונים את הצינור החדש: לשכפל מהר יותר את מה שכבר מייצרים, או לשחזר את העומק שהכלים ויתרו עליו, כלומר תרחישים והסתעפויות שעד היום היו יקרים מדי. זו גם שאלה על אנשים, לא רק על כלים: מי בצוות יודע לעצב תרחיש כזה בכלל.",
+      "matters_en": "Avi is building AI-native production methods, and the concrete decision is where to point the new pipeline: at reproducing existing output faster, or at rebuilding the depth the tools dropped, namely branching scenarios that were previously too expensive. It is also a people question, not just a tooling one: who on the team can still design that kind of scenario.",
+      "lane": "learning_tech",
+      "url": "https://elearninfo247.com/2026/09/23/hall-of-fame-2026-learning-systems-learning-tech-and-e-learning/",
+      "source": "Craig Weiss",
+      "published": "2026-09-23T19:34:19+00:00",
+      "revised": true
+    }
+  ],
+  "warnings": [
+    "feed 'Will Thalheimer' parsed 0 items (format change?)",
+    "feed failed for 'HR Executive': HTTPError: HTTP Error 404: Not Found",
+    "feed failed for 'HR Executive Tech': HTTPError: HTTP Error 404: Not Found",
+    "web-search top-up added no new candidates",
+    "8 article(s) still below the editorial bar after 2 rounds; shipped as-is",
+    "editorial pass rate 2/10 in the final round: this week's source material may be thin"
+  ]
+}
