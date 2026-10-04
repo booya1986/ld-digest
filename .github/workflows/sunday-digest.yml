@@ -37,7 +37,10 @@ jobs:
   send:
     runs-on: ubuntu-latest
     steps:
+      # Branch tip, not the triggering SHA, so a queued run sees the first run's .email_sent.
       - uses: actions/checkout@v4
+        with:
+          ref: main
 
       - uses: actions/setup-python@v5
         with:
