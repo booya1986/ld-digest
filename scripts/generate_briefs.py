@@ -20,6 +20,7 @@ where each was learned the hard way:
 """
 import json
 import os
+import re
 import sys
 
 MODEL = "claude-opus-5"
@@ -55,9 +56,13 @@ never promote a weak article just to fill a lane. Substance wins over balance.
 - Prefer articles with a concrete idea, method, finding, or data over vendor \
 marketing, listicles, and course-catalog roundups.
 - Never pick two articles covering the same story. Choose the better source.
-- Ground every claim in the title and summary you are given. Never invent \
-findings, numbers, or claims the source does not support. If the supplied \
-summary is thin, write less rather than filling the gap with assumption.
+- Every candidate comes with the full article text. Ground every claim in it. \
+Never invent findings, numbers, or claims the source does not support.
+- If a text is plainly not the whole article (it stops mid-sentence or \
+mid-section, or promises parts it never reaches), do not pick it. Pick another \
+article instead.
+- Never write about the source text itself: no notes that it was cut, \
+incomplete, or retrieved.
 - Do not use em-dashes anywhere. Use colons, commas, or parentheses instead.
 - Hebrew must read naturally, not as translated English. Keep product, company, \
 and methodology names in Latin script inside the Hebrew text.
@@ -104,22 +109,48 @@ BRIEFS_SCHEMA = {
 }
 
 
-FULL_TEXT_CHARS = 4000   # per article, inside the candidate list
+POOL_CHARS = 600_000      # total article text sent in the one selection call
+
+# A brief that talks about its own source being cut is a brief about part of
+# an article. Caught here and in review_briefs.py, since the model can slip.
+_TRUNCATION_NOTE = re.compile(
+    r"(נקטע|קטוע|נחתך|הטקסט שנאסף|הטקסט שהתקבל|cuts? off|cut short|truncat"
+    r"|retrieved text|text (provided|available) (ends|stops)|incomplete (text|source))",
+    re.I,
+)
+
+
+def mentions_truncation(article):
+    text = " ".join(
+        str(article.get(k) or "") for k in
+        ("summary_he", "summary_en", "matters_he", "matters_en")
+    ) + " ".join(article.get("insights_he") or []) + " ".join(article.get("insights_en") or [])
+    return bool(_TRUNCATION_NOTE.search(text))
+
+
+def complete_pool(items, limit=CANDIDATES, budget=POOL_CHARS):
+    """Only articles with their whole text can be picked. Items arrive ranked;
+    one that would overflow the budget is skipped whole, never shortened."""
+    pool, used = [], 0
+    for it in items:
+        full = (it.get("full_text") or "").strip()
+        if not full or used + len(full) > budget:
+            continue
+        pool.append(it)
+        used += len(full)
+        if len(pool) == limit:
+            break
+    return pool
 
 
 def _candidate_list(items):
-    """Give the model the article body where extract_content.py got one, and
-    the feed blurb otherwise. Key insights drawn from a two-line RSS summary
-    are thin; drawn from the real text they are specific."""
+    """Every candidate goes in with its whole article text. Key insights drawn
+    from a feed blurb or half an article misrepresent the source."""
     lines = []
     for i, it in enumerate(items):
         points = it.get("points") or 0
         traction = f" [{points} HN points]" if points else ""
-        full = (it.get("full_text") or "").strip()
-        if full:
-            body = f"   full text:\n{full[:FULL_TEXT_CHARS]}"
-        else:
-            body = f"   summary only (full text unavailable):\n   {(it.get('summary') or '')[:400]}"
+        body = f"   full text:\n{it['full_text'].strip()}"
         lines.append(
             f"{i}. {it['title']}\n"
             f"   source: {it.get('source', '')}{traction} | lane: {it.get('lane', '')}"
@@ -178,7 +209,20 @@ def generate(infile, outfile):
         json.dump(data, open(outfile, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
         return
 
-    pool = items[:CANDIDATES]
+    pool = complete_pool(items)
+    left_out = len(items) - len(pool)
+    if left_out:
+        print(f"{left_out} candidate(s) left out: no complete article text",
+              file=sys.stderr)
+    if not pool:
+        # Nothing whole to write from. An empty digest fails the report gate
+        # loudly, which beats a digest built from feed blurbs.
+        warnings.append("no candidate had its complete article text; no briefs written")
+        data["articles"] = []
+        data["warnings"] = warnings
+        json.dump(data, open(outfile, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+        return
+
     api_key = os.environ.get("ANTHROPIC_API_KEY", "")
 
     if not api_key:
@@ -219,6 +263,9 @@ def generate(infile, outfile):
                 if idx in seen:
                     continue          # same article picked twice
                 seen.add(idx)
+                if mentions_truncation(entry):
+                    warnings.append(f"dropped a brief that described its source as cut: {entry.get('headline_en', '')[:60]}")
+                    continue
                 src = pool[idx]
                 articles.append({
                     "headline_he": entry["headline_he"],

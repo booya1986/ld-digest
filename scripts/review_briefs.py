@@ -27,10 +27,11 @@ import json
 import os
 import sys
 
+from generate_briefs import mentions_truncation
+
 MODEL = "claude-opus-5"
 MAX_TOKENS = 32000
 MAX_ROUNDS = 2
-SOURCE_CHARS = 3500
 # Below this share passing, the digest is weak enough to be worth shouting about
 # on the run summary even after the rewrite rounds.
 ACCEPTABLE_PASS_RATE = 0.7
@@ -157,7 +158,7 @@ def _source_for(article, by_url):
     item = by_url.get(article.get("url"))
     if not item:
         return "(source text unavailable)"
-    return (item.get("full_text") or item.get("summary") or "(source text unavailable)")[:SOURCE_CHARS]
+    return item.get("full_text") or "(source text unavailable)"
 
 
 def _render(article, idx, by_url):
@@ -291,7 +292,11 @@ def run(infile, outfile):
         print(f"editorial review failed: {type(e).__name__}: {e}", file=sys.stderr)
         warnings.append(f"editorial review failed ({type(e).__name__}); briefs unchanged")
 
-    data["articles"] = articles
+    kept = [a for a in articles if not mentions_truncation(a)]
+    for a in articles:
+        if a not in kept:
+            warnings.append(f"dropped a brief that described its source as cut: {a.get('headline_en', '')[:60]}")
+    data["articles"] = kept
     data["warnings"] = warnings
     json.dump(data, open(outfile, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
 

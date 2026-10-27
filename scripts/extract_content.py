@@ -14,11 +14,11 @@ Two paths, in order:
   2. No key: a plain fetch plus a conservative HTML-to-text pass. Free, works
      on most sites, gives up quietly on the ones that block it.
 
-Non-fatal throughout: any article that cannot be extracted keeps its feed
-summary and the digest is built as before. Only the top candidates are
-extracted, since the brief writer picks from the full pool but only the
-strongest are realistic picks and every fetch costs time (and a Firecrawl
-credit).
+Only complete articles are kept. An article whose body could not be fetched,
+came back as a paywall teaser, or is longer than MAX_CHARS gets no full_text,
+and generate_briefs.py will not pick it: a brief written from part of an
+article reads as if it covered the whole thing. A shortened text is never
+stored. Non-fatal per article: a failed fetch only takes that article out.
 """
 import json
 import os
@@ -26,8 +26,9 @@ import re
 import sys
 import urllib.request
 
-EXTRACT_LIMIT = 15      # candidates to extract, highest-scoring first
-MAX_CHARS = 6000        # per article, enough for a grounded brief
+EXTRACT_LIMIT = 30      # candidates to extract; only extracted ones can be picked
+MAX_CHARS = 40000       # longer than this is dropped, never cut
+MIN_CHARS = 1200        # shorter is a teaser, a block page or a stub
 TIMEOUT = 30
 
 _UA = {
@@ -46,6 +47,26 @@ _DROP_BLOCKS = re.compile(
 _MAIN = re.compile(r"<(article|main)\b[^>]*>(.*?)</\1>", re.S | re.I)
 _BLOCK_END = re.compile(r"</(p|div|li|h[1-6]|br|tr)\s*>", re.I)
 _TAG = re.compile(r"<[^>]+>")
+
+# Phrases a publisher puts where the rest of the article would be.
+_TEASER = re.compile(
+    r"(continue reading|read the full (article|story|post)|subscribe to (continue|read|unlock)"
+    r"|sign in to (continue|read)|log in to (continue|read)|members[- ]only"
+    r"|this (content|article) is for (paid )?(subscribers|members)|upgrade to (read|continue)"
+    r"|keep reading with a)",
+    re.I,
+)
+
+
+def incomplete_reason(text):
+    """Why this text is not a whole article, or "" if it looks whole."""
+    if len(text) < MIN_CHARS:
+        return f"only {len(text)} chars"
+    if len(text) > MAX_CHARS:
+        return f"{len(text)} chars, over the {MAX_CHARS} limit"
+    if _TEASER.search(text[-800:]):
+        return "ends in a paywall or 'continue reading' prompt"
+    return ""
 
 
 def _clean_html(html):
@@ -126,11 +147,11 @@ def extract(infile, outfile):
         # Never let a coverage cap look like full coverage on the run summary.
         print(
             f"extracting top {EXTRACT_LIMIT} of {len(items)} candidates; "
-            f"the rest keep their feed summary",
+            f"the rest cannot be picked",
             file=sys.stderr,
         )
 
-    ok, via = 0, {}
+    ok, via, rejected = 0, {}, 0
     for i, item in enumerate(targets, 1):
         url = item.get("url", "")
         print(f"  [{i}/{len(targets)}] {url[:80]}", file=sys.stderr)
@@ -139,18 +160,22 @@ def extract(infile, outfile):
         except Exception as e:
             print(f"    extract failed: {type(e).__name__}: {e}", file=sys.stderr)
             continue
-        if len(text) < 400:
-            continue                      # paywall, JS-only page, or a block
-        item["full_text"] = text[:MAX_CHARS]
+        reason = incomplete_reason(text)
+        if reason:
+            print(f"    not a complete article ({reason}); dropped", file=sys.stderr)
+            rejected += 1
+            continue
+        item["full_text"] = text
         item["extracted_via"] = how
         ok += 1
         via[how] = via.get(how, 0) + 1
 
-    print(f"extracted {ok}/{len(targets)} articles {via}", file=sys.stderr)
+    print(f"extracted {ok}/{len(targets)} complete articles {via}, "
+          f"{rejected} incomplete", file=sys.stderr)
     if ok < len(targets) // 2:
         warnings.append(
-            f"full text extracted for only {ok}/{len(targets)} articles; "
-            f"briefs for the rest rely on feed summaries"
+            f"complete text for only {ok}/{len(targets)} articles; "
+            f"the rest were left out of the digest"
         )
 
     data["items"] = items
