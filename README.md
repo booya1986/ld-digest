@@ -138,7 +138,8 @@ learned by breaking:
 
 | Week | Date | Report | Articles | Emailed |
 |---|---|---|---|---|
-| `2026-W46` | 2026-11-13 | [open](https://booya1986.github.io/ld-digest/reports/2026-W46/) | 10 |  |
+| `2026-W47` | 2026-11-20 | [open](https://booya1986.github.io/ld-digest/reports/2026-W47/) | 10 |  |
+| `2026-W46` | 2026-11-13 | [open](https://booya1986.github.io/ld-digest/reports/2026-W46/) | 10 | ✅ |
 | `2026-W45` | 2026-11-06 | [open](https://booya1986.github.io/ld-digest/reports/2026-W45/) | 10 | ✅ |
 | `2026-W44` | 2026-10-30 | [open](https://booya1986.github.io/ld-digest/reports/2026-W44/) | 10 | ✅ |
 | `2026-W43` | 2026-10-23 | [open](https://booya1986.github.io/ld-digest/reports/2026-W43/) | 10 | ✅ |
@@ -153,5 +154,5 @@ learned by breaking:
 | `2026-W34` | 2026-08-21 | [open](https://booya1986.github.io/ld-digest/reports/2026-W34/) | 10 | ✅ |
 | `2026-W33` | 2026-08-16 | [open](https://booya1986.github.io/ld-digest/reports/2026-W33/) | 10 | ✅ |
 
-_14 reports._
+_15 reports._
 <!-- REPORTS:END -->

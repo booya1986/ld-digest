@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1b1b1b">
+<title>עיכול L&amp;D שבועי 2026-W47</title>
+<meta name="description" content="10 הכתבות המובילות בלמידה, פיתוח והדרכה. פותח ב: איך לבדוק אם ה-AI באמת מנתח נכון משובי הדרכה: בונים דאטה סינתטי עם תשובות ידועות">
+<link rel="canonical" href="https://booya1986.github.io/ld-digest/reports/2026-W47/">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="עיכול L&amp;D שבועי">
+<meta property="og:locale" content="he_IL">
+<meta property="og:url" content="https://booya1986.github.io/ld-digest/reports/2026-W47/">
+<meta property="og:title" content="עיכול L&amp;D שבועי — 2026-W47">
+<meta property="og:description" content="10 הכתבות המובילות בלמידה, פיתוח והדרכה. פותח ב: איך לבדוק אם ה-AI באמת מנתח נכון משובי הדרכה: בונים דאטה סינתטי עם תשובות ידועות">
+<meta property="og:image" content="https://booya1986.github.io/ld-digest/reports/2026-W47/og.png">
+<meta property="og:image:secure_url" content="https://booya1986.github.io/ld-digest/reports/2026-W47/og.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="עיכול L&amp;D שבועי — 2026-W47">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="עיכול L&amp;D שבועי — 2026-W47">
+<meta name="twitter:description" content="10 הכתבות המובילות בלמידה, פיתוח והדרכה. פותח ב: איך לבדוק אם ה-AI באמת מנתח נכון משובי הדרכה: בונים דאטה סינתטי עם תשובות ידועות">
+<meta name="twitter:image" content="https://booya1986.github.io/ld-digest/reports/2026-W47/og.png">
+
+<link rel="icon" href="data:image/svg+xml,&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 100 100&quot;&gt;&lt;text y=&quot;.9em&quot; font-size=&quot;90&quot;&gt;&#128218;&lt;/text&gt;&lt;/svg&gt;">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Hebrew:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #1b1b1b;
+    --bg-elevated: #232323;
+    --fg: #c5c1b9;
+    --fg-strong: #dcdad5;
+    --fg-muted: #a09d96;
+    --fg-subtle: #96928c;
+    --accent: #22c55e;
+    --accent-glow: rgba(34,197,94,0.6);
+    --accent-soft: rgba(34,197,94,0.12);
+    --accent-softer: rgba(34,197,94,0.04);
+    --accent-border: rgba(34,197,94,0.12);
+    --accent-border-hover: rgba(34,197,94,0.3);
+    --shadow-glow-md: 0 0 15px rgba(34,197,94,0.3), 0 0 40px rgba(34,197,94,0.1);
+    --text-glow: 0 0 8px rgba(34,197,94,0.6), 0 0 20px rgba(34,197,94,0.3);
+    --font-sans: 'Noto Sans Hebrew', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 16px;
+    --radius-pill: 999px;
+    --transition: 0.3s cubic-bezier(0.4,0,0.2,1);
+    --transition-fast: 0.15s cubic-bezier(0.4,0,0.2,1);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--font-sans);
+    font-size: clamp(1rem, 2vw, 1.0625rem);
+    line-height: 1.7;
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+    overflow-x: hidden;
+  }
+
+  /* ── GRID BACKGROUND ── */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background-image:
+      linear-gradient(rgba(34,197,94,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(34,197,94,0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+    mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black 40%, transparent 100%);
+    -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black 40%, transparent 100%);
+  }
+
+  .wrap {
+    position: relative;
+    z-index: 1;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 24px 16px 80px;
+  }
+
+  /* ── TOP BAR ── */
+  .top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    gap: 10px;
+  }
+  .lang-btn, .share-btn {
+    background: var(--accent-softer);
+    border: 1px solid var(--accent-border);
+    border-radius: var(--radius-pill);
+    color: var(--accent);
+    font-family: var(--font-sans);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding: 7px 16px;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    min-height: 44px;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .lang-btn:hover, .share-btn:hover {
+    background: var(--accent-soft);
+    border-color: var(--accent);
+    box-shadow: 0 0 10px var(--accent-glow);
+  }
+  .share-btn svg { width: 16px; height: 16px; stroke: var(--accent); }
+  .share-copied {
+    font-size: 0.72rem;
+    color: var(--accent);
+    margin-top: 4px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .share-copied.show { opacity: 1; }
+
+  /* ── HEADER ── */
+  .site-header { margin-bottom: 28px; }
+  .header-eyebrow {
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--accent);
+    text-shadow: var(--text-glow);
+    margin-bottom: 6px;
+  }
+  .header-title {
+    font-size: clamp(1.6rem, 4vw, 2.2rem);
+    font-weight: 700;
+    color: var(--fg-strong);
+    line-height: 1.3;
+    text-shadow: 0 0 30px rgba(34,197,94,0.1);
+    margin-bottom: 4px;
+  }
+  .header-sub {
+    font-size: 0.875rem;
+    color: var(--fg-muted);
+    font-weight: 300;
+  }
+
+  /* ── CARDS ── */
+  .card {
+    position: relative;
+    background: var(--accent-softer);
+    border: 1px solid var(--accent-border);
+    border-radius: var(--radius-lg);
+    margin-bottom: 16px;
+    transition: border-color var(--transition), background var(--transition), box-shadow var(--transition);
+  }
+  .card:hover {
+    border-color: var(--accent-border-hover);
+    background: rgba(34,197,94,0.07);
+    box-shadow: var(--shadow-glow-md), 0 12px 32px rgba(0,0,0,0.25);
+  }
+
+  .card__rank {
+    position: absolute;
+    top: -1px;
+    right: 20px;
+    background: var(--accent);
+    color: #0a1a0f;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding: 3px 10px;
+    border-radius: 0 0 var(--radius-sm) var(--radius-sm);
+  }
+  [dir="ltr"] .card__rank { right: auto; left: 20px; }
+
+  .card__body { padding: 28px 20px 20px; }
+
+  .card__header {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 10px;
+  }
+  .card__title-block { flex: 1; min-width: 0; }
+  .card__eyebrow {
+    font-size: 0.78rem;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--accent);
+    text-shadow: var(--text-glow);
+    margin-bottom: 4px;
+  }
+  .card__title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.35;
+  }
+  .card__title a {
+    color: var(--fg-strong);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+    word-break: break-word;
+  }
+  .card__title a:hover { color: var(--accent); }
+
+  .card__meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 14px;
+    font-size: 0.78rem;
+    color: var(--fg-subtle);
+    margin-bottom: 10px;
+  }
+  .meta-icon { opacity: 0.5; }
+
+  .card__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 16px;
+  }
+  .tag {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: var(--radius-pill);
+    background: var(--accent-soft);
+    border: 1px solid var(--accent-border);
+    color: var(--accent);
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    white-space: nowrap;
+    transition: all var(--transition-fast);
+  }
+  .tag:hover {
+    background: rgba(34,197,94,0.16);
+    border-color: var(--accent);
+    box-shadow: 0 0 10px var(--accent-glow);
+  }
+
+  /* ── BRIEF SECTIONS ── */
+  .card__content { display: flex; flex-direction: column; gap: 0; }
+
+  .brief-section {
+    padding: 10px 0;
+    border-top: 1px solid var(--accent-border);
+  }
+  .brief-section:first-child { border-top: none; padding-top: 0; }
+
+  .brief-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--accent);
+    text-shadow: var(--text-glow);
+    margin-bottom: 4px;
+  }
+  .brief-text {
+    font-size: 0.9375rem;
+    color: var(--fg-muted);
+    font-weight: 300;
+    line-height: 1.7;
+  }
+
+  .brief-list {
+    font-size: 0.9375rem;
+    color: var(--fg-muted);
+    font-weight: 300;
+    line-height: 1.65;
+    padding-right: 18px;
+    margin-top: 2px;
+  }
+  [dir="ltr"] .brief-list { padding-right: 0; padding-left: 18px; }
+  .brief-list li { margin-bottom: 5px; }
+  .brief-list li::marker { color: var(--accent); }
+
+  /* "Why it matters" gets a highlight treatment */
+  .brief-section--matters {
+    background: var(--accent-soft);
+    border: 1px solid var(--accent-border);
+    border-radius: var(--radius-md);
+    padding: 10px 14px;
+    margin-top: 8px;
+  }
+  .brief-section--matters .brief-label { margin-bottom: 3px; }
+  .brief-section--matters .brief-text {
+    color: var(--fg-strong);
+    font-weight: 400;
+  }
+
+  .desc { font-size: 0.9375rem; color: var(--fg-muted); font-weight: 300; line-height: 1.7; }
+
+  /* ── CARD CTA ── */
+  .card__cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 14px;
+    padding: 9px 18px;
+    border-radius: var(--radius-pill);
+    background: var(--accent-soft);
+    border: 1px solid var(--accent-border);
+    color: var(--accent);
+    font-size: 0.82rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all var(--transition-fast);
+    min-height: 42px;
+  }
+  .card__cta:hover {
+    background: var(--accent);
+    color: #0a1a0f;
+    border-color: var(--accent);
+    box-shadow: 0 0 14px var(--accent-glow);
+  }
+  /* RTL reading flow: a "leads to" arrow points left. Flip it for LTR. */
+  .cta-arrow { font-size: 1rem; line-height: 1; }
+  [dir="ltr"] .cta-arrow { transform: scaleX(-1); display: inline-block; }
+
+  /* ── SECTION HEADINGS ── */
+  .section-eyebrow {
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--accent);
+    text-shadow: var(--text-glow);
+    margin-bottom: 4px;
+  }
+  .section-sub {
+    font-size: 0.78rem;
+    color: var(--fg-subtle);
+    margin-bottom: 14px;
+  }
+
+  /* ── FOOTER ── */
+  .site-footer {
+    margin-top: 40px;
+    font-size: 0.78rem;
+    color: var(--fg-subtle);
+    text-align: center;
+    border-top: 1px solid var(--accent-border);
+    padding-top: 20px;
+  }
+  a { color: var(--accent); }
+
+  /* ── MOBILE SAFETY ── */
+  img, video { max-width: 100%; }
+  @media (max-width: 480px) {
+    .card__body { padding: 28px 14px 16px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="top-bar">
+    <button class="lang-btn" id="langToggle" onclick="toggleLang()">EN</button>
+    <button class="share-btn" id="shareBtn" onclick="shareReport()" aria-label="Share">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/>
+        <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/>
+        <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
+      </svg>
+      <span class="i18n" data-he="שתף" data-en="Share">שתף</span>
+    </button>
+  </div>
+
+  <header class="site-header">
+    <p class="header-eyebrow i18n" data-he="עיכול L&amp;D שבועי" data-en="Weekly L&amp;D Digest">עיכול L&amp;D שבועי</p>
+    <h1 class="header-title i18n" data-he="&#128218; למידה, פיתוח והדרכה" data-en="&#128218; Learning &amp; Development">&#128218; למידה, פיתוח והדרכה</h1>
+    <p class="header-sub">2026-W47 &middot; 2026-11-20</p>
+  </header>
+
+  <p class="section-eyebrow i18n" data-he="&#128218; 10 הכתבות המובילות" data-en="&#128218; Top 10 Articles">&#128218; 10 הכתבות המובילות</p>
+  <p class="section-sub i18n" data-he="מה שכדאי לקרוא השבוע בלמידה, בעיצוב הדרכה ובטכנולוגיות למידה" data-en="This week's best reading in L&amp;D, instructional design, and learning technology">מה שכדאי לקרוא השבוע בלמידה, בעיצוב הדרכה ובטכנולוגיות למידה</p>
+
+  <main id="articleList">
+
+    <article class="card">
+      <div class="card__rank">#1</div>
+      <div class="card__body">
+
+        <div class="card__header">
+          <div class="card__title-block">
+            <p class="card__eyebrow">eLearning Industry</p>
+            <h2 class="card__title">
+              <a href="https://elearningindustry.com/actionable-course-evaluation-insights-how-to-build-a-simulated-dataset" target="_blank" rel="noopener"
+                 class="i18n" data-he="איך לבדוק אם ה-AI באמת מנתח נכון משובי הדרכה: בונים דאטה סינתטי עם תשובות ידועות"
+                 data-en="Testing Whether AI Really Analyzes Course Evaluations: Build a Synthetic Dataset With a Sealed Answer Key">איך לבדוק אם ה-AI באמת מנתח נכון משובי הדרכה: בונים דאטה סינתטי עם תשובות ידועות</a>
+            </h2>
+          </div>
+        </div>
+
+        <div class="card__meta">
+          <span class="meta-item"><span class="meta-icon">&#128197;</span> 2026-11-19</span>
+        </div>
+
+        <div class="card__tags">
+          <span class="tag i18n" data-he="AI בלמידה"
+                data-en="AI in L&amp;D">AI בלמידה</span>
+        </div>
+
+        <div class="card__content"><div class="brief-section"><p class="brief-label" data-he="תקציר" data-en="Summary">תקציר</p><p class="brief-text i18n" data-he="Zsolt Olah מ-Intel מתאר שיטה לבניית מאגר משובי הדרכה מדומה עם נושאים ומלכודות שתוכננו מראש, כדי להשוות שלוש גישות ניתוח: machine learning קלאסי, GenAI בלבד, וגישה היברידית. בניסוי שלו הגישה הקלאסית זיהתה את כל 11 התבניות לפי קבוצות אך סיווגה כל הערה סרקסטית כחיובית והתאימה נושאים בכשישה מתוך עשרה מקרים, בעוד Gemini חישב ציוני קורס על בסיס 29% עד 54% מהתשובות בלי לציין זאת, בסטייה של עד 15 נקודות. המסקנה: קוד עושה את כל הספירה והחישוב, ו-GenAI מתויג טקסט פתוח מול רשימת נושאים שאדם אישר." data-en="Zsolt Olah of Intel describes how to build a simulated course evaluation dataset with planted themes and traps in order to benchmark three analysis approaches: classic machine learning, GenAI only, and a hybrid. In his experiment the classic method found all 11 patterns via group comparisons but scored every sarcastic comment as positive and matched real themes only about 6 in 10 times, while Gemini built course scores from 29% to 54% of responses without disclosing it, off by up to 15 points. The conclusion: let code do all counting and comparison, and let GenAI label open text against a human-approved theme list.">Zsolt Olah מ-Intel מתאר שיטה לבניית מאגר משובי הדרכה מדומה עם נושאים ומלכודות שתוכננו מראש, כדי להשוות שלוש גישות ניתוח: machine learning קלאסי, GenAI בלבד, וגישה היברידית. בניסוי שלו הגישה הקלאסית זיהתה את כל 11 התבניות לפי קבוצות אך סיווגה כל הערה סרקסטית כחיובית והתאימה נושאים בכשישה מתוך עשרה מקרים, בעוד Gemini חישב ציוני קורס על בסיס 29% עד 54% מהתשובות בלי לציין זאת, בסטייה של עד 15 נקודות. המסקנה: קוד עושה את כל הספירה והחישוב, ו-GenAI מתויג טקסט פתוח מול רשימת נושאים שאדם אישר.</p></div><div class="brief-section"><p class="brief-label" data-he="תובנות מפתח" data-en="Key insights">תובנות מפתח</p><ul class="brief-list i18n-list" data-he="לפני שסומכים על מודל בניתוח משובים אמיתיים, מריצים אותו על דאטה מדומה עם מפתח תשובות חתום ומנקדים אותו ברובריקה (אצלו 40 נקודות, כולל הורדת נקודה על כל טענה בלי ביסוס).
+חלוקת העבודה שעובדת: Python מבצע ספירות, ממוצעים, הסרת כפילויות וטיפול ב-PII, ו-GenAI מייצר נושאים מדגימה של 400 הערות, אדם מאשר 20 עד 30 נושאים, ואז המודל מתייג את כל ההערות באצוות.
+כדאי לשתול מלכודות מהשטח: סרקזם, הערות שמשבחות ומתלוננות באותה נשימה, ממלא שעונה אותו דבר בכל שאלה, והקבוצה עם הבעיה הגדולה ביותר היא זו שהכי פחות עונה לסקר." data-en="Before trusting a model on real evaluation data, run it against simulated data with a sealed answer key and score it on a rubric (his was 40 points, including minus one for every unsupported claim).
+The division of labor that works: Python handles counts, averages, deduplication and PII, while GenAI generates themes from a 400 comment sample, a human approves 20 to 30 themes, and the model then labels every comment in batches.
+Plant the traps you actually see in the field: sarcasm, comments that praise and complain at once, straight-lining respondents, and the group with the biggest problem being the least likely to answer the survey."><li>לפני שסומכים על מודל בניתוח משובים אמיתיים, מריצים אותו על דאטה מדומה עם מפתח תשובות חתום ומנקדים אותו ברובריקה (אצלו 40 נקודות, כולל הורדת נקודה על כל טענה בלי ביסוס).</li><li>חלוקת העבודה שעובדת: Python מבצע ספירות, ממוצעים, הסרת כפילויות וטיפול ב-PII, ו-GenAI מייצר נושאים מדגימה של 400 הערות, אדם מאשר 20 עד 30 נושאים, ואז המודל מתייג את כל ההערות באצוות.</li><li>כדאי לשתול מלכודות מהשטח: סרקזם, הערות שמשבחות ומתלוננות באותה נשימה, ממלא שעונה אותו דבר בכל שאלה, והקבוצה עם הבעיה הגדולה ביותר היא זו שהכי פחות עונה לסקר.</li></ul></div><div class="brief-section brief-section--matters"><p class="brief-label" data-he="למה זה רלוונטי לך" data-en="Why it matters for you">למה זה רלוונטי לך</p><p class="brief-text i18n" data-he="זו בדיוק נקודת החיבור של אבי בין AI ללמידה מבוססת נתונים: שיטה ניתנת לשחזור שמוכיחה איזו גישת ניתוח באמת עובדת, לפני שמכניסים אותה לתהליך המדידה בבנק." data-en="This sits exactly on Avi&#x27;s AI plus analytics axis: a reproducible way to prove which analysis approach actually works before wiring it into the bank&#x27;s evaluation process.">זו בדיוק נקודת החיבור של אבי בין AI ללמידה מבוססת נתונים: שיטה ניתנת לשחזור שמוכיחה איזו גישת ניתוח באמת עובדת, לפני שמכניסים אותה לתהליך המדידה בבנק.</p></div></div>
+
+        <a class="card__cta" href="https://elearningindustry.com/actionable-course-evaluation-insights-how-to-build-a-simulated-dataset" target="_blank" rel="noopener">
+          <span class="i18n" data-he="קרא את הכתבה המלאה" data-en="Read the full article">קרא את הכתבה המלאה</span>
+          <span class="cta-arrow">&#8592;</span>
+        </a>
+
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card__rank">#2</div>
+      <div class="card__body">
+
+        <div class="card__header">
+          <div class="card__title-block">
+            <p class="card__eyebrow">Chief Learning Officer</p>
+            <h2 class="card__title">
+              <a href="https://www.chieflearningofficer.com/2026/11/16/the-missing-test-of-leadership-development/" target="_blank" rel="noopener"
+                 class="i18n" data-he="המבחן החסר בפיתוח מנהלים: לא אם המנהל הקשיב, אלא מה הארגון החליט בעקבות זאת"
+                 data-en="The Missing Test of Leadership Development: Not Whether the Manager Listened, but What the Organization Decided">המבחן החסר בפיתוח מנהלים: לא אם המנהל הקשיב, אלא מה הארגון החליט בעקבות זאת</a>
+            </h2>
+          </div>
+        </div>
+
+        <div class="card__meta">
+          <span class="meta-item"><span class="meta-icon">&#128197;</span> 2026-11-16</span>
+        </div>
+
+        <div class="card__tags">
+          <span class="tag i18n" data-he="אסטרטגיה"
+                data-en="Strategy">אסטרטגיה</span>
+        </div>
+
+        <div class="card__content"><div class="brief-section"><p class="brief-label" data-he="תקציר" data-en="Summary">תקציר</p><p class="brief-text i18n" data-he="המאמר טוען שפיתוח מנהלים נמדד בשינוי התנהגות של המנהל, אך מפספס את השאלה אם המידע שעלה בשיחה הגיע לבעל סמכות ההחלטה וקיבל מענה. הכותב מציע decision-transfer audit בן ארבעה שבועות: לאתר סוגיה תפעולית חוזרת, למסגר אותה בסשן action learning עם הגנה מוסכמת למשתתפים, להביא אותה לבעל החלטה מזוהה ולדרוש תשובה מתועדת, ואז לבדוק מה באמת השתנה. הוא נשען על מחקר העברה (מטא-אנליזה של 89 מחקרים), מחקרי voice של Detert, ומחקר שלו עצמו על רשומות מקבילות שאותרו ב-23 מתוך 80 אתרים תפעוליים." data-en="The article argues that leadership development is measured by the manager&#x27;s behavior change but skips the question of whether what she heard reached someone with authority and got an answer. The author proposes a four-week decision-transfer audit: surface a recurring operational issue, frame it in a protected action learning session, bring it to a named decision owner and demand a documented response, then check what actually changed. It draws on transfer research (a meta-analysis of 89 studies), Detert&#x27;s work on employee voice, and the author&#x27;s own study that found confirmed parallel records at 23 of 80 operational sites.">המאמר טוען שפיתוח מנהלים נמדד בשינוי התנהגות של המנהל, אך מפספס את השאלה אם המידע שעלה בשיחה הגיע לבעל סמכות ההחלטה וקיבל מענה. הכותב מציע decision-transfer audit בן ארבעה שבועות: לאתר סוגיה תפעולית חוזרת, למסגר אותה בסשן action learning עם הגנה מוסכמת למשתתפים, להביא אותה לבעל החלטה מזוהה ולדרוש תשובה מתועדת, ואז לבדוק מה באמת השתנה. הוא נשען על מחקר העברה (מטא-אנליזה של 89 מחקרים), מחקרי voice של Detert, ומחקר שלו עצמו על רשומות מקבילות שאותרו ב-23 מתוך 80 אתרים תפעוליים.</p></div><div class="brief-section"><p class="brief-label" data-he="תובנות מפתח" data-en="Key insights">תובנות מפתח</p><ul class="brief-list i18n-list" data-he="יש להפריד בין חמש ראיות שונות: המנהל הפגין את הכישור, הסוגיה הגיעה לגורם מוסמך, ניתנה תשובה אחראית, התשובה הובילה לפעולה, והשינוי שרד. איחוד שלהן לציון הצלחה אחד מסתיר בדיוק את מה שחשוב.
+שתיקה אינה החלטה: המבחן אינו שכל הצעה מאומצת אלא שכל סוגיה מקבלת אישור, שינוי, בקשת ראיות נוספות או דחייה מנומקת ומתועדת.
+כשמתגלה רשומה לא רשמית שעובדים מתחזקים, השאלה הנכונה אינה למי למחוק אותה אלא מה היא משמרת שהמערכת הרשמית לא מצליחה לתפוס." data-en="Keep five kinds of evidence separate: the manager demonstrated the skill, the issue reached an authorized decision maker, an accountable answer was given, the answer led to action, and the change persisted. Collapsing them into one success score hides the very thing that matters.
+Silence is not a decision: the test is not that every suggestion is adopted but that every issue gets an approval, a modification, a request for evidence, or a documented, reasoned refusal.
+When you find an unofficial record that staff maintain, the right question is not who deletes it but what it preserves that the authorized system fails to capture."><li>יש להפריד בין חמש ראיות שונות: המנהל הפגין את הכישור, הסוגיה הגיעה לגורם מוסמך, ניתנה תשובה אחראית, התשובה הובילה לפעולה, והשינוי שרד. איחוד שלהן לציון הצלחה אחד מסתיר בדיוק את מה שחשוב.</li><li>שתיקה אינה החלטה: המבחן אינו שכל הצעה מאומצת אלא שכל סוגיה מקבלת אישור, שינוי, בקשת ראיות נוספות או דחייה מנומקת ומתועדת.</li><li>כשמתגלה רשומה לא רשמית שעובדים מתחזקים, השאלה הנכונה אינה למי למחוק אותה אלא מה היא משמרת שהמערכת הרשמית לא מצליחה לתפוס.</li></ul></div><div class="brief-section brief-section--matters"><p class="brief-label" data-he="למה זה רלוונטי לך" data-en="Why it matters for you">למה זה רלוונטי לך</p><p class="brief-text i18n" data-he="זה תרגום מעשי של תפיסת performance consulting לשפה שמנהלים בכירים בבנק מבינים: ביקורת החלטות במקום עוד סקר שביעות רצון אחרי תוכנית ניהול." data-en="This translates performance consulting into language senior bank stakeholders understand: a decision audit instead of another satisfaction survey after a leadership program.">זה תרגום מעשי של תפיסת performance consulting לשפה שמנהלים בכירים בבנק מבינים: ביקורת החלטות במקום עוד סקר שביעות רצון אחרי תוכנית ניהול.</p></div></div>
+
+        <a class="card__cta" href="https://www.chieflearningofficer.com/2026/11/16/the-missing-test-of-leadership-development/" target="_blank" rel="noopener">
+          <span class="i18n" data-he="קרא את הכתבה המלאה" data-en="Read the full article">קרא את הכתבה המלאה</span>
+          <span class="cta-arrow">&#8592;</span>
+        </a>
+
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card__rank">#3</div>
+      <div class="card__body">
+
+        <div class="card__header">
+          <div class="card__title-block">
+            <p class="card__eyebrow">eLearning Industry</p>
+            <h2 class="card__title">
+              <a href="https://elearningindustry.com/learning-transfer" target="_blank" rel="noopener"
+                 class="i18n" data-he="העברה ליישום: מדריך מלא להבדל בין שינון לבין שימוש בעבודה, וכיצד למדוד אותו"
+                 data-en="Learning Transfer: The Full Breakdown Between Retention and Real Workplace Use, and How to Measure It">העברה ליישום: מדריך מלא להבדל בין שינון לבין שימוש בעבודה, וכיצד למדוד אותו</a>
+            </h2>
+          </div>
+        </div>
+
+        <div class="card__meta">
+          <span class="meta-item"><span class="meta-icon">&#128197;</span> 2026-11-18</span>
+        </div>
+
+        <div class="card__tags">
+          <span class="tag i18n" data-he="עיצוב למידה"
+                data-en="Learning design">עיצוב למידה</span>
+        </div>
+
+        <div class="card__content"><div class="brief-section"><p class="brief-label" data-he="תקציר" data-en="Summary">תקציר</p><p class="brief-text i18n" data-he="מאמר הסבר על learning transfer שרוב תוכנו מוכר: ההבדל בין זכירה ליישום, שלושת גורמי ההשפעה (הלומד, עיצוב הלמידה וסביבת העבודה) ושבע אסטרטגיות ליישום. שני דברים בו אינם שגרתיים: הנחיית ה-CDC שסקר מיד בתום ההדרכה אינו ראיה אובייקטיבית לכך שהלמידה מיושמת בעבודה, ולצידה רשימה שמית של תנאי העברה שכדאי למדוד (הזדמנות וזמן ליישם, גישה למשאבים, תזכורות, תמיכת מנהל ותמיכת עמיתים). בנוסף, סקירה מ-2026 של 45 מחקרים מצאה את LTSI ככלי הנפוץ ביותר לבחינת תנאי העברה, אף שהמאמר עצמו מסייג שלא כל יוזמה מצדיקה מודל הערכה מלא." data-en="A learning transfer explainer whose bulk is familiar ground: retention versus application, the three drivers (learner, design, work environment) and seven application strategies. Two elements are not standard issue: CDC guidance that an immediate post-course survey is not objective evidence that learning is used at work, and CDC&#x27;s named list of transfer conditions worth measuring (opportunity and time to apply, access to resources, reminders, supervisor support, colleague support). A 2026 review of 45 studies found LTSI the most commonly used instrument for transfer conditions, though the article itself notes not every project warrants a full evaluation model.">מאמר הסבר על learning transfer שרוב תוכנו מוכר: ההבדל בין זכירה ליישום, שלושת גורמי ההשפעה (הלומד, עיצוב הלמידה וסביבת העבודה) ושבע אסטרטגיות ליישום. שני דברים בו אינם שגרתיים: הנחיית ה-CDC שסקר מיד בתום ההדרכה אינו ראיה אובייקטיבית לכך שהלמידה מיושמת בעבודה, ולצידה רשימה שמית של תנאי העברה שכדאי למדוד (הזדמנות וזמן ליישם, גישה למשאבים, תזכורות, תמיכת מנהל ותמיכת עמיתים). בנוסף, סקירה מ-2026 של 45 מחקרים מצאה את LTSI ככלי הנפוץ ביותר לבחינת תנאי העברה, אף שהמאמר עצמו מסייג שלא כל יוזמה מצדיקה מודל הערכה מלא.</p></div><div class="brief-section"><p class="brief-label" data-he="תובנות מפתח" data-en="Key insights">תובנות מפתח</p><ul class="brief-list i18n-list" data-he="הנחיית ה-CDC היא עילה חיצונית להפסיק לדווח על סקרי סיום כראיה ליישום: מה שנמדד שם הוא נתון למידה. נתוני יישום מחייבים מדידת המשך שמתוכננת בשלב העיצוב ולא נספחת בדיעבד.
+במקום לבנות שאלון תנאים מאפס, להוסיף לכלי הקיים חמישה פריטים לפי רשימת ה-CDC: הזדמנות ליישם, זמן, משאבים, תזכורות, ותמיכת מנהל ועמיתים. ציון נמוך בפריט בודד מצביע על הגורם שצריך לתקן, בעוד ציון כולל נמוך רק מאשר שההעברה נכשלה.
+LTSI הוא ברירת המחדל כשנדרש כלי מתוקף, לפי הסקירה מ-2026 של 45 מחקרים. ההחלטה הסבירה היא LTSI לתוכניות דגל בלבד, ובכל השאר איסוף ראיות ממוקד לשאלה העסקית שהזמינה את התוכנית." data-en="The CDC position is external cover for ending the practice of reporting end-of-course surveys as application evidence: what they capture is learning data. Application data requires follow-up measurement planned during design, not bolted on afterwards.
+Rather than building a conditions questionnaire from scratch, add five items from CDC&#x27;s list to the existing instrument: opportunity to apply, time, resources, reminders, and manager and peer support. A low score on a single item names the lever to fix, whereas a low overall score only confirms that transfer failed.
+LTSI is the default when a validated instrument is needed, per the 2026 review of 45 studies. The sensible rule is LTSI for flagship programmes only, and for everything else evidence gathered against the business question that triggered the programme."><li>הנחיית ה-CDC היא עילה חיצונית להפסיק לדווח על סקרי סיום כראיה ליישום: מה שנמדד שם הוא נתון למידה. נתוני יישום מחייבים מדידת המשך שמתוכננת בשלב העיצוב ולא נספחת בדיעבד.</li><li>במקום לבנות שאלון תנאים מאפס, להוסיף לכלי הקיים חמישה פריטים לפי רשימת ה-CDC: הזדמנות ליישם, זמן, משאבים, תזכורות, ותמיכת מנהל ועמיתים. ציון נמוך בפריט בודד מצביע על הגורם שצריך לתקן, בעוד ציון כולל נמוך רק מאשר שההעברה נכשלה.</li><li>LTSI הוא ברירת המחדל כשנדרש כלי מתוקף, לפי הסקירה מ-2026 של 45 מחקרים. ההחלטה הסבירה היא LTSI לתוכניות דגל בלבד, ובכל השאר איסוף ראיות ממוקד לשאלה העסקית שהזמינה את התוכנית.</li></ul></div><div class="brief-section brief-section--matters"><p class="brief-label" data-he="למה זה רלוונטי לך" data-en="Why it matters for you">למה זה רלוונטי לך</p><p class="brief-text i18n" data-he="ביחידה שבה סקרי שביעות רצון מזינים דוחות להנהלה, מקור חיצוני שקובע שהם אינם ראיה ליישום מאפשר לשנות את מה שנמדד בלי להיראות כמי שבורח ממספרים. תנאי ההעברה הם גם נתון ארגוני בפני עצמו: הם מראים אילו יחידות ואילו מנהלים מאפשרים יישום ואילו חוסמים אותו." data-en="In a unit where satisfaction surveys feed reports upward, an external source stating they are not evidence of application makes it possible to change what gets measured without looking like an escape from numbers. Transfer conditions are also organizational data in their own right: they show which units and which managers enable application and which block it.">ביחידה שבה סקרי שביעות רצון מזינים דוחות להנהלה, מקור חיצוני שקובע שהם אינם ראיה ליישום מאפשר לשנות את מה שנמדד בלי להיראות כמי שבורח ממספרים. תנאי ההעברה הם גם נתון ארגוני בפני עצמו: הם מראים אילו יחידות ואילו מנהלים מאפשרים יישום ואילו חוסמים אותו.</p></div></div>
+
+        <a class="card__cta" href="https://elearningindustry.com/learning-transfer" target="_blank" rel="noopener">
+          <span class="i18n" data-he="קרא את הכתבה המלאה" data-en="Read the full article">קרא את הכתבה המלאה</span>
+          <span class="cta-arrow">&#8592;</span>
+        </a>
+
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card__rank">#4</div>
+      <div class="card__body">
+
+        <div class="card__header">
+          <div class="card__title-block">
+            <p class="card__eyebrow">Chief Learning Officer</p>
+            <h2 class="card__title">
+              <a href="https://www.chieflearningofficer.com/2026/11/19/learning-technology-management-in-2027/" target="_blank" rel="noopener"
+                 class="i18n" data-he="ניהול טכנולוגיית למידה הופך לעדיפות: מה באמת המנדט של מנהל הלמידה מול ה-tech stack"
+                 data-en="Learning Technology Management Becomes a Priority: The CLO&#x27;s Real Mandate for the Tech Stack">ניהול טכנולוגיית למידה הופך לעדיפות: מה באמת המנדט של מנהל הלמידה מול ה-tech stack</a>
+            </h2>
+          </div>
+        </div>
+
+        <div class="card__meta">
+          <span class="meta-item"><span class="meta-icon">&#128197;</span> 2026-11-19</span>
+        </div>
+
+        <div class="card__tags">
+          <span class="tag i18n" data-he="טכנולוגיות למידה"
+                data-en="Learning tech">טכנולוגיות למידה</span>
+        </div>
+
+        <div class="card__content"><div class="brief-section"><p class="brief-label" data-he="תקציר" data-en="Summary">תקציר</p><p class="brief-text i18n" data-he="מתוך דוח Trends 2027 של Training Industry: האתגר אינו עוד כלי אלא נתונים, אינטגרציות, ממשל והערך של הכלים הקיימים, ומנהל הלמידה הוא שותף לעיצוב המערכת הארגונית מול IT, HR, אבטחת מידע ותפעול. החלק הקונקרטי ביותר הוא דוגמה מ-Facing History &amp; Ourselves: הארגון מעדכן את מפת המיומנויות הארגונית כך שתכלול התנהגויות של digital mindset, מציב יעד אימוץ של 80 עד 90 אחוזים על פני שנתיים עד שלוש, ורק אחר כך עובר לשאלה כיצד מודדים שינוי התנהגות. המאמר גם דורש להגדיר תוצאות מכוונות לפני רכש או הרחבה של טכנולוגיה, ולא להסתפק במדדי שימוש, השלמה ושביעות רצון." data-en="From Training Industry&#x27;s Trends 2027 report: the challenge is not another tool but data, integrations, governance and the value existing tools deliver, with the learning leader as co-architect alongside IT, HR, security and business operations. The most concrete element is an example from Facing History &amp; Ourselves: the organization is updating its org-wide competency map to include digital mindset behaviors, targets 80 to 90 percent adoption over two to three years, and only then turns to how behavior change gets measured. The piece also insists intended outcomes be defined before purchasing or expanding technology, rather than relying on usage, completion and satisfaction.">מתוך דוח Trends 2027 של Training Industry: האתגר אינו עוד כלי אלא נתונים, אינטגרציות, ממשל והערך של הכלים הקיימים, ומנהל הלמידה הוא שותף לעיצוב המערכת הארגונית מול IT, HR, אבטחת מידע ותפעול. החלק הקונקרטי ביותר הוא דוגמה מ-Facing History &amp; Ourselves: הארגון מעדכן את מפת המיומנויות הארגונית כך שתכלול התנהגויות של digital mindset, מציב יעד אימוץ של 80 עד 90 אחוזים על פני שנתיים עד שלוש, ורק אחר כך עובר לשאלה כיצד מודדים שינוי התנהגות. המאמר גם דורש להגדיר תוצאות מכוונות לפני רכש או הרחבה של טכנולוגיה, ולא להסתפק במדדי שימוש, השלמה ושביעות רצון.</p></div><div class="brief-section"><p class="brief-label" data-he="תובנות מפתח" data-en="Key insights">תובנות מפתח</p><ul class="brief-list i18n-list" data-he="אימוץ הוא שער לפני מדידה ולא שלב מקביל לה: ב-Facing History הציבו 80 עד 90 אחוזי אימוץ על פני שנתיים עד שלוש כתנאי, ורק אחריו מתחילים לשאול איך מודדים התנהגות. המשמעות המעשית היא לא להתחייב להנהלה על מדדי שינוי התנהגות בשנה הראשונה של כלי חדש.
+ההתנהגויות הוכנסו למפת המיומנויות הארגונית לפני המדידה, כי התנהגות שאינה מופיעה במפה אי אפשר לחזק ואי אפשר למדוד. זו פעולה בנתוני מיומנויות, לא בתוכן הדרכה, והיא קודמת לכל דשבורד.
+ככל שגבולות פלטפורמות הלמידה, מערכות הטאלנט והאפליקציות העסקיות מיטשטשים, שלוש שאלות דורשות בעלים מוגדר: כיצד המערכות מתחברות, כיצד זורמים ביניהן נתונים, וכיצד נראה ממשל משותף לכלים מבוססי AI. הדוח ממקם את האחריות כשותפות עם IT, HR, אבטחת מידע ותפעול, כלומר בן שיח בעל שם בכל אחד מהם לפני פיילוט ולא אחריו." data-en="Adoption is a gate before measurement, not a parallel track: Facing History set 80 to 90 percent adoption over two to three years as the condition, and only then asks how to measure behavior. The practical rule is to avoid promising executives behavior change metrics in year one of a new tool.
+The behaviors went into the org-wide competency map before measurement, because a behavior absent from the map cannot be reinforced or measured. That is an act on skills data, not on training content, and it precedes any dashboard.
+As the boundaries between learning platforms, talent systems and business applications blur, three questions need a named owner: how the systems connect, how data flows between them, and what shared governance of AI-enabled tools looks like. The report places that accountability as a partnership with IT, HR, security and operations, meaning a named counterpart in each before a pilot rather than after."><li>אימוץ הוא שער לפני מדידה ולא שלב מקביל לה: ב-Facing History הציבו 80 עד 90 אחוזי אימוץ על פני שנתיים עד שלוש כתנאי, ורק אחריו מתחילים לשאול איך מודדים התנהגות. המשמעות המעשית היא לא להתחייב להנהלה על מדדי שינוי התנהגות בשנה הראשונה של כלי חדש.</li><li>ההתנהגויות הוכנסו למפת המיומנויות הארגונית לפני המדידה, כי התנהגות שאינה מופיעה במפה אי אפשר לחזק ואי אפשר למדוד. זו פעולה בנתוני מיומנויות, לא בתוכן הדרכה, והיא קודמת לכל דשבורד.</li><li>ככל שגבולות פלטפורמות הלמידה, מערכות הטאלנט והאפליקציות העסקיות מיטשטשים, שלוש שאלות דורשות בעלים מוגדר: כיצד המערכות מתחברות, כיצד זורמים ביניהן נתונים, וכיצד נראה ממשל משותף לכלים מבוססי AI. הדוח ממקם את האחריות כשותפות עם IT, HR, אבטחת מידע ותפעול, כלומר בן שיח בעל שם בכל אחד מהם לפני פיילוט ולא אחריו.</li></ul></div><div class="brief-section brief-section--matters"><p class="brief-label" data-he="למה זה רלוונטי לך" data-en="Why it matters for you">למה זה רלוונטי לך</p><p class="brief-text i18n" data-he="בבנק, שער אימוץ שנקבע מראש הוא ההגנה הטובה ביותר מפני הצגת מדדי השפעה מוקדמים מדי על כלי AI, והכנסת התנהגויות העבודה עם AI למפת המיומנויות הופכת אותן לנכס נתונים שניתן לעקוב אחריו לאורך זמן במקום לקמפיין חד פעמי." data-en="In a bank, a pre-agreed adoption gate is the best protection against presenting impact metrics on an AI tool too early, and putting AI working behaviors into the competency map turns them into a trackable data asset rather than a one-off campaign.">בבנק, שער אימוץ שנקבע מראש הוא ההגנה הטובה ביותר מפני הצגת מדדי השפעה מוקדמים מדי על כלי AI, והכנסת התנהגויות העבודה עם AI למפת המיומנויות הופכת אותן לנכס נתונים שניתן לעקוב אחריו לאורך זמן במקום לקמפיין חד פעמי.</p></div></div>
+
+        <a class="card__cta" href="https://www.chieflearningofficer.com/2026/11/19/learning-technology-management-in-2027/" target="_blank" rel="noopener">
+          <span class="i18n" data-he="קרא את הכתבה המלאה" data-en="Read the full article">קרא את הכתבה המלאה</span>
+          <span class="cta-arrow">&#8592;</span>
+        </a>
+
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card__rank">#5</div>
+      <div class="card__body">
+
+        <div class="card__header">
+          <div class="card__title-block">
+            <p class="card__eyebrow">InSync Training</p>
+            <h2 class="card__title">
+              <a href="https://blog.insynctraining.com/content-creator-to-learning-architect" target="_blank" rel="noopener"
+                 class="i18n" data-he="מיוצר תוכן לארכיטקט למידה: מה AI משחרר את המעצב לעשות"
+                 data-en="From Content Creator to Learning Architect: What AI Frees the Designer to Do">מיוצר תוכן לארכיטקט למידה: מה AI משחרר את המעצב לעשות</a>
+            </h2>
+          </div>
+        </div>
+
+        <div class="card__meta">
+          <span class="meta-item"><span class="meta-icon">&#128197;</span> 2026-11-16</span>
+        </div>
+
+        <div class="card__tags">
+          <span class="tag i18n" data-he="AI בלמידה"
+                data-en="AI in L&amp;D">AI בלמידה</span>
+        </div>
+
+        <div class="card__content"><div class="brief-section"><p class="brief-label" data-he="תקציר" data-en="Summary">תקציר</p><p class="brief-text i18n" data-he="תוכן שיווקי של ספק (מסגרת InQuire Engagement Framework וקריאה להוריד תבניות Human-in-the-Loop) שמציג תזה מוכרת: ה-AI לוקח את טיוטת הביניים (ראשי פרקים, תרחישים, הערכות) והמעצב עובר לאבחון פער הביצועים ולעיצוב להעברה. הנתון שבראש המאמר, לפיו רק כ-5% מהארגונים העבירו למידה מקורסים לביצועים, מיוחס ל-emerging research on Dynamic Enablement בלי מחקר, מדגם או תאריך, ולא כדאי לצטט אותו. החלק השמיש הוא שלושת ממדי הבדיקה (רגשי, אינטלקטואלי, סביבתי) והדוגמה שאנשי מכירות מבינים משא ומתן אך חסרים ביטחון להשתמש בו תחת לחץ." data-en="Vendor content (the InQuire Engagement Framework and a call to download Human-in-the-Loop templates) carrying a familiar thesis: AI takes the first-draft work (outlines, scenarios, assessments) and the designer moves to diagnosing the performance gap and designing for transfer. The headline figure, that only about 5% of organizations have moved learning from courses to performance, is attributed to emerging research on Dynamic Enablement with no study, sample or date, and should not be quoted. The usable part is the three review dimensions (emotional, intellectual, environmental) and the example that salespeople often understand negotiation but lack the confidence to use it under pressure.">תוכן שיווקי של ספק (מסגרת InQuire Engagement Framework וקריאה להוריד תבניות Human-in-the-Loop) שמציג תזה מוכרת: ה-AI לוקח את טיוטת הביניים (ראשי פרקים, תרחישים, הערכות) והמעצב עובר לאבחון פער הביצועים ולעיצוב להעברה. הנתון שבראש המאמר, לפיו רק כ-5% מהארגונים העבירו למידה מקורסים לביצועים, מיוחס ל-emerging research on Dynamic Enablement בלי מחקר, מדגם או תאריך, ולא כדאי לצטט אותו. החלק השמיש הוא שלושת ממדי הבדיקה (רגשי, אינטלקטואלי, סביבתי) והדוגמה שאנשי מכירות מבינים משא ומתן אך חסרים ביטחון להשתמש בו תחת לחץ.</p></div><div class="brief-section"><p class="brief-label" data-he="תובנות מפתח" data-en="Key insights">תובנות מפתח</p><ul class="brief-list i18n-list" data-he="הנתון של 5% מגיע מ-emerging research בלי מקור, מדגם או תאריך. אם הוא כבר נדד לשקף של מישהו בארגון, זה הרגע להוציא אותו משם.
+הממד הסביבתי הוא קריטריון פסילה ולא סעיף בדיקה: אם אין תשובה לשאלה היכן המערכת הארגונית עצמה תחבל בשינוי ההתנהגות, הבקשה חוזרת לבעל התהליך העסקי במקום להיכנס לייצור. תוספת תוכן לא מקזזת לחץ עבודה שמונע יישום.
+כשהאבחון מצביע על פער ביטחון ולא על פער ידע, כמו אצל אנשי המכירות, התקציב עובר מהסבר לתרגול תחת לחץ. בדיקת הממד האינטלקטואלי שואלת אז דבר אחד: האם החשיבה המקדימה נבנית לפני ההתנהגות המורכבת, או שהרצף מניח ידע שמעולם לא הונח." data-en="The 5% figure comes from emerging research with no source, sample or date. If it has already migrated into someone&#x27;s slide inside the organization, that is the moment to take it out.
+The environmental dimension is a kill criterion, not a review line item: if there is no answer to where the system itself will undermine the behavior change, the request goes back to the business owner instead of into production. More content does not offset job pressure that blocks application.
+When diagnosis points to a confidence gap rather than a knowledge gap, as with the salespeople, budget shifts from explanation to rehearsal under pressure. The intellectual review then asks one thing: is the prerequisite thinking built before the complex behavior, or does the sequence assume knowledge that was never laid down."><li>הנתון של 5% מגיע מ-emerging research בלי מקור, מדגם או תאריך. אם הוא כבר נדד לשקף של מישהו בארגון, זה הרגע להוציא אותו משם.</li><li>הממד הסביבתי הוא קריטריון פסילה ולא סעיף בדיקה: אם אין תשובה לשאלה היכן המערכת הארגונית עצמה תחבל בשינוי ההתנהגות, הבקשה חוזרת לבעל התהליך העסקי במקום להיכנס לייצור. תוספת תוכן לא מקזזת לחץ עבודה שמונע יישום.</li><li>כשהאבחון מצביע על פער ביטחון ולא על פער ידע, כמו אצל אנשי המכירות, התקציב עובר מהסבר לתרגול תחת לחץ. בדיקת הממד האינטלקטואלי שואלת אז דבר אחד: האם החשיבה המקדימה נבנית לפני ההתנהגות המורכבת, או שהרצף מניח ידע שמעולם לא הונח.</li></ul></div><div class="brief-section brief-section--matters"><p class="brief-label" data-he="למה זה רלוונטי לך" data-en="Why it matters for you">למה זה רלוונטי לך</p><p class="brief-text i18n" data-he="אבי מייצר למידה בשיטות AI-native, ולכן שלוש שאלות הבדיקה שוות יותר מהתזה עצמה: האם התוצר בונה ביטחון, האם הוא מרצף מורכבות נכון, והאם הוא מתייחס ללחץ העבודה שיחבל ביישום. זו גם תזכורת שתוכן מסוג זה מגיע עם מספרים לא מתוקפים שקל מאוד להעתיק לשקף הנהלה." data-en="Avi produces learning AI-natively, so the three review questions are worth more than the thesis itself: does the output build confidence, does it sequence complexity correctly, and does it account for the job pressure that will block application. It is also a reminder that content like this arrives with unvalidated numbers that travel easily into an executive slide.">אבי מייצר למידה בשיטות AI-native, ולכן שלוש שאלות הבדיקה שוות יותר מהתזה עצמה: האם התוצר בונה ביטחון, האם הוא מרצף מורכבות נכון, והאם הוא מתייחס ללחץ העבודה שיחבל ביישום. זו גם תזכורת שתוכן מסוג זה מגיע עם מספרים לא מתוקפים שקל מאוד להעתיק לשקף הנהלה.</p></div></div>
+
+        <a class="card__cta" href="https://blog.insynctraining.com/content-creator-to-learning-architect" target="_blank" rel="noopener">
+          <span class="i18n" data-he="קרא את הכתבה המלאה" data-en="Read the full article">קרא את הכתבה המלאה</span>
+          <span class="cta-arrow">&#8592;</span>
+        </a>
+
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card__rank">#6</div>
+      <div class="card__body">
+
+        <div class="card__header">
+          <div class="card__title-block">
+            <p class="card__eyebrow">Training Journal</p>
+            <h2 class="card__title">
+              <a href="https://www.trainingjournal.com/2026/content-type/news/tj-newsflash-18-november-hr-and-ld-face-growing-skills-budget-and-leadership-challenges/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=tj-newsflash-18-november-hr-and-ld-face-growing-skills-budget-and-leadership-challenges" target="_blank" rel="noopener"
+                 class="i18n" data-he="מחסום התקציב והסמכות: הנתונים השבועיים על יכולת L&amp;D, ROI וההשפעה של AI על כוח האדם"
+                 data-en="The Budget and Authority Barrier: This Week&#x27;s Data on L&amp;D Capability, ROI and AI&#x27;s Workforce Impact">מחסום התקציב והסמכות: הנתונים השבועיים על יכולת L&amp;D, ROI וההשפעה של AI על כוח האדם</a>
+            </h2>
+          </div>
+        </div>
+
+        <div class="card__meta">
+          <span class="meta-item"><span class="meta-icon">&#128197;</span> 2026-11-18</span>
+        </div>
+
+        <div class="card__tags">
+          <span class="tag i18n" data-he="אסטרטגיה"
+                data-en="Strategy">אסטרטגיה</span>
+        </div>
+
+        <div class="card__content"><div class="brief-section"><p class="brief-label" data-he="תקציר" data-en="Summary">תקציר</p><p class="brief-text i18n" data-he="סיכום החדשות השבועי של Training Journal. Kaplan UK: יותר משליש ממובילי HR ו-L&amp;D חסרים תקציב, סמכות או שניהם כדי לספק את היכולת שאסטרטגיית ה-AI של הארגון דורשת, אף שהם סבורים שהם מבינים איזו יכולת נדרשת. CIPD: 91% רואים בשיפור ביצועי הארגון עדיפות ו-78% בתכנון כוח אדם, אך רק 61% מזהים באופן יזום מיומנויות נדרשות לשנה עד שנתיים קדימה, ומומחיות בתכנון כוח אדם קיימת אצל 14% בלבד (ניהול טאלנט 13%, פיתוח ועיצוב ארגוני 12%). Thirst: 67% מציבים הוכחת ROI כעדיפות עליונה מול 22% שבטוחים ביכולתם, ו-56% עסוקים מדי באספקה כדי לחשוב אסטרטגית. Avanade: 77% ממקבלי ההחלטות סבורים שהשקעת ה-AI מופנית יותר מדי לשיפורים מצטברים, רק 11% מצפים לשינוי מהותי בשנה הקרובה, כשני שלישים אומרים שההחזר אינו מצדיק את ההשקעה ושלושה רבעים שהארגון הגזים בתיאור בגרות ה-AI שלו. BSI: 54% מהמנהלים אומרים ש-AI מאפשר צמצום כוח אדם, לעומת 41% אשתקד." data-en="Training Journal&#x27;s weekly roundup. Kaplan UK: more than a third of HR and L&amp;D leaders lack the budget, the authority or both to deliver the capability their organization&#x27;s AI strategy requires, even though they believe they understand what capability is needed. CIPD: 91% call improving organizational performance a priority and 78% say workforce planning is, but only 61% can proactively identify skills needed one to two years out, and just 14% hold workforce planning expertise (talent management 13%, OD and design 12%). Thirst: 67% rank proving ROI top priority against 22% who feel able to, and 56% are too busy delivering to think strategically. Avanade: 77% of decision makers say too much AI investment goes to incremental improvements, only 11% expect fundamental change within a year, roughly two thirds say returns do not justify the investment and three quarters say their organization overstated its AI maturity. BSI: 54% of leaders say AI is helping them cut headcount, up from 41% last year.">סיכום החדשות השבועי של Training Journal. Kaplan UK: יותר משליש ממובילי HR ו-L&amp;D חסרים תקציב, סמכות או שניהם כדי לספק את היכולת שאסטרטגיית ה-AI של הארגון דורשת, אף שהם סבורים שהם מבינים איזו יכולת נדרשת. CIPD: 91% רואים בשיפור ביצועי הארגון עדיפות ו-78% בתכנון כוח אדם, אך רק 61% מזהים באופן יזום מיומנויות נדרשות לשנה עד שנתיים קדימה, ומומחיות בתכנון כוח אדם קיימת אצל 14% בלבד (ניהול טאלנט 13%, פיתוח ועיצוב ארגוני 12%). Thirst: 67% מציבים הוכחת ROI כעדיפות עליונה מול 22% שבטוחים ביכולתם, ו-56% עסוקים מדי באספקה כדי לחשוב אסטרטגית. Avanade: 77% ממקבלי ההחלטות סבורים שהשקעת ה-AI מופנית יותר מדי לשיפורים מצטברים, רק 11% מצפים לשינוי מהותי בשנה הקרובה, כשני שלישים אומרים שההחזר אינו מצדיק את ההשקעה ושלושה רבעים שהארגון הגזים בתיאור בגרות ה-AI שלו. BSI: 54% מהמנהלים אומרים ש-AI מאפשר צמצום כוח אדם, לעומת 41% אשתקד.</p></div><div class="brief-section"><p class="brief-label" data-he="תובנות מפתח" data-en="Key insights">תובנות מפתח</p><ul class="brief-list i18n-list" data-he="הסתירה שכדאי להניח על השולחן: 54% מהמנהלים כבר מצמצמים כוח אדם בזכות AI, אבל רק 11% מצפים שה-AI ישנה מהותית את אופן הפעולה בשנה הקרובה וכשני שלישים אומרים שההחזר עדיין אינו מצדיק את ההשקעה. הקיצוץ מקדים את הערך המוכח, ולכן נרטיב הסבה שנשען על &#x27;ה-AI ישנה הכול&#x27; חלש מנרטיב שנשען על מה שכבר עובר אוטומציה בפועל.
+נתוני ה-CIPD מצביעים על היכולת שכדאי לגייס או לבנות ראשונה: 78% מגדירים תכנון כוח אדם כעדיפות ורק 14% מחזיקים בו מומחיות. זו החלטת איוש ביחידה ולא עוד הכשרה, והיא החוליה שמחברת נתוני מיומנויות לתחזית צרכים לשנה עד שנתיים.
+לפי Kaplan החסם המדווח אינו האבחון אלא הסמכות והתקציב. בשילוב עם 56% שעסוקים מדי באספקה, הבקשה הנכונה מההנהלה היא בעלות על אג&#x27;נדת יכולות ה-AI וזכויות החלטה, ולא תוספת תקציב להדרכות." data-en="The contradiction worth putting on the table: 54% of leaders are already cutting headcount thanks to AI, yet only 11% expect AI to fundamentally change how the organization operates within a year and roughly two thirds say returns do not yet justify the investment. Cuts are running ahead of proven value, so a reskilling narrative built on &#x27;AI will change everything&#x27; is weaker than one built on what is already being automated.
+The CIPD numbers name the capability to hire or build first: 78% call workforce planning a priority while only 14% hold expertise in it. That is a staffing decision inside the unit rather than another programme, and it is the link between skills data and a one to two year needs forecast.
+Kaplan reports the stated blocker is not diagnosis but authority and budget. Combined with the 56% too busy delivering, the right ask of the executive is ownership of the AI capability agenda and decision rights, not a larger training budget."><li>הסתירה שכדאי להניח על השולחן: 54% מהמנהלים כבר מצמצמים כוח אדם בזכות AI, אבל רק 11% מצפים שה-AI ישנה מהותית את אופן הפעולה בשנה הקרובה וכשני שלישים אומרים שההחזר עדיין אינו מצדיק את ההשקעה. הקיצוץ מקדים את הערך המוכח, ולכן נרטיב הסבה שנשען על &#x27;ה-AI ישנה הכול&#x27; חלש מנרטיב שנשען על מה שכבר עובר אוטומציה בפועל.</li><li>נתוני ה-CIPD מצביעים על היכולת שכדאי לגייס או לבנות ראשונה: 78% מגדירים תכנון כוח אדם כעדיפות ורק 14% מחזיקים בו מומחיות. זו החלטת איוש ביחידה ולא עוד הכשרה, והיא החוליה שמחברת נתוני מיומנויות לתחזית צרכים לשנה עד שנתיים.</li><li>לפי Kaplan החסם המדווח אינו האבחון אלא הסמכות והתקציב. בשילוב עם 56% שעסוקים מדי באספקה, הבקשה הנכונה מההנהלה היא בעלות על אג&#x27;נדת יכולות ה-AI וזכויות החלטה, ולא תוספת תקציב להדרכות.</li></ul></div><div class="brief-section brief-section--matters"><p class="brief-label" data-he="למה זה רלוונטי לך" data-en="Why it matters for you">למה זה רלוונטי לך</p><p class="brief-text i18n" data-he="הבנק יושב בדיוק בצומת הזה: יחידה שמייצרת למידה בקצב גבוה נשאבת לאספקה, והמספרים האלה הם הבסיס לשיחה על מנדט וזכויות החלטה ולא על תקציב. השילוב של CIPD ו-Thirst ממקד את ההשקעה הפנימית הבאה בתכנון כוח אדם ובמדידה, שתי היכולות שבהן הפער בין עדיפות ליכולת הוא הגדול ביותר." data-en="The bank sits exactly at this junction: a unit producing learning at pace gets pulled into delivery, and these numbers are the basis for a mandate and decision rights conversation rather than a budget one. CIPD plus Thirst together point the next internal investment at workforce planning and measurement, the two capabilities where the gap between priority and ability is widest.">הבנק יושב בדיוק בצומת הזה: יחידה שמייצרת למידה בקצב גבוה נשאבת לאספקה, והמספרים האלה הם הבסיס לשיחה על מנדט וזכויות החלטה ולא על תקציב. השילוב של CIPD ו-Thirst ממקד את ההשקעה הפנימית הבאה בתכנון כוח אדם ובמדידה, שתי היכולות שבהן הפער בין עדיפות ליכולת הוא הגדול ביותר.</p></div></div>
+
+        <a class="card__cta" href="https://www.trainingjournal.com/2026/content-type/news/tj-newsflash-18-november-hr-and-ld-face-growing-skills-budget-and-leadership-challenges/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=tj-newsflash-18-november-hr-and-ld-face-growing-skills-budget-and-leadership-challenges" target="_blank" rel="noopener">
+          <span class="i18n" data-he="קרא את הכתבה המלאה" data-en="Read the full article">קרא את הכתבה המלאה</span>
+          <span class="cta-arrow">&#8592;</span>
+        </a>
+
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card__rank">#7</div>
+      <div class="card__body">
+
+        <div class="card__header">
+          <div class="card__title-block">
+            <p class="card__eyebrow">eLearning Industry</p>
+            <h2 class="card__title">
+              <a href="https://elearningindustry.com/lms-rfp-template" target="_blank" rel="noopener"
+                 class="i18n" data-he="RFP ל-LMS: קריטריוני סף מול קריטריונים מנוקדים, הדגמות בתסריט וחישוב עלות בעלות כוללת"
+                 data-en="LMS RFP: Gate Criteria Versus Scored Criteria, Scripted Demos, and Total Cost of Ownership">RFP ל-LMS: קריטריוני סף מול קריטריונים מנוקדים, הדגמות בתסריט וחישוב עלות בעלות כוללת</a>
+            </h2>
+          </div>
+        </div>
+
+        <div class="card__meta">
+          <span class="meta-item"><span class="meta-icon">&#128197;</span> 2026-11-19</span>
+        </div>
+
+        <div class="card__tags">
+          <span class="tag i18n" data-he="טכנולוגיות למידה"
+                data-en="Learning tech">טכנולוגיות למידה</span>
+        </div>
+
+        <div class="card__content"><div class="brief-section"><p class="brief-label" data-he="תקציר" data-en="Summary">תקציר</p><p class="brief-text i18n" data-he="מדריך מובנה לבניית RFP ל-LMS בעשרה פרקים, מהגדרת תרחישי השימוש העסקיים ועד תנאי יציאה ובעלות על נתונים. ההמלצות המרכזיות: לסווג כל תשובת ספק לפי אופן המימוש ולא ב-כן או לא, להפריד קריטריוני סף שפוסלים מקריטריונים מנוקדים, לקבוע משקלות לפני שרואים ספק, ולחייב הדגמות בתסריט אחיד (למשל הפקת דוח הסמכות חודשי לפי אזור ללא עזרת הספק). המאמר גם מצטט מחקר קונים של eLearning Industry מ-2026 שלפיו קונים דירגו חוויית משתמש, תמחור ואינטגרציות גבוה יותר מ-AI." data-en="A structured ten-section guide to building an LMS RFP, from defining business use cases through exit terms and data ownership. The core recommendations: classify every vendor answer by how the capability is delivered rather than yes or no, separate gate criteria that disqualify from scored criteria, set weights before meeting any vendor, and require scripted demos of the same workflow (for example producing a monthly regional certification report without vendor assistance). It also cites eLearning Industry&#x27;s 2026 buyer research showing buyers ranked user experience, pricing and integrations above AI.">מדריך מובנה לבניית RFP ל-LMS בעשרה פרקים, מהגדרת תרחישי השימוש העסקיים ועד תנאי יציאה ובעלות על נתונים. ההמלצות המרכזיות: לסווג כל תשובת ספק לפי אופן המימוש ולא ב-כן או לא, להפריד קריטריוני סף שפוסלים מקריטריונים מנוקדים, לקבוע משקלות לפני שרואים ספק, ולחייב הדגמות בתסריט אחיד (למשל הפקת דוח הסמכות חודשי לפי אזור ללא עזרת הספק). המאמר גם מצטט מחקר קונים של eLearning Industry מ-2026 שלפיו קונים דירגו חוויית משתמש, תמחור ואינטגרציות גבוה יותר מ-AI.</p></div><div class="brief-section"><p class="brief-label" data-he="תובנות מפתח" data-en="Key insights">תובנות מפתח</p><ul class="brief-list i18n-list" data-he="לא לקבל תשובות כן או לא: כל דרישה מסווגת כ-native, קונפיגורציה, אינטגרציה של צד שלישי, פיתוח בהזמנה או ללא תמיכה. ספק שעונה &#x27;יש לנו אינטגרציה ל-HRIS&#x27; באמצעות פיתוח בהזמנה אינו באותה שורת עלות וסיכון כמו ספק עם מחבר מובנה.
+אבטחת מידע, נגישות ואופן האירוח הם קריטריוני סף שפוסלים ולא סעיפים משוקללים: ספק שאינו עומד בהם לא שווה ניקוד של שאר ההצעה. לרשימה הזו נוספת שאלה שאינה &#x27;האם יש AI&#x27; אלא כיצד נתוני הלומדים והנתונים הארגוניים משמשים את יכולות ה-AI, וגם היא מתאימה למעמד של סף.
+לדרוש תמחור של אותו תרחיש בדיוק לתקופה קבועה, למשל שלוש שנים, בנפח הלומדים הנוכחי וגם בנפח הצפוי בעוד שנתיים או שלוש, בהפרדה בין יישום, תחזוקת אינטגרציות, תמיכה מוגברת, אחסון, שירותים מקצועיים והגירה. במקביל לסגור מראש מי הבעלים של הנתונים וכיצד מוציאים אותם בתום החוזה, כי אחרי החתימה אין מנוף." data-en="Refuse yes or no answers: every requirement gets classified as native, configurable, third-party integration, custom development or not supported. A vendor answering &#x27;we integrate with HRIS&#x27; via custom development is not on the same cost and risk line as one with a prebuilt connector.
+Security, accessibility and hosting belong as gate criteria that disqualify, not as weighted lines: a vendor failing them is not worth scoring on the rest. Add to that list a question that is not &#x27;do you use AI&#x27; but how learner and organizational data are used by those AI features, which also qualifies as a gate.
+Require pricing for the identical scenario over a fixed period, for example three years, at current learner volumes and at projected volumes two or three years out, with implementation, integration maintenance, premium support, storage, professional services and migration itemized separately. In parallel settle who owns the data and how it is retrieved at contract end, because after signature there is no leverage."><li>לא לקבל תשובות כן או לא: כל דרישה מסווגת כ-native, קונפיגורציה, אינטגרציה של צד שלישי, פיתוח בהזמנה או ללא תמיכה. ספק שעונה &#x27;יש לנו אינטגרציה ל-HRIS&#x27; באמצעות פיתוח בהזמנה אינו באותה שורת עלות וסיכון כמו ספק עם מחבר מובנה.</li><li>אבטחת מידע, נגישות ואופן האירוח הם קריטריוני סף שפוסלים ולא סעיפים משוקללים: ספק שאינו עומד בהם לא שווה ניקוד של שאר ההצעה. לרשימה הזו נוספת שאלה שאינה &#x27;האם יש AI&#x27; אלא כיצד נתוני הלומדים והנתונים הארגוניים משמשים את יכולות ה-AI, וגם היא מתאימה למעמד של סף.</li><li>לדרוש תמחור של אותו תרחיש בדיוק לתקופה קבועה, למשל שלוש שנים, בנפח הלומדים הנוכחי וגם בנפח הצפוי בעוד שנתיים או שלוש, בהפרדה בין יישום, תחזוקת אינטגרציות, תמיכה מוגברת, אחסון, שירותים מקצועיים והגירה. במקביל לסגור מראש מי הבעלים של הנתונים וכיצד מוציאים אותם בתום החוזה, כי אחרי החתימה אין מנוף.</li></ul></div><div class="brief-section brief-section--matters"><p class="brief-label" data-he="למה זה רלוונטי לך" data-en="Why it matters for you">למה זה רלוונטי לך</p><p class="brief-text i18n" data-he="בבנק כל בחירת פלטפורמה עוברת רכש, IT ואבטחת מידע, ושאלת השימוש של יכולות ה-AI בנתוני לומדים היא בדיוק הנקודה שבה תהליכים כאלה נתקעים. הפרדה מוקדמת בין סף למנוקד, ובין מחיר רישוי לעלות בעלות כוללת, היא מה שמקצר את הסבב הזה." data-en="In a bank every platform choice passes procurement, IT and security, and the question of how AI features use learner data is precisely where such processes stall. Separating gate from scored criteria early, and license price from total cost of ownership, is what shortens that cycle.">בבנק כל בחירת פלטפורמה עוברת רכש, IT ואבטחת מידע, ושאלת השימוש של יכולות ה-AI בנתוני לומדים היא בדיוק הנקודה שבה תהליכים כאלה נתקעים. הפרדה מוקדמת בין סף למנוקד, ובין מחיר רישוי לעלות בעלות כוללת, היא מה שמקצר את הסבב הזה.</p></div></div>
+
+        <a class="card__cta" href="https://elearningindustry.com/lms-rfp-template" target="_blank" rel="noopener">
+          <span class="i18n" data-he="קרא את הכתבה המלאה" data-en="Read the full article">קרא את הכתבה המלאה</span>
+          <span class="cta-arrow">&#8592;</span>
+        </a>
+
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card__rank">#8</div>
+      <div class="card__body">
+
+        <div class="card__header">
+          <div class="card__title-block">
+            <p class="card__eyebrow">eLearning Industry</p>
+            <h2 class="card__title">
+              <a href="https://elearningindustry.com/stop-one-and-done-training-by-building-a-connected-learning-ecosystem" target="_blank" rel="noopener"
+                 class="i18n" data-he="לצאת ממלכודת ההדרכה החד פעמית: עיצוב לאחור ומודל Gilbert ככלי אבחון"
+                 data-en="Escaping One-and-Done Training: Backward Design and Gilbert&#x27;s Behavior Engineering Model as a Diagnostic">לצאת ממלכודת ההדרכה החד פעמית: עיצוב לאחור ומודל Gilbert ככלי אבחון</a>
+            </h2>
+          </div>
+        </div>
+
+        <div class="card__meta">
+          <span class="meta-item"><span class="meta-icon">&#128197;</span> 2026-11-19</span>
+        </div>
+
+        <div class="card__tags">
+          <span class="tag i18n" data-he="אסטרטגיה"
+                data-en="Strategy">אסטרטגיה</span>
+        </div>
+
+        <div class="card__content"><div class="brief-section"><p class="brief-label" data-he="תקציר" data-en="Summary">תקציר</p><p class="brief-text i18n" data-he="תוכן ממומן של Bridge, שנכתב בידי מנהלת שיווק ולא בידי איש מקצוע בלמידה, כך שכדאי לקזז את המלצות הפלטפורמה. המסגרת המוצעת: להחליף אירועי הדרכה חד פעמיים באסטרטגיה שנתית. החלק בעל הערך הוא הפתיחה: עיצוב לאחור שמתחיל בשאלה כיצד נראה מבצע אידיאלי ומה התפוקות שלו, ובעיקר Behavior Engineering Model של Thomas Gilbert, ששימושו כאן הוא להבחין בין פער שמקורו בידע ומיומנות לבין פער שמקורו בציפיות לא ברורות, תהליכים שבורים או תמריצים לא מיושרים (המאמר מזכיר שישה גורמים אך אינו מפרט אותם). משם והלאה כל פתרון מצביע לעבר פלטפורמת המיומנויות של המפרסם." data-en="Bridge-sponsored content written by a marketing executive rather than an L&amp;D practitioner, so the platform recommendations should be discounted. The frame offered: replace one-and-done events with a year-round strategy. The valuable part is the opening: backward design starting from what an ideal performer looks like and what their outputs are, and above all Thomas Gilbert&#x27;s Behavior Engineering Model, used here to separate gaps rooted in knowledge and skill from gaps rooted in unclear expectations, broken systems or misaligned incentives (the article mentions six factors but does not list them). From there every remedy points at the sponsor&#x27;s skills platform.">תוכן ממומן של Bridge, שנכתב בידי מנהלת שיווק ולא בידי איש מקצוע בלמידה, כך שכדאי לקזז את המלצות הפלטפורמה. המסגרת המוצעת: להחליף אירועי הדרכה חד פעמיים באסטרטגיה שנתית. החלק בעל הערך הוא הפתיחה: עיצוב לאחור שמתחיל בשאלה כיצד נראה מבצע אידיאלי ומה התפוקות שלו, ובעיקר Behavior Engineering Model של Thomas Gilbert, ששימושו כאן הוא להבחין בין פער שמקורו בידע ומיומנות לבין פער שמקורו בציפיות לא ברורות, תהליכים שבורים או תמריצים לא מיושרים (המאמר מזכיר שישה גורמים אך אינו מפרט אותם). משם והלאה כל פתרון מצביע לעבר פלטפורמת המיומנויות של המפרסם.</p></div><div class="brief-section"><p class="brief-label" data-he="תובנות מפתח" data-en="Key insights">תובנות מפתח</p><ul class="brief-list i18n-list" data-he="להשתמש במודל של Gilbert כטריאז&#x27; לפני קבלת בקשת הדרכה: מתוך הגורמים שהוא חושף, רק ידע ומיומנות שייכים ליחידת הלמידה. ציפיות לא ברורות, תהליכים שבורים ותמריצים סותרים חוזרים לבעל התהליך העסקי עם החלטה נדרשת ושם של אחראי, כי שום קורס לא סוגר אותם.
+הטענה שאי אפשר להגיע לשפת מיומנויות אחידה בלי תוכנה ייעודית היא הנחת המוצא של המפרסם ולא ממצא. מה שכן עולה מהמאמר הוא התנאי האמיתי: הגדרת המיומנות נבנית מול תורמים יחידים, מנהליהם, מומחים חוצי פונקציות וציפיות ההנהלה, והקטלוג הוא תוצר של התהליך הזה ולא תחליף לו.
+המבחן שמבדיל אקוסיסטם מלוח שנה של אירועים הוא היכן קורה התרגול: עזרי ביצוע קצרים ברגע הצורך ומסלולים שמשלבים משימות עבודה אמיתיות, במקום הפסקת עבודה לטובת מפגש. אם הלומד חייב לצאת מהעבודה כדי ללמוד, זה עדיין אירוע." data-en="Use Gilbert&#x27;s model as triage before accepting a training request: of the factors it surfaces, only knowledge and skill belong to the learning unit. Unclear expectations, broken systems and conflicting incentives go back to the business owner with a required decision and a named accountable person, because no course closes them.
+The claim that a shared skills language is unreachable without purpose-built software is the sponsor&#x27;s premise, not a finding. What the article does establish is the real condition: a skill definition is built against individual contributors, their managers, cross-functional experts and C-suite expectations, and the catalogue is the output of that process rather than a substitute for it.
+The test that separates an ecosystem from a calendar of events is where practice happens: short job aids at the point of need and pathways that embed real work tasks, rather than pausing work for a session. If the learner has to leave the work to learn, it is still an event."><li>להשתמש במודל של Gilbert כטריאז&#x27; לפני קבלת בקשת הדרכה: מתוך הגורמים שהוא חושף, רק ידע ומיומנות שייכים ליחידת הלמידה. ציפיות לא ברורות, תהליכים שבורים ותמריצים סותרים חוזרים לבעל התהליך העסקי עם החלטה נדרשת ושם של אחראי, כי שום קורס לא סוגר אותם.</li><li>הטענה שאי אפשר להגיע לשפת מיומנויות אחידה בלי תוכנה ייעודית היא הנחת המוצא של המפרסם ולא ממצא. מה שכן עולה מהמאמר הוא התנאי האמיתי: הגדרת המיומנות נבנית מול תורמים יחידים, מנהליהם, מומחים חוצי פונקציות וציפיות ההנהלה, והקטלוג הוא תוצר של התהליך הזה ולא תחליף לו.</li><li>המבחן שמבדיל אקוסיסטם מלוח שנה של אירועים הוא היכן קורה התרגול: עזרי ביצוע קצרים ברגע הצורך ומסלולים שמשלבים משימות עבודה אמיתיות, במקום הפסקת עבודה לטובת מפגש. אם הלומד חייב לצאת מהעבודה כדי ללמוד, זה עדיין אירוע.</li></ul></div><div class="brief-section brief-section--matters"><p class="brief-label" data-he="למה זה רלוונטי לך" data-en="Why it matters for you">למה זה רלוונטי לך</p><p class="brief-text i18n" data-he="מודל Gilbert הוא הכלי שמסיט שיחה עם מזמין הדרכה מהזמנת קורס לאבחון, בדיוק המהלך שאבי מנסה להפוך לברירת מחדל בבנק. שווה גם לשים לב שספקי פלטפורמות מיומנויות מגיעים היום עם אותה שפה של ייעוץ ביצועים, ולכן הבידול של היחידה חייב לשבת באבחון ובנתונים ולא בהצהרה." data-en="Gilbert&#x27;s model is the lever that moves a conversation with an internal client from course ordering to diagnosis, exactly the shift Avi is trying to make default in the bank. Worth noting too that skills-platform vendors now arrive speaking the same performance consulting language, so the unit&#x27;s differentiation has to sit in the diagnosis and the data, not in the claim.">מודל Gilbert הוא הכלי שמסיט שיחה עם מזמין הדרכה מהזמנת קורס לאבחון, בדיוק המהלך שאבי מנסה להפוך לברירת מחדל בבנק. שווה גם לשים לב שספקי פלטפורמות מיומנויות מגיעים היום עם אותה שפה של ייעוץ ביצועים, ולכן הבידול של היחידה חייב לשבת באבחון ובנתונים ולא בהצהרה.</p></div></div>
+
+        <a class="card__cta" href="https://elearningindustry.com/stop-one-and-done-training-by-building-a-connected-learning-ecosystem" target="_blank" rel="noopener">
+          <span class="i18n" data-he="קרא את הכתבה המלאה" data-en="Read the full article">קרא את הכתבה המלאה</span>
+          <span class="cta-arrow">&#8592;</span>
+        </a>
+
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card__rank">#9</div>
+      <div class="card__body">
+
+        <div class="card__header">
+          <div class="card__title-block">
+            <p class="card__eyebrow">Training Journal</p>
+            <h2 class="card__title">
+              <a href="https://www.trainingjournal.com/2026/content-type/features/the-surprising-power-of-handwriting-in-a-digital-learning-world/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=the-surprising-power-of-handwriting-in-a-digital-learning-world" target="_blank" rel="noopener"
+                 class="i18n" data-he="כשה-AI מתמלל הכול, איפה הלומד חושב: הכוח של כתיבה ביד"
+                 data-en="When AI Transcribes Everything, Where Does the Learner Think: The Case for Handwriting">כשה-AI מתמלל הכול, איפה הלומד חושב: הכוח של כתיבה ביד</a>
+            </h2>
+          </div>
+        </div>
+
+        <div class="card__meta">
+          <span class="meta-item"><span class="meta-icon">&#128197;</span> 2026-11-17</span>
+        </div>
+
+        <div class="card__tags">
+          <span class="tag i18n" data-he="עיצוב למידה"
+                data-en="Learning design">עיצוב למידה</span>
+        </div>
+
+        <div class="card__content"><div class="brief-section"><p class="brief-label" data-he="תקציר" data-en="Summary">תקציר</p><p class="brief-text i18n" data-he="כשהקלטה, תמלול וסיכום אוטומטי זמינים בלחיצה, נפתחת שאלה עיצובית: היכן בדיוק הלומד מעבד. המאמר נשען על Mueller ו-Oppenheimer (2014), שמצאו שכותבים בכתב יד מעתיקים פחות מילה במילה ולכן בוררים ומנסחים מחדש, ומציין בהגינות שניסויי שחזור מאוחרים לא מצאו יתרון למידה ברור. לצד זה הוא מביא את מחקרי המעבר בין משימות (לכל החלפת קשב יש מחיר קוגניטיבי גם כשלא לוחצים על ההתראה) ואת מחקר Jackie Andrade על שרבוט במשימת האזנה מונוטונית. המסקנה אינה לוותר על דיגיטל אלא לתכנן רגעי עיבוד ולהשאיר את בחירת הכלי פתוחה משיקולי נגישות." data-en="Once recording, transcription and automatic summarizing are one click away, a design question opens: where exactly does the learner process. The article leans on Mueller and Oppenheimer (2014), who found longhand note takers copy less verbatim and therefore select and rephrase, and honestly notes later replications have not found a clear learning advantage. Alongside it it cites task-switching research (every attention shift carries a cognitive cost even when the notification is not clicked) and Jackie Andrade&#x27;s doodling study on a monotonous listening task. The conclusion is not to abandon digital but to engineer processing moments and keep tool choice open for accessibility.">כשהקלטה, תמלול וסיכום אוטומטי זמינים בלחיצה, נפתחת שאלה עיצובית: היכן בדיוק הלומד מעבד. המאמר נשען על Mueller ו-Oppenheimer (2014), שמצאו שכותבים בכתב יד מעתיקים פחות מילה במילה ולכן בוררים ומנסחים מחדש, ומציין בהגינות שניסויי שחזור מאוחרים לא מצאו יתרון למידה ברור. לצד זה הוא מביא את מחקרי המעבר בין משימות (לכל החלפת קשב יש מחיר קוגניטיבי גם כשלא לוחצים על ההתראה) ואת מחקר Jackie Andrade על שרבוט במשימת האזנה מונוטונית. המסקנה אינה לוותר על דיגיטל אלא לתכנן רגעי עיבוד ולהשאיר את בחירת הכלי פתוחה משיקולי נגישות.</p></div><div class="brief-section"><p class="brief-label" data-he="תובנות מפתח" data-en="Key insights">תובנות מפתח</p><ul class="brief-list i18n-list" data-he="להחליף את ההנחיה לרשום הערות בהנחיה שמחייבת עיבוד: רעיון אחד שאתה לא מסכים איתו, שאלה אחת שתרצה לשאול, או דבר אחד שתנסה אחרי המפגש. מבחן האיכות הוא ההבדל בין העתקת ההגדרה של ביטחון פסיכולוגי לבין רישום השאלה &#x27;האם אנשים בצוות שלי יגידו לי שאני טועה&#x27;.
+תבנית קונקרטית למפגש מרחוק: מציגים מושג על המסך, שתי דקות חשיבה פרטית על נייר, חדר דיון קצר על מה שעלה, ובסוף רישום הפעולה בדיגיטל כדי שאפשר יהיה לעקוב. ההצדקה לדקות מחוץ למסך היא עלות המעבר בין משימות ולא נוסטלגיה.
+פתק בכתב יד ליד המסך, למשל &#x27;לשאול לפני שמייעצים&#x27; או שלוש שאלות לסקירת הפרויקט הבאה, הוא מנגנון העברה בעלות אפסית. הערך אינו בכתיבה אלא בכך שהתזכורת נשארת בסביבת העבודה אחרי שהפלטפורמה נסגרה." data-en="Replace the instruction to take notes with one that forces processing: one idea you disagree with, one question you want to ask, or one thing you will try after the session. The quality test is the difference between copying the definition of psychological safety and writing &#x27;would people on my team tell me when I am wrong&#x27;.
+A concrete virtual session pattern: introduce the concept on screen, two minutes of private thinking on paper, a short breakout on what surfaced, then record the resulting action digitally so it can be followed up. The justification for the off-screen minutes is task-switching cost, not nostalgia.
+A handwritten card by the monitor, for example &#x27;ask before advising&#x27; or three questions for the next project review, is a zero-cost transfer mechanism. The value is not in the writing but in the prompt still sitting in the work environment after the platform has closed."><li>להחליף את ההנחיה לרשום הערות בהנחיה שמחייבת עיבוד: רעיון אחד שאתה לא מסכים איתו, שאלה אחת שתרצה לשאול, או דבר אחד שתנסה אחרי המפגש. מבחן האיכות הוא ההבדל בין העתקת ההגדרה של ביטחון פסיכולוגי לבין רישום השאלה &#x27;האם אנשים בצוות שלי יגידו לי שאני טועה&#x27;.</li><li>תבנית קונקרטית למפגש מרחוק: מציגים מושג על המסך, שתי דקות חשיבה פרטית על נייר, חדר דיון קצר על מה שעלה, ובסוף רישום הפעולה בדיגיטל כדי שאפשר יהיה לעקוב. ההצדקה לדקות מחוץ למסך היא עלות המעבר בין משימות ולא נוסטלגיה.</li><li>פתק בכתב יד ליד המסך, למשל &#x27;לשאול לפני שמייעצים&#x27; או שלוש שאלות לסקירת הפרויקט הבאה, הוא מנגנון העברה בעלות אפסית. הערך אינו בכתיבה אלא בכך שהתזכורת נשארת בסביבת העבודה אחרי שהפלטפורמה נסגרה.</li></ul></div><div class="brief-section brief-section--matters"><p class="brief-label" data-he="למה זה רלוונטי לך" data-en="Why it matters for you">למה זה רלוונטי לך</p><p class="brief-text i18n" data-he="ככל שאבי מאיץ ייצור למידה בעזרת AI, התמלול והסיכום נעלמים מהעבודה של הלומד, ולכן רגע העיבוד חייב להיות מתוכנן במפורש. שווה גם לאמץ את הזהירות של המאמר עצמו: Mueller ו-Oppenheimer אינם ראיה סגורה, ואין לצטט אותם כמסקנה מוכחת מול הנהלה." data-en="As Avi accelerates AI-assisted production, transcription and summarizing disappear from the learner&#x27;s work, so the processing moment has to be deliberately designed in. Worth borrowing the article&#x27;s own caution too: Mueller and Oppenheimer are not settled evidence and should not be quoted to executives as a proven finding.">ככל שאבי מאיץ ייצור למידה בעזרת AI, התמלול והסיכום נעלמים מהעבודה של הלומד, ולכן רגע העיבוד חייב להיות מתוכנן במפורש. שווה גם לאמץ את הזהירות של המאמר עצמו: Mueller ו-Oppenheimer אינם ראיה סגורה, ואין לצטט אותם כמסקנה מוכחת מול הנהלה.</p></div></div>
+
+        <a class="card__cta" href="https://www.trainingjournal.com/2026/content-type/features/the-surprising-power-of-handwriting-in-a-digital-learning-world/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=the-surprising-power-of-handwriting-in-a-digital-learning-world" target="_blank" rel="noopener">
+          <span class="i18n" data-he="קרא את הכתבה המלאה" data-en="Read the full article">קרא את הכתבה המלאה</span>
+          <span class="cta-arrow">&#8592;</span>
+        </a>
+
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card__rank">#10</div>
+      <div class="card__body">
+
+        <div class="card__header">
+          <div class="card__title-block">
+            <p class="card__eyebrow">Training Journal</p>
+            <h2 class="card__title">
+              <a href="https://www.trainingjournal.com/2026/content-type/opinion/could-your-ai-side-hustle-put-your-freelance-status-at-risk/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=could-your-ai-side-hustle-put-your-freelance-status-at-risk" target="_blank" rel="noopener"
+                 class="i18n" data-he="עבודת צד כמאמן AI: למה התעריף השעתי הוא רק חצי מהחשבון למקצועני L&amp;D עצמאיים"
+                 data-en="The AI Trainer Side Hustle: Why the Hourly Rate Is Only Half the Calculation for Freelance L&amp;D Professionals">עבודת צד כמאמן AI: למה התעריף השעתי הוא רק חצי מהחשבון למקצועני L&amp;D עצמאיים</a>
+            </h2>
+          </div>
+        </div>
+
+        <div class="card__meta">
+          <span class="meta-item"><span class="meta-icon">&#128197;</span> 2026-11-18</span>
+        </div>
+
+        <div class="card__tags">
+          <span class="tag i18n" data-he="AI בלמידה"
+                data-en="AI in L&amp;D">AI בלמידה</span>
+        </div>
+
+        <div class="card__content"><div class="brief-section"><p class="brief-label" data-he="תקציר" data-en="Summary">תקציר</p><p class="brief-text i18n" data-he="מודעות דרושים לתפקידי AI trainer, rubric writer ו-prompt evaluator מגייסות במפורש בעלי רקע בהוראה, עיצוב הערכה ופיתוח תוכניות לימודים, בתעריפים של 20 עד 80 ליש&quot;ט לשעה. המאמר מצביע על שתי תביעות ייצוגיות בארה&quot;ב נגד פלטפורמות הכשרת AI סביב סיווג עובדים כקבלנים עצמאיים, עם טענות על הקצאת משימות אלגוריתמית, תעריפים שנקבעים חד צדדית, הכשרה לא מתוגמלת ומנגנון אוטומטי שמבטל תשלום כשמשימה חורגת מדדליין. את הטענות האלה הוא ממפה מול גורמי השליטה שבהם השתמש בית המשפט העליון בבריטניה בפרשת Uber BV v Aslam, שבה הנהגים הוכרו כ-workers ולא כעצמאים." data-en="Job ads for AI trainer, rubric writer and prompt evaluator roles explicitly recruit people with teaching, assessment design and curriculum backgrounds at 20 to 80 pounds an hour. The article points to two US class actions against AI training platforms over classifying workers as independent contractors, alleging algorithmic task assignment, unilaterally set pay rates, unpaid training and an automated system that can remove pay entirely when a task runs past a deadline. It maps those allegations onto the control factors the UK Supreme Court used in Uber BV v Aslam, where drivers were held to be workers rather than self-employed.">מודעות דרושים לתפקידי AI trainer, rubric writer ו-prompt evaluator מגייסות במפורש בעלי רקע בהוראה, עיצוב הערכה ופיתוח תוכניות לימודים, בתעריפים של 20 עד 80 ליש&quot;ט לשעה. המאמר מצביע על שתי תביעות ייצוגיות בארה&quot;ב נגד פלטפורמות הכשרת AI סביב סיווג עובדים כקבלנים עצמאיים, עם טענות על הקצאת משימות אלגוריתמית, תעריפים שנקבעים חד צדדית, הכשרה לא מתוגמלת ומנגנון אוטומטי שמבטל תשלום כשמשימה חורגת מדדליין. את הטענות האלה הוא ממפה מול גורמי השליטה שבהם השתמש בית המשפט העליון בבריטניה בפרשת Uber BV v Aslam, שבה הנהגים הוכרו כ-workers ולא כעצמאים.</p></div><div class="brief-section"><p class="brief-label" data-he="תובנות מפתח" data-en="Key insights">תובנות מפתח</p><ul class="brief-list i18n-list" data-he="חמש שאלות לפני חתימה: האם התעריף באמת נתון למשא ומתן, האם זמן הכיול והקליטה משולם, האם אפשר לסרב למשימה בלי חניקת החשבון, האם נשאר מרחב לפעול מחוץ ל-IR35, והאם קיים לקוח בעל שם או רק אלגוריתם שמחלק משימות.
+הסיכון אינו מוגבל לחוזה הבודד: ערימה של פלטפורמות כאלה לצד לקוחות ייעוץ אמיתיים עלולה לסבך את מעמד העצמאות ואת מצב המס בכל ההתקשרויות המקבילות, ולא רק באותה פלטפורמה.
+המבחן הנייד, שלא תלוי בשיפוט ספציפי: האם התעריף נקבע בלי קלט של נותן השירות, האם יש סנקציה על סירוב או ביצוע חלש, האם האפליקציה קובעת כיצד מבצעים את העבודה, והאם נמנעת מערכת יחסים ישירה עם לקוח שיוכל להזמין שוב. הנקודה המכריעה היא שהבחינה נעשית על אופן ההתנהלות בפועל ולא על הכותרת שבחוזה." data-en="Five questions before signing: is the rate genuinely negotiable, is calibration and onboarding time paid, can tasks be declined without the account being throttled, is there room to operate outside IR35, and is there a named client or only an algorithm assigning work.
+The exposure is not confined to one contract: stacking several such platforms alongside genuine consultancy clients can complicate self-employed status and tax position across every concurrent engagement, not only the platform one.
+The portable test, independent of jurisdiction: is the rate set without the worker&#x27;s input, is there a penalty for declining or underperforming, does the app dictate how the work is done, and is a direct relationship with a client who could rehire prevented. The decisive point is that what gets examined is how the relationship actually operated, not what the contract called it."><li>חמש שאלות לפני חתימה: האם התעריף באמת נתון למשא ומתן, האם זמן הכיול והקליטה משולם, האם אפשר לסרב למשימה בלי חניקת החשבון, האם נשאר מרחב לפעול מחוץ ל-IR35, והאם קיים לקוח בעל שם או רק אלגוריתם שמחלק משימות.</li><li>הסיכון אינו מוגבל לחוזה הבודד: ערימה של פלטפורמות כאלה לצד לקוחות ייעוץ אמיתיים עלולה לסבך את מעמד העצמאות ואת מצב המס בכל ההתקשרויות המקבילות, ולא רק באותה פלטפורמה.</li><li>המבחן הנייד, שלא תלוי בשיפוט ספציפי: האם התעריף נקבע בלי קלט של נותן השירות, האם יש סנקציה על סירוב או ביצוע חלש, האם האפליקציה קובעת כיצד מבצעים את העבודה, והאם נמנעת מערכת יחסים ישירה עם לקוח שיוכל להזמין שוב. הנקודה המכריעה היא שהבחינה נעשית על אופן ההתנהלות בפועל ולא על הכותרת שבחוזה.</li></ul></div><div class="brief-section brief-section--matters"><p class="brief-label" data-he="למה זה רלוונטי לך" data-en="Why it matters for you">למה זה רלוונטי לך</p><p class="brief-text i18n" data-he="החלק המשפטי כבול לשיפוט: IR35 ופסיקת בית המשפט העליון בבריטניה אינם חלים בישראל. מה שכן עובר הוא האבחון: גורמי השליטה והעיקרון שבוחנים את ההתנהלות בפועל ולא את כותרת החוזה. זה שימושי לאבי בשתי חזיתות: בייעוץ למעצבי למידה עצמאיים שהוא מלמד, שנמשכים בדיוק לשוק הזה, וכשהיחידה שלו רוכשת כוח אדם פרילנס לייצור למידה." data-en="The legal half is jurisdiction-bound: IR35 and the UK Supreme Court ruling do not apply in Israel. What transfers is the diagnostic: the control factors, and the principle that what is examined is how the relationship actually ran rather than the contract&#x27;s label. That is useful to Avi on two fronts: advising the freelance designers he teaches, who are being recruited into exactly this market, and when his own unit buys freelance capacity for learning production.">החלק המשפטי כבול לשיפוט: IR35 ופסיקת בית המשפט העליון בבריטניה אינם חלים בישראל. מה שכן עובר הוא האבחון: גורמי השליטה והעיקרון שבוחנים את ההתנהלות בפועל ולא את כותרת החוזה. זה שימושי לאבי בשתי חזיתות: בייעוץ למעצבי למידה עצמאיים שהוא מלמד, שנמשכים בדיוק לשוק הזה, וכשהיחידה שלו רוכשת כוח אדם פרילנס לייצור למידה.</p></div></div>
+
+        <a class="card__cta" href="https://www.trainingjournal.com/2026/content-type/opinion/could-your-ai-side-hustle-put-your-freelance-status-at-risk/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=could-your-ai-side-hustle-put-your-freelance-status-at-risk" target="_blank" rel="noopener">
+          <span class="i18n" data-he="קרא את הכתבה המלאה" data-en="Read the full article">קרא את הכתבה המלאה</span>
+          <span class="cta-arrow">&#8592;</span>
+        </a>
+
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <span class="i18n" data-he="עיכול אוטומטי שבועי &middot; מקורות: בלוגים ומגזינים מובילים בתחום הלמידה" data-en="Auto-generated weekly digest &middot; Sources: leading L&amp;D blogs and publications">עיכול אוטומטי שבועי &middot; מקורות: בלוגים ומגזינים מובילים בתחום הלמידה</span>
+    <p class="share-copied" id="shareCopied">&#128279; <span class="i18n" data-he="הקישור הועתק!" data-en="Link copied!">הקישור הועתק!</span></p>
+  </footer>
+
+</div>
+
+<script>
+// ── LANGUAGE TOGGLE ──
+var currentLang = 'he';
+function toggleLang() {
+  currentLang = currentLang === 'he' ? 'en' : 'he';
+  var isHe = currentLang === 'he';
+  document.documentElement.lang = currentLang;
+  document.documentElement.dir = isHe ? 'rtl' : 'ltr';
+  document.getElementById('langToggle').textContent = isHe ? 'EN' : 'עב';
+  document.querySelectorAll('.i18n').forEach(function(el) {
+    var v = el.dataset[currentLang];
+    if (v !== undefined) el.innerHTML = v;
+  });
+  // Bulleted lists carry their items as newline-joined data attributes.
+  document.querySelectorAll('.i18n-list').forEach(function(el) {
+    var v = el.dataset[currentLang];
+    if (v === undefined) return;
+    el.innerHTML = v.split('\n').filter(Boolean).map(function(item) {
+      var li = document.createElement('li');
+      li.textContent = item;
+      return li.outerHTML;
+    }).join('');
+  });
+  document.querySelectorAll('.brief-label').forEach(function(el) {
+    var he = el.dataset.he, en = el.dataset.en;
+    if (he && en) el.textContent = isHe ? he : en;
+  });
+}
+
+// ── SHARE ──
+function shareReport() {
+  var title = currentLang === 'he'
+    ? 'עיכול L&D שבועי – 2026-W47'
+    : 'Weekly L&D Digest – 2026-W47';
+  var url = window.location.href;
+  if (navigator.share) {
+    navigator.share({ title: title, url: url }).catch(function(){});
+  } else {
+    navigator.clipboard.writeText(url).then(function() {
+      var el = document.getElementById('shareCopied');
+      el.classList.add('show');
+      setTimeout(function() { el.classList.remove('show'); }, 2500);
+    }).catch(function() {
+      prompt('Copy this link:', url);
+    });
+  }
+}
+</script>
+</body>
+</html>
