@@ -1,0 +1,244 @@
+{
+  "week": "2026-W48",
+  "generated_for": "2026-11-27",
+  "count": 10,
+  "articles": [
+    {
+      "headline_he": "ROI בששה רבדים: מה באמת מבדיל בין צוותי L&D שמוכיחים השפעה לכאלה שלא",
+      "headline_en": "A Six-Layer ROI Playbook: What Separates L&D Teams That Prove Impact",
+      "summary_he": "סקר של יותר מ-140 אנשי L&D ולמעלה מ-15 ראיונות עומק מצא שרק 11% מהמשיבים יכולים לקשר כמותית בין הדרכה לשיפור עסקי. מהנתונים עלה playbook בן שישה רבדים: הגדרת KPI עסקי מראש, איסוף baseline, שיתוף מנהלים ישירים, חיבור נתוני למידה לנתונים עסקיים, מחזור שיפור מתמשך ונכונות לקבל תוצאות מאכזבות. לכל רובד מוצמדים פערי הצלחה מדידים בין מי שמיישם לבין מי שלא.",
+      "summary_en": "A survey of 140+ L&D professionals plus 15+ in-depth interviews found only 11% can quantitatively connect training to business improvement. The data produced a six-layer playbook: define the business KPI up front, capture a baseline, involve line managers, connect learning data to business data, iterate continuously, and make room for disappointing results. Each layer carries a measurable gap between teams that do it and teams that do not.",
+      "insights_he": [
+        "הקורלציה החזקה ביותר במחקר: 43% ממי שמשתמש בדשבורד BI הצליח להוכיח ROI, מול 8% בלבד אצל מי שנשען על נתוני LMS בלבד.",
+        "מעורבות מנהלים ישירים משנה את התמונה: 21% הוכחת ROI כשהמנהלים מעורבים מאוד, מול 3% כשאין מעורבות כלל. בקשו מהם לצפות בכמה התנהגויות ספציפיות ולדווח בנקודות בדיקה מוסכמות.",
+        "56% ממי שטען שיש לו הוכחת ROI כמותית לא הצליח לתת דוגמה קונקרטית כשנשאל. כדאי להסכים מראש מה ייחשב הצלחה ומה עושים אם היעד לא מושג."
+      ],
+      "insights_en": [
+        "The strongest correlation in the research: 43% of BI dashboard users could prove ROI, versus 8% of those relying on LMS data alone.",
+        "Line manager involvement changes everything: 21% proved ROI with high manager involvement versus 3% with none. Give managers a few specific behaviors to observe and agreed checkpoints to report at.",
+        "56% of respondents who claimed quantitative ROI proof could not produce a concrete example when asked. Agree in advance what success looks like and what happens if the target is missed."
+      ],
+      "matters_he": "זה בדיוק הציר של אבי: ביצועים ודאטה במקום ספירת קורסים. ה-playbook נותן מסגרת מוכנה לשיחה עם בעלי עניין בבנק ומצביע על חיבור נתוני הלמידה למערכות העסקיות כצעד בעל ההשפעה הגדולה ביותר.",
+      "matters_en": "This sits exactly on Avi's axis: performance and data instead of course counting. The playbook gives a ready framework for stakeholder conversations at the bank and names connecting learning data to business systems as the highest-leverage move.",
+      "lane": "strategy",
+      "url": "https://www.chieflearningofficer.com/2026/11/20/using-the-6-layer-roi-playbook-to-prove-trainings-impact/",
+      "source": "Chief Learning Officer",
+      "published": "2026-11-20T20:55:33+00:00"
+    },
+    {
+      "headline_he": "הערכה עצמית מודדת פחד, לא יכולת: למה צריך לבדוק את התרבות לפני שבודקים אנשים",
+      "headline_en": "Self-Assessment Measures Fear, Not Capability",
+      "summary_he": "Ben Satchwell טוען שהערכה עצמית במסגרות יכולות (capability frameworks) היא נתון רועש מלכתחילה: המתאם שלה עם יכולת אמיתית חלש, והחלשים ביותר נוטים להיות הבטוחים ביותר. כשמוסיפים תרבות ארגונית לא בטוחה, הרעש הופך להטיה שיטתית כלפי מעלה, והפערים האמיתיים נעלמים מהדאטה. ההמלצה: להעריך את מוכנות התרבות לפני שמעריכים את האנשים.",
+      "summary_en": "Ben Satchwell argues self-assessment in capability frameworks is noisy data to begin with: it correlates weakly with actual competence, and the weakest performers tend to be the most overconfident. Add a low-trust culture and the noise becomes systematic inflation, making real gaps invisible. His prescription: assess the organisation's readiness to be assessed honestly before you collect a single rating.",
+      "insights_he": [
+        "הערכה עצמית בארגון לא בטוח גרועה מאי-מדידה: הנהלה רואה מעט פערים, מסיטה תקציב למקום אחר, והפערים האמיתיים הופכים רשמית לבלתי נראים.",
+        "לפני שמריצים: בדקו אם אנשים כאן באמת מודים שהם לא יודעים משהו, מה קורה בפועל למי שחושף פער, והאם היו לאחרונה רה-ארגונים שמסמנים שחשיפה מסוכנת.",
+        "ארבעה מנגנונים מפחיתים את ההטיה: לשלב מקור מידע נוסף לצד הדירוג העצמי, למסגר במפורש כפיתוח ולא כשיפוט, להתחיל חשיפה מההנהלה, ולהפריד בחומה גלויה בין נתוני יכולת להחלטות ביצועים ותגמול."
+      ],
+      "insights_en": [
+        "Self-assessment in an unsafe organisation is worse than no data: leadership sees few gaps, redirects investment, and the real gaps become officially invisible.",
+        "Before running one, ask: do people here routinely admit they do not know something, what actually happens to someone who surfaces a gap, and have there been recent restructures that make disclosure feel dangerous.",
+        "Four mechanisms reduce the bias: triangulate with a second data source, frame explicitly as development rather than judgement, have leaders disclose their own gaps first, and build a visible wall between capability data and reward decisions."
+      ],
+      "matters_he": "מי שבונה דאטה של מיומנויות בארגון גדול נשען לעיתים קרובות על הערכה עצמית כמקור הראשון. המאמר נותן נימוק מתודולוגי מדויק לדרוש טריאנגולציה ולהפריד בין דאטה של יכולת לבין תהליכי ביצועים.",
+      "matters_en": "Anyone building skills data in a large organisation often leans on self-assessment as the first source. This gives Avi a precise methodological argument for demanding triangulation and for separating capability data from performance processes.",
+      "lane": "id_craft",
+      "url": "https://www.trainingjournal.com/2026/content-type/opinion/self-assessment-only-works-in-psychologically-safe-organisations/?utm_source=rss&utm_medium=rss&utm_campaign=self-assessment-only-works-in-psychologically-safe-organisations",
+      "source": "Training Journal",
+      "published": "2026-11-25T03:43:00+00:00"
+    },
+    {
+      "headline_he": "חוב למידה: 41% מהעובדים אומרים שהתפקיד השתנה מהר יותר מיכולת ההדרכה",
+      "headline_en": "Learning Debt: 41% Say Their Role Outpaced the Company's Ability to Train Them",
+      "summary_he": "Stelios Sergis מציג את מושג חוב הלמידה: הפער בין מה שהעבודה דורשת לבין מה שהעובדים צוידו לעשות. לפי דוח Learning Debt 2026 של TalentLMS, 41% מהעובדים אומרים שהתפקיד שלהם התפתח מהר יותר מיכולת הארגון להכשיר אותם, והתגובה הספונטנית היא אלתור. המאמר מציע חמישה מהלכים שיהפכו את האלתור הזה ליכולת ארגונית נשמרת במקום לגילוי פרטי שנשאר אצל היחיד.",
+      "summary_en": "Stelios Sergis frames learning debt as the distance between what the work demands and what employees have been equipped to do. Per TalentLMS's 2026 Learning Debt report, 41% of employees say their role evolved faster than their company could train them, and their instinctive response is to improvise. The article offers five moves to turn that improvisation into retained organisational capability instead of isolated individual discovery.",
+      "insights_he": [
+        "47% מהעובדים שתקו כשהתקשו במשימה ו-28% אומרים שהמנהל שלהם לא יודע כמה הם מתקשים. בלי בטיחות פסיכולוגית, ניתוח צרכים לא יחשוף את הפערים האמיתיים אלא רק את אלה שנוח לדווח עליהם.",
+        "לכל תהליך עבודה שבחרתם, הגדירו מראש מהו ביצוע טוב בשלושה סעיפים: אילו החלטות העובד צריך לקבל, מהן הטעויות הנפוצות, ומה הסימן שהוא כבר עובד עצמאית. בלי שלושת אלה אין קריטריון למדידה ואין דרך לדעת שסגרתם פער.",
+        "בלמידה נתמכת AI, שלבו פעילות חשיבה: בקשו מהעובד להשוות תוצר של AI לגישה שלו ולנסח מה היה מאמת, מפקפק או משנה. המדד שחשוב לעקוב אחריו הוא הפער בין time-to-tool-adoption ל-time-to-training."
+      ],
+      "insights_en": [
+        "47% of employees have stayed quiet when struggling with a task and 28% say their manager does not know how often they struggle. Without psychological safety, needs analysis surfaces only the gaps people feel safe reporting.",
+        "For each workflow you pick, define what good performance looks like in three parts: which decisions the employee must make, what the common errors are, and what signals someone can now work independently. Without those three you have no measurement criterion and no way to know a gap closed.",
+        "For AI-supported work, build in a reasoning activity: have the employee compare AI output with their own approach and state what they would verify, question or change. The metric to track is the gap between time-to-tool-adoption and time-to-training."
+      ],
+      "matters_he": "בבנק כמעט כל שינוי מערכת או רגולציה מגיע ליחידה כבקשה לקורס. שלוש שאלות ה'ביצוע הטוב' ברמת התהליך הן פתיחה מעשית לשיחת ייעוץ ביצועים מול בעל התהליך, ומונח כמו חוב למידה מסביר למנהל עסקי למה דחיית התמיכה נושאת ריבית.",
+      "matters_en": "At the bank almost every system or regulatory change reaches the unit as a course request. The three 'what good looks like' questions at workflow level are a practical opener for a performance consulting conversation with the process owner, and a term like learning debt explains to a business manager why deferred support accrues interest.",
+      "lane": "strategy",
+      "url": "https://www.learningguild.com/articles/learning-debt-is-growing-5-ways-ld-can-help-employees-keep-up",
+      "source": "The Learning Guild",
+      "published": "2026-11-23T06:00:00+00:00",
+      "revised": true
+    },
+    {
+      "headline_he": "בדיקת איכות עצמית: תוכנית בדיקה שמונעת מהלקוח למצוא את הבאג",
+      "headline_en": "A QA Self-Check Plan for Your Own eLearning",
+      "summary_he": "The eLearning Coach מציגה מתודולוגיה שיטתית לבדיקה עצמית של תוצרי למידה לפני שהם עוברים לביקורת חיצונית. במקום run-through מזדמן, בונים תוכנית בדיקה שמכסה מסלולים אפשריים, תגובות לא צפויות, תנאי תצוגה, יציאה וחזרה, מכשירים ודפדפנים, ותיעוד מסודר של התקלות. הבדיקה העצמית לא מחליפה ביקורת עצמאית אלא מקצרת אותה.",
+      "summary_en": "The eLearning Coach lays out a systematic method for testing your own learning products before they go to independent review. Instead of a casual run-through, you build a test plan covering possible paths, unexpected responses, display conditions, exit and resume, devices and browsers, and structured issue logging. Self-testing does not replace independent QA; it shortens it.",
+      "insights_he": [
+        "הפכו את יומן התקלות לארטיפקט צוותי עם חמישה שדות קבועים: מיקום, תיאור הבעיה, התנאים שבהם היא מופיעה, סטטוס טיפול, ואימות שהתיקון אכן פתר. השדה השלישי הוא זה שחוסך סבבי 'אצלי זה עובד'.",
+        "בדקו תמיד בסביבה שבה המוצר יפעל בפועל ולא ב-preview של כלי הפיתוח. חלק מהתקלות, במיוחד בהשקה, חזרה לאמצע וכתיבת השלמה, פשוט לא מופיעות ב-preview.",
+        "בתוכן שנוצר ב-AI: אימות עובדות, הפניות ודוגמאות הוא סעיף בדיקה נפרד ברשימה, לא הנחת עבודה. מי שמייצר מהר חייב שדה בדיקה ייעודי לזה."
+      ],
+      "insights_en": [
+        "Turn the issue log into a team artifact with five fixed fields: location, description, the conditions under which it occurs, resolution status, and verification that the fix actually resolved it. The third field is what kills the 'works on my machine' round trip.",
+        "Always test in the environment where the product will actually run, not in the authoring tool's preview mode. Launch, resume and completion tracking failures in particular simply do not appear in preview.",
+        "For AI-generated content, verifying facts, references and examples is its own line item on the check, not an assumption. Anyone producing fast needs a dedicated field for it."
+      ],
+      "matters_he": "כשמייצרים למידה בקצב AI-native, בקרת האיכות היא צוואר הבקבוק האמיתי. חמשת שדות היומן ניתנים להפיכה לנוהל צוותי בתוך יום, ומשמשים גם חומר ישיר להדרכות שאבי מעביר למפתחי למידה דיגיטלית.",
+      "matters_en": "When you produce learning at AI-native speed, QA becomes the real bottleneck. The five log fields can become a team standard within a day, and they double as direct material for the digital learning development courses Avi teaches.",
+      "lane": "id_craft",
+      "url": "https://theelearningcoach.com/elearning_design/check-your-own-elearning/",
+      "source": "The eLearning Coach",
+      "published": "2026-11-25T20:30:34+00:00",
+      "revised": true
+    },
+    {
+      "headline_he": "שני מחקרים על שפת הערכות ביצועים: למה שבח חם לא מתורגם לקידום",
+      "headline_en": "Two Studies on Review Language: Why Warm Praise Does Not Become Promotion",
+      "summary_he": "המאמר נשען על שני מחקרים אקדמיים: Biernat, Tocci ו-Williams (2012) מצאו שבהערכות של עורכי דין צעירים, מעריכים גברים כתבו שפה נרטיבית חיובית כלפי נשים באותה מידה או יותר, בעוד הציונים המספריים שלהם העדיפו גברים. Correll ועמיתים (2020) קודדו שפת הערכות בחברת טכנולוגיה גדולה ומצאו שהערכות של גברים השתמשו יותר במילות תוצאה (delivered, drove, built) ושל נשים יותר במילות תכונה (supportive, organized), והפער ניבא התקדמות שנים אחר כך, בלתי תלוי בציון. המסקנה המעשית: לטפל בטופס ההערכה כבעיית עיצוב.",
+      "summary_en": "The article draws on two academic studies: Biernat, Tocci and Williams (2012) found that in reviews of junior attorneys, male supervisors wrote equally or more positive narrative language about women while their numeric scores favored men. Correll and colleagues (2020) coded review language at a large technology company and found men's reviews used more results words (delivered, drove, built) and women's more disposition words (supportive, organized), a difference that predicted advancement years later independent of the numeric score. The practical conclusion: treat the review form as a design problem.",
+      "insights_he": [
+        "המאמר מתמחר את המחיר הארגוני בשלושה מקומות: ישיבות כיול שורפות שעות על השוואת ציונים שהנרטיב מאחוריהם מתאר דברים שונים, ועדת קידום קוראת בתיק דליל פחות הישגים ממה שהעבודה מצדיקה, וסטנדרט ההערכה המעורפל עובר למנהלים חדשים דרך התבניות והדוגמאות מהשנה שעברה ומשכפל את עצמו בשקט.",
+        "הוסיפו שדה outcome חובה לכל הערת תכונה: \"מאורגנת\" דורשת תוצאה מוצמדת כמו \"עמדה בכל הדדליינים לאורך מעבר הספק\".",
+        "הריצו blind text pass לפני סגירת ציונים: הסירו שמות מהערות הטיוטה ובדקו אם סגנון השפה משתנה לפי מגדר. חמש דקות תופסות מה שמנהל יפספס."
+      ],
+      "insights_en": [
+        "The article prices the organisational cost in three places: calibration meetings burn hours reconciling scores whose narratives describe different things, a promotion committee reads fewer accomplishments into a thin file than the work supports, and the vague review standard passes to new managers through templates and last year's examples, quietly repeating each cycle.",
+        "Add a required outcome field to every trait comment: \"organized\" needs an attached result such as \"kept every deadline through the vendor transition\".",
+        "Run a blind text pass before ratings are final: strip names from draft narrative comments and check whether language style differs by gender. A five-minute pass catches what a manager will miss."
+      ],
+      "matters_he": "בבנק קובץ ההערכות הוא גם מאגר הדאטה שממנו נגזרות החלטות קידום וניוד ושעליו נבנים ניתוחי כישורים. אם חלק מהתיאורים הם תכונות בלי תוצאות, ההטיה נכנסת לדאטה במקור. ההתערבות כאן היא בטופס ובישיבת הכיול, לא בסדנת הטיות, וזו בדיוק ההצעה שיועץ ביצועים יכול להביא ל-HR.",
+      "matters_en": "At the bank the review file is also the data source behind promotion and mobility decisions and behind any skills analytics built on top of it. If part of the descriptions are traits without outcomes, the bias enters the data at source. The intervention is the form and the calibration meeting, not a bias workshop, and that is exactly the proposal a performance consultant can take to HR.",
+      "lane": "id_craft",
+      "url": "https://elearningindustry.com/the-feedback-gap-holding-women-leaders-back",
+      "source": "eLearning Industry",
+      "published": "2026-11-27T10:00:58+00:00",
+      "revised": true
+    },
+    {
+      "headline_he": "סקרי השבוע: תקציבי L&D, 48% חוששים שישפטו אותם על שימוש מועט מדי ב-AI",
+      "headline_en": "This Week's Data: L&D Budgets, and 48% Fear Being Judged for Not Using AI Enough",
+      "summary_he": "מקבץ הנתונים של Training Journal כולל מחקר של General Assembly שלפיו מנהלי L&D שהאסטרטגיה שלהם קשורה במפורש לעדיפויות עסקיות מתועדות צפויים יותר מפי שניים לצפות לגידול תקציבי משמעותי (23% מול 11%). לצד זה, מחקר של The Inclusion Initiative ב-LSE עם Protiviti על 3,001 עובדים מצא שכמעט מחצית (48%) חוששים שישפטו אותם על שימוש מועט מדי ב-AI, לעומת 20% שחוששים מהשיפוט ההפוך, ושהשימוש ב-AI בעבודה קפץ מ-29% ב-2024 ל-74%.",
+      "summary_en": "Training Journal's roundup includes General Assembly research showing L&D leaders whose strategy is fully tied to documented business priorities are more than twice as likely to expect a significant budget increase (23% versus 11%). Alongside it, research from The Inclusion Initiative at LSE with Protiviti, surveying 3,001 professionals, found nearly half (48%) worry about being judged for not using AI enough versus 20% who worry about the reverse, with workplace AI use jumping from 29% in 2024 to 74%.",
+      "insights_he": [
+        "אותו פער בציפיות התקציב (23% מול 11%) חל גם על מנהלי L&D שמעורבים בעיצוב האסטרטגיה הארגונית ושותפים למיפוי מיומנויות קריטיות. לשם השוואה, רק 14% מכלל מנהלי ה-L&D מצפים לגידול תקציבי משמעותי ב-2027 ו-17% מתכננים הגדלת כוח אדם.",
+        "כיוון הלחץ החברתי סביב AI התהפך: 48% חוששים שייראו כמי שלא משתמש מספיק מול 20% שחוששים מההפך. כשהשימוש המדווח מזנק מ-29% ל-74% בשנתיים, מספרי אימוץ גבוהים כבר לא מעידים על יכולת, ולכן כל דשבורד אימוץ צריך מדד יכולת לצד מדד שימוש.",
+        "בנצ'מרק לסקטור מפוקח: סקר Zing365 בקרב 150 מנהלי L&D בביטוח מצא שרק 52% מאמינים שלאנשיהם יש המיומנויות להשגת יעדי האסטרטגיה בשלוש השנים הקרובות, ו-32% מציינים מיומנויות AI כצורך ההשקעה הגדול ביותר."
+      ],
+      "insights_en": [
+        "The same budget-expectation gap (23% versus 11%) also applies to L&D leaders who help shape organisational strategy and partner on mapping critical team skills. For scale, only 14% of L&D leaders overall expect a significant 2027 budget increase and 17% plan significant headcount growth.",
+        "The direction of social pressure around AI has inverted: 48% fear being judged for underusing it versus 20% for the reverse. With reported use jumping from 29% to 74% in two years, high adoption numbers no longer evidence capability, so any adoption dashboard needs a capability measure next to the usage measure.",
+        "A regulated-sector benchmark: the Zing365 survey of 150 insurance L&D leaders found only 52% believe their people have the skills to hit strategy objectives over the next three years, and 32% name AI skills as the biggest training investment need."
+      ],
+      "matters_he": "נתון התקציב מול אסטרטגיה מתועדת הוא תחמושת ישירה לשיחת התקציב השנתית בבנק, במיוחד אם אפשר להצביע על מסמך עדיפויות שהיחידה חתומה עליו. נתוני ה-48% וה-74% אומרים שהמדד שאתם מדווחים עליו היום על אימוץ AI מנופח, ונתוני הביטוח הם הדבר הכי קרוב לבנצ'מרק מסקטור מפוקח אחר.",
+      "matters_en": "The budget-versus-documented-strategy figure is direct ammunition for the annual budget conversation at the bank, especially if you can point to a priorities document the unit is signed onto. The 48% and 74% figures say the AI adoption metric you report today is inflated, and the insurance numbers are the closest thing here to a benchmark from another regulated sector.",
+      "lane": "strategy",
+      "url": "https://www.trainingjournal.com/2026/content-type/news/tj-newsflash-25-november-ld-budgets-insurance-skills-ai-pressure-and-imposter-syndrome/?utm_source=rss&utm_medium=rss&utm_campaign=tj-newsflash-25-november-ld-budgets-insurance-skills-ai-pressure-and-imposter-syndrome",
+      "source": "Training Journal",
+      "published": "2026-11-25T06:02:00+00:00",
+      "revised": true
+    },
+    {
+      "headline_he": "מנטורינג לא מספיק: ארבעת הרבדים של צינור מנהיגות שבאמת עובד",
+      "headline_en": "Mentoring Is Not Enough: The Four Layers of a Working Leadership Pipeline",
+      "summary_he": "המאמר מבחין בין מנטורינג, שמספק משוב ועצה, לבין sponsorship, שבו מישהו בעל השפעה מקדם את ההתקדמות של אדם ופותח לו גישה להזדמנויות. מחקר Catalyst שעליו נשענו Ibarra, Carter ו-Silva ב-HBR מצא שנשים מקבלות מנטורינג בשיעור שווה או גבוה מעמיתים גברים, אך לא את אותה גישה ל-sponsorship ולהתקדמות. מחקר עדכני של Gröschl ועמיתים מצא ש-sponsorship צומח מחשיפה מתמשכת לעבודה משמעותית, לא רק משיחות תומכות.",
+      "summary_en": "The article distinguishes mentoring, which provides feedback and advice, from sponsorship, where someone with influence advocates for a person's advancement and opens access to opportunities. The Catalyst research behind Ibarra, Carter and Silva's HBR piece found women receive mentoring at rates equal to or higher than male peers but not the same access to sponsorship and advancement. A newer study by Gröschl and colleagues found sponsorship emerges from sustained exposure to consequential work, not only supportive conversations.",
+      "insights_he": [
+        "ארבעת הרבדים: מנטורינג (יכולת), חשיפה (מנהלים בכירים רואים עבודה משמעותית), סנגור (מישהו אומר את השם בחדר), ואחריותיות (הארגון עוקב אחרי מי מקבל נראות ומי לא).",
+        "פער sponsorship כמעט אף פעם לא מגיע מתויג ככזה: הוא מופיע כבעיית succession, כבעיית פיתוח (ביצועים חזקים שתקועים במקום) או כבעיית retention.",
+        "אל תתייחסו לקיום תוכנית מנטורינג כראיה לכך שיש גם גישה ל-sponsorship. מדדו את השניים בנפרד עם הגדרות הצלחה שונות."
+      ],
+      "insights_en": [
+        "The four layers: mentoring (capability), exposure (senior leaders see consequential work), advocacy (someone says the name in the room), and accountability (the organisation tracks whose readiness is made visible).",
+        "A sponsorship gap almost never arrives labelled as one: it surfaces as a succession problem, a development problem (a strong performer stuck at level), or a retention problem.",
+        "Do not treat the existence of a mentoring programme as evidence that sponsorship access exists too. Track them separately with different success measures."
+      ],
+      "matters_he": "ההבחנה הזו היא דוגמה קלאסית לייעוץ ביצועים: כשמבקשים ממך עוד תוכנית מנהיגות, האבחנה האמיתית עשויה להיות פער בחשיפה ובסנגור שתוכנית הדרכה לא תפתור.",
+      "matters_en": "This distinction is classic performance consulting: when someone orders another leadership programme, the real diagnosis may be an exposure and advocacy gap that no course will fix.",
+      "lane": "strategy",
+      "url": "https://elearningindustry.com/why-mentoring-alone-doesnt-build-the-next-generation-of-leaders",
+      "source": "eLearning Industry",
+      "published": "2026-11-26T10:00:37+00:00"
+    },
+    {
+      "headline_he": "מומחי תוכן כיוצרי קורסים: מודל שבו L&D הופך למנצח ולא למפעל תוכן",
+      "headline_en": "SMEs as Course Creators: L&D as Orchestrator, Not Content Factory",
+      "summary_he": "מאמר בחסות 360Learning שטוען שהמודל הריכוזי, שבו צוות L&D קטן מייצר כל קורס, הוא צוואר בקבוק מבני. לפי מחקר של 360Learning, פחות מ-5% מהעובדים תורמים תוכן למידה בפועל, בעוד 92% אומרים שיש להם ידע בעל ערך לשתף ורק 60% נשאלו אי פעם. ההצעה היא מסגרת בת חמישה שלבים עם כתיבה משותפת, מעקות איכות שמוגדרים מראש ו-AI שמוריד חיכוך. חשוב לזכור שחלק מהחומר הוא תיאור פיצ'רים של הספק.",
+      "summary_en": "A 360Learning-sponsored piece arguing the centralized model, where a small L&D team produces every course, is a structural bottleneck. Per 360Learning research, under 5% of employees actively contribute learning content while 92% say they have valuable knowledge to share and only 60% have ever been asked. The proposal is a five-step framework with co-authoring, pre-set quality guardrails and AI to remove friction. Note that much of the material is vendor feature description.",
+      "insights_he": [
+        "לפני שמומחה תוכן מתחייב, סגרו איתו בכתב ארבעה דברים: היקף הזמן (שעה או פרויקט של שבועות), הטווח (תרומה חד פעמית או תפקיד מתמשך), האם הוא נדרש לענות לשאלות לומדים אחרי ההשקה, ומה נחשב תוצר טוב. לצד זה חלוקת תפקידים ברורה: L&D מחזיק יעדים, שלד ולוח זמנים, המומחה מספק רק את הידע.",
+        "המפתח לשמירה על איכות הוא לא לרכז יצירה אלא לתקנן מעקות: L&D מגדיר טון, פדגוגיה, ציות ומותג מראש כהוראות prompt, כך שהסטנדרט אפוי כבר בטיוטה הראשונה, ולצדו validation workflow לפני פרסום.",
+        "לא צריך השתתפות גורפת. גם 1 עד 2 אחוזים מהעובדים שיוצרים תוכן באופן פעיל יכולים להרחיב משמעותית את הספרייה, והניסיון לגייס את כולם לרוב מזיק."
+      ],
+      "insights_en": [
+        "Before an SME commits, fix four things in writing: time commitment (an hour or a multi-week project), scope (one-off contribution or ongoing role), whether they must answer learner questions after launch, and what 'good' looks like. Pair it with a clear role split: L&D owns objectives, outline and timeline, the SME supplies only the expertise.",
+        "Quality control comes from standardizing guardrails rather than centralizing creation: L&D defines tone, pedagogy, compliance and brand up front as prompt instructions so the standard is baked into the first draft, with a validation workflow before publishing.",
+        "You do not need broad participation. Even 1 to 2 percent of employees actively creating content can dramatically expand the library, and trying to involve everyone is often counterproductive."
+      ],
+      "matters_he": "אבי בונה ייצור למידה AI-native עם צוות קטן, מול רשת מומחים בתחומי מוצר, אשראי וציות. מעקות מבוססי prompt עם validation workflow הם המנגנון שמאפשר לפתוח את הכתיבה החוצה בלי לאבד שליטה רגולטורית, וארבעת תנאי ההתחייבות הם מה שמונע ממומחה לנטוש באמצע. המקור ספק, אז את הפיצ'רים כדאי לקרוא כדרישות למערכת ולא כהמלצה.",
+      "matters_en": "Avi is building AI-native production with a small team against a network of experts in product, credit and compliance. Prompt-based guardrails plus a validation workflow are the mechanism that lets authoring open up without losing regulatory control, and the four commitment terms are what stop an SME dropping out mid-build. The source is a vendor, so read the features as requirements for any platform rather than as a recommendation.",
+      "lane": "ai_ld",
+      "url": "https://elearningindustry.com/how-to-scale-learning-with-internal-experts-as-course-creators",
+      "source": "eLearning Industry",
+      "published": "2026-11-26T14:00:35+00:00",
+      "revised": true
+    },
+    {
+      "headline_he": "62% מהארגונים בפער מיומנויות: למה אי אפשר יותר לחכות לכישרון מוכן",
+      "headline_en": "62% of Organisations Report Skills Shortages: The Case for Building Talent Internally",
+      "summary_he": "מאמר דעה שטוען שארגונים לא יכולים עוד להסתמך על מערכת החינוך לאספקת כישרון מוכן, ושצריך לבנות מיומנויות מבפנים. הנתון היחיד במאמר הוא 62% מהארגונים שמדווחים על מחסור במיומנויות, והוא מופיע ללא מקור. שאר החומר הוא ציטוטים של ארבעה דוברים מ-Epson, Node4, LearnUpon ו-WorkJam בלי נתונים תומכים.",
+      "summary_en": "An opinion piece arguing that organisations can no longer rely on the education system for ready-made talent and must build skills internally. The only figure in the article is 62% of organisations reporting skills shortages, given without a source. The rest is quotes from four speakers at Epson, Node4, LearnUpon and WorkJam with no supporting data.",
+      "insights_he": [
+        "הנתון היחיד, 62% מהארגונים עם מחסור במיומנויות, מובא בלי מקור ובלי מתודולוגיה. אם הוא נכנס למצגת הנהלה, הציגו אותו כאינדיקציה בלבד.",
+        "הטענה המעשית היחידה היא של Jessica Shorten Hood מ-Epson: חניכות ותפקידי כניסה כתחליף לסינון לפי תואר, עם למידה תוך כדי שכר, ניסיון ספציפי לענף ומיומנויות רוחב מוגדרות (פתרון בעיות, תקשורת, עבודת צוות). ההשלכה: ברגע שמרפים את מסנן התואר בגיוס, בניית בסיס היכולת עוברת פנימה אל ה-L&D.",
+        "שניים מארבעת הדוברים המצוטטים מגיעים מספקי פלטפורמות למידה וכוח אדם (LearnUpon ו-WorkJam), ולכן המסקנה 'להשקיע יותר ב-L&D' היא המסקנה שהמקורות מתוגמלים להגיע אליה. שווה כאיתות שוק, לא כראיה."
+      ],
+      "insights_en": [
+        "The single figure, 62% of organisations facing skills shortages, appears with no source and no methodology. If it goes into a management deck, present it as directional only.",
+        "The one operational claim is from Epson's Jessica Shorten Hood: apprenticeships and entry-level roles as substitutes for degree filters, with earn-while-you-learn, sector-specific experience and named transferable skills (problem-solving, communication, teamwork). The implication: loosen the degree filter at intake and the baseline capability build moves inside, to L&D.",
+        "Two of the four quoted voices come from learning and workforce platform vendors (LearnUpon and WorkJam), so the 'invest more in L&D' conclusion is the one the sources are paid to reach. Useful as a market signal, not as evidence."
+      ],
+      "matters_he": "ערך מוגבל. אם הבנק מרחיב מסלולי כניסה ללא תואר, השאלה המעשית היא מה בסיס היכולת שהיחידה שלך מחויבת לייצר במקום מסנן הגיוס, ואיזו דאטת מיומנויות תוכיח שהוא נבנה. מעבר לזה, המאמר הוא חומר ציטוט ולא מקור ממצאים.",
+      "matters_en": "Limited value. If the bank widens non-degree entry routes, the practical question is what baseline capability your unit now has to produce in place of the recruitment filter, and what skills data will prove it was built. Beyond that, the piece is quotable material, not a source of findings.",
+      "lane": "strategy",
+      "url": "https://www.trainingjournal.com/2026/audience_role/experienced_landd/stop-waiting-for-ready-made-talent-future-proof-your-workforce-skills/?utm_source=rss&utm_medium=rss&utm_campaign=stop-waiting-for-ready-made-talent-future-proof-your-workforce-skills",
+      "source": "Training Journal",
+      "published": "2026-11-24T03:23:00+00:00",
+      "revised": true
+    },
+    {
+      "headline_he": "ממחלקת הדרכה לזרוע אסטרטגית: לקחים ממנהל למידה על שינוי תפיסה",
+      "headline_en": "From Training Team to Strategic Arm: A Learning Leader on Changing Perceptions",
+      "summary_he": "פרופיל אישי ב-People Management על Lavu Njobvu, שמכנה עצמו The L&D Guy. אין במאמר ממצאים או נתונים: הוא מתאר כניסה מקרית למקצוע ב-2009, את האתגר של שינוי תפיסת בעלי העניין מצוות הדרכה לזרוע אסטרטגית, בנייה של פונקציית L&D מאפס ב-WPP Enterprise Solutions, ותחזית ללמידה מוטמעת בעבודה ול-AI שמתאים אישית מסלולים. המאמר לא מסביר כיצד שינוי התפיסה נעשה בפועל.",
+      "summary_en": "A personality profile in People Management of Lavu Njobvu, who calls himself The L&D Guy. It contains no findings or data: he describes falling into the profession in 2009, the challenge of shifting stakeholder perception from training team to strategic arm, building an L&D function from scratch at WPP Enterprise Solutions, and a forecast of embedded learning plus AI-personalised pathways. The piece never explains how the perception shift was actually achieved.",
+      "insights_he": [
+        "הטענה על גידול של יותר מ-100% במעורבות בלמידה ב-WPP היא דיווח עצמי ללא הגדרה של מעורבות, ללא בסיס השוואה וללא תקופה. לא חומר לציטוט מול הנהלה.",
+        "הפרט היחיד עם ערך ניהולי הוא מה שהוא מזהה כמה שפיתח אותו: מנהלת שנתנה אוטונומיה ומרחב להיכשל ופידבק שחרג מגבולות המשימה, ומנטור שהמשיך ללוות אותו גם אחרי שעזב את הארגון. זה מודל פיתוח לצוות שלך, לא קורס.",
+        "המשאב המקצועי שהוא מצביע עליו הוא קהילות L&D בערוצי Slack חוצי תעשיות, שבהן אפשר לשאול איך משהו נעשה בפועל. ערוץ זול לפיתוח יכולת הצוות, ללא תקציב."
+      ],
+      "insights_en": [
+        "The claim of a 100%-plus increase in learning engagement at WPP is self-reported, with no definition of engagement, no baseline and no timeframe. Not material to quote to a management forum.",
+        "The one detail with managerial value is what he credits for his own development: a manager who gave autonomy, room to fail and feedback that went beyond the brief, plus a mentor who kept coaching him after he left the organisation. That is a development model for your own team, not a course.",
+        "The professional resource he names is cross-industry L&D Slack communities, where you can ask how something was actually done. A cheap, zero-budget channel for building your team's capability."
+      ],
+      "matters_he": "פרופיל ללא ממצאים, וחלק גדול ממנו יחזיר לך את התזה שלך עצמך. מה שכן אפשר לקחת: מודל פיתוח העובדים בתוך היחידה, והעובדה שגם ב-2026 מומחה מנוסה עדיין מגדיר את 'מעבר מהדרכה לשותף אסטרטגי' כאתגר המרכזי שלו, כלומר הקרב שאבי כבר ניהל בבנק עדיין פתוח ברוב הארגונים.",
+      "matters_en": "A profile with no findings, much of which will simply hand Avi back his own thesis. What is usable: the model for developing people inside the unit, and the fact that in 2026 an experienced practitioner still names 'training team to strategic partner' as his central challenge, meaning the battle Avi has already fought at the bank is still open in most organisations.",
+      "lane": "strategy",
+      "url": "https://peoplemanagement.co.uk/article/1976312/l-d-me-learning-leader-becoming-strategic-arm-business",
+      "source": "People Management",
+      "published": "2026-11-27T00:00:00+00:00",
+      "revised": true
+    }
+  ],
+  "warnings": [
+    "feed failed for 'Will Thalheimer': RemoteDisconnected: Remote end closed connection without response",
+    "feed 'Craig Weiss' parsed 0 items (format change?)",
+    "feed failed for 'Talented Learning': HTTPError: HTTP Error 415: Unsupported Media Type",
+    "feed failed for 'HR Executive': HTTPError: HTTP Error 404: Not Found",
+    "feed failed for 'HR Executive Tech': HTTPError: HTTP Error 404: Not Found",
+    "no article this week in lane(s): learning_tech",
+    "3 article(s) still below the editorial bar after 2 rounds; shipped as-is",
+    "editorial pass rate 4/7 in the final round: this week's source material may be thin"
+  ]
+}
